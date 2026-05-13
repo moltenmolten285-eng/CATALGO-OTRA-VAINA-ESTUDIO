@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTRA VAINA STUDIOS | Producción Visual Premium</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-white: #FFFFFF;
+            --text-black: #0A0A0A; /* Negro ligeramente más suave, más premium */
+            --smooth-blue: #8CA6BC;
+            --navy: #1B3A6B;
+            --light-gray: #F5F5F5;
+            --grid-color: rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            cursor: none;
+        }
+
+        ::selection {
+            background-color: var(--smooth-blue);
+            color: var(--bg-white);
+        }
+
+        body {
+            background-color: var(--bg-white);
+            color: var(--text-black);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            background-image: linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+                              linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+            background-size: 50px 50px;
+            position: relative;
+        }
+
+        /* 🎬 EFECTO FILM GRAIN (RUIDO FOTOGRÁFICO) 🎬 */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.04; /* Sutil y elegante */
+            pointer-events: none;
+            z-index: 9998;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* TIPOGRAFÍA OUTLINE PARA EL HERO */
+        .outline-text {
+            color: transparent;
+            -webkit-text-stroke: 2px var(--text-black);
+        }
+
+        .custom-cursor {
+            position: fixed;
+            top: 0; left: 0; width: 12px; height: 12px;
+            background-color: var(--smooth-blue);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1), height 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s;
+            mix-blend-mode: exclusion; /* Se adapta mejor a fondos oscuros y claros */
+        }
+
+        .custom-cursor.hover-effect {
+            width: 60px; height: 60px;
+            background-color: transparent;
+            border: 1.5px solid var(--smooth-blue);
+        }
+
+        nav {
+            padding: 1.5rem 5%;
+            display: flex; justify-content: space-between; align-items: center;
+            position: fixed; width: 100%; top: 0;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            z-index: 100;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .brand { display: flex; align-items: center; gap: 15px; text-decoration: none; }
+        .brand img { height: 35px; width: auto; object-fit: contain; }
+        .logo-text { font-family: 'Montserrat', sans-serif; font-size: 1.2rem; font-weight: 900; letter-spacing: -1px; color: var(--text-black); }
+
+        .nav-links a {
+            margin-left: 2.5rem; text-decoration: none; color: var(--text-black);
+            font-weight: 600; font-size: 0.85rem; text-transform: uppercase;
+            letter-spacing: 1px; transition: color 0.3s ease;
+        }
+        .nav-links a:hover { color: var(--smooth-blue); }
+
+        .hero {
+            height: 100vh; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center;
+            padding: 0 5%; position: relative;
+        }
+
+        .hero h1 {
+            font-size: clamp(3.5rem, 12vw, 9rem);
+            line-height: 0.85; letter-spacing: -4px;
+            z-index: 2;
+        }
+
+        .hero p {
+            margin-top: 2rem; font-size: 1.1rem; color: #555;
+            max-width: 550px; font-weight: 300; line-height: 1.6;
+            z-index: 2;
+        }
+
+        /* 🚀 CINTA INFINITA (MARQUEE TICKER) 🚀 */
+        .marquee-container {
+            position: absolute; bottom: 10%; width: 100vw;
+            overflow: hidden; white-space: nowrap;
+            background: var(--text-black); color: var(--bg-white);
+            padding: 12px 0; transform: rotate(-2deg) scale(1.05); /* Ligeramente inclinado */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+        .marquee-content {
+            display: inline-block; font-family: 'Montserrat', sans-serif;
+            font-weight: 900; font-size: 0.8rem; letter-spacing: 3px;
+            animation: marquee 20s linear infinite;
+        }
+        .marquee-content span { margin-right: 50px; }
+        
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .scroll-indicator {
+            position: absolute; bottom: 30px; font-size: 0.75rem;
+            letter-spacing: 3px; font-weight: 600; text-transform: uppercase;
+            animation: bounce 2s infinite; z-index: 2;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .services { padding: 8rem 5%; position: relative; z-index: 2;}
+        .section-title {
+            font-size: 2.5rem; margin-bottom: 4rem; border-bottom: 3px solid var(--text-black);
+            display: inline-block; padding-bottom: 0.5rem; letter-spacing: -1px;
+        }
+
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 4rem; }
+        .service-card { padding-top: 2rem; border-top: 1px solid #E0E0E0; transition: all 0.4s ease; position: relative; }
+        .service-card h3 { font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; }
+        .service-card p { color: #666; font-size: 0.95rem; line-height: 1.7; }
+        .service-card::after { content: ''; position: absolute; top: -1px; left: 0; width: 0; height: 2px; background-color: var(--smooth-blue); transition: width 0.4s ease; }
+        .service-card:hover::after { width: 100%; }
+
+        .rec-dot {
+            display: inline-block; width: 8px; height: 8px; background-color: red;
+            border-radius: 50%; margin-right: 10px; animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+        .portfolio { padding: 0 5% 8rem 5%; position: relative; z-index: 2;}
+        .portfolio-filters { display: flex; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap; }
+        .filter-btn {
+            padding: 0.5rem 1.5rem; border: 1.5px solid var(--text-black);
+            background: transparent; font-family: 'Montserrat', sans-serif;
+            font-weight: 800; font-size: 0.75rem; letter-spacing: 1px;
+            text-transform: uppercase; cursor: none; transition: all 0.3s ease;
+        }
+        .filter-btn:hover, .filter-btn.active { background: var(--text-black); color: var(--bg-white); }
+        .filter-btn.active { background: var(--navy); border-color: var(--navy); }
+
+        .portfolio-masonry { display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 80px; gap: 1.2rem; }
+        .p-item { position: relative; overflow: hidden; background: var(--light-gray); transition: opacity 0.5s ease, transform 0.5s ease; }
+        
+        .p-item--tall   { grid-column: span 4; grid-row: span 6; }
+        .p-item--wide   { grid-column: span 8; grid-row: span 5; }
+        .p-item--square { grid-column: span 4; grid-row: span 5; }
+        .p-item--hero   { grid-column: span 8; grid-row: span 7; }
+        .p-item--small  { grid-column: span 4; grid-row: span 4; }
+        .p-item--mid    { grid-column: span 6; grid-row: span 5; }
+
+        .p-item img {
+            width: 100%; height: 100%; object-fit: cover; object-position: top center;
+            transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.5s ease;
+            filter: grayscale(10%); display: block;
+        }
+
+        .p-overlay {
+            position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 50%);
+            opacity: 0; transition: opacity 0.4s ease; display: flex; flex-direction: column;
+            justify-content: flex-end; padding: 1.5rem;
+        }
+
+        .p-overlay-tag {
+            font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 800;
+            letter-spacing: 3px; color: var(--smooth-blue); text-transform: uppercase;
+            transform: translateY(10px); transition: transform 0.4s ease 0.05s;
+        }
+
+        .p-overlay-title {
+            font-family: 'Montserrat', sans-serif; font-size: 1.3rem; font-weight: 900;
+            color: #fff; letter-spacing: 1px; text-transform: uppercase;
+            transform: translateY(10px); transition: transform 0.4s ease;
+        }
+
+        .p-brackets { position: absolute; inset: 12px; border: 1px solid rgba(255,255,255,0); transition: border-color 0.4s ease; pointer-events: none; }
+        .p-brackets::before, .p-brackets::after { content: ''; position: absolute; width: 18px; height: 18px; border-color: rgba(255,255,255,0); border-style: solid; transition: border-color 0.4s ease; }
+        .p-brackets::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+        .p-brackets::after { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+
+        .p-item:hover img { transform: scale(1.05); filter: grayscale(0%); }
+        .p-item:hover .p-overlay { opacity: 1; }
+        .p-item:hover .p-overlay-tag, .p-item:hover .p-overlay-title { transform: translateY(0); }
+        .p-item:hover .p-brackets { border-color: rgba(255,255,255,0.2); }
+        .p-item:hover .p-brackets::before, .p-item:hover .p-brackets::after { border-color: rgba(255,255,255,0.9); }
+        .p-item.hidden { opacity: 0; pointer-events: none; transform: scale(0.96); }
+
+        .session-label { grid-column: span 12; display: flex; align-items: center; gap: 1rem; padding: 0.5rem 0; }
+        .session-label span { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; color: #999; white-space: nowrap; }
+        .session-label::after { content: ''; flex: 1; height: 1px; background: #E0E0E0; }
+
+        .pricing-section { padding: 8rem 5%; background-color: var(--bg-white); position: relative; z-index: 2;}
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; align-items: stretch; }
+        .pricing-card {
+            border: 1px solid #E0E0E0; padding: 3rem 2rem; text-align: center;
+            transition: transform 0.4s ease, box-shadow 0.4s ease; position: relative;
+            background: var(--bg-white); display: flex; flex-direction: column;
+        }
+
+        .pricing-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
+        .pricing-card h3 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--smooth-blue); }
+        .pricing-card .price { font-size: 2.8rem; font-family: 'Montserrat', sans-serif; font-weight: 900; margin-bottom: 2rem; color: var(--text-black); }
+        .pricing-card .price span { font-size: 1rem; vertical-align: super; margin-right: 5px; }
+        .pricing-card ul { list-style: none; margin-bottom: 3rem; flex-grow: 1; }
+        .pricing-card ul li { font-size: 0.9rem; color: #666; margin-bottom: 1rem; border-bottom: 1px solid #F0F0F0; padding-bottom: 1rem; }
+        .pricing-card ul li:last-child { border-bottom: none; }
+
+        /* 🔥 GLOW EN LA TARJETA PREMIUM 🔥 */
+        .pricing-card.highlight {
+            background-color: var(--text-black); color: var(--bg-white); border: none;
+            transform: scale(1.05); box-shadow: 0 20px 50px rgba(140, 166, 188, 0.35); /* Resplandor Smooth Blue */
+            z-index: 2;
+        }
+
+        .pricing-card.highlight:hover { transform: scale(1.05) translateY(-10px); }
+        .pricing-card.highlight h3 { color: var(--bg-white); }
+        .pricing-card.highlight .price { color: var(--smooth-blue); }
+        .pricing-card.highlight ul li { color: #CCC; border-bottom-color: #333; }
+
+        .badge-popular {
+            position: absolute; top: -15px; left: 50%; transform: translateX(-50%);
+            background: var(--smooth-blue); color: var(--bg-white); padding: 0.5rem 1.5rem;
+            font-size: 0.7rem; font-family: 'Montserrat', sans-serif; font-weight: 800;
+            letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 5px 15px rgba(140, 166, 188, 0.4);
+        }
+
+        .btn-pricing {
+            display: inline-block; padding: 1rem 1.5rem; text-decoration: none;
+            font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 0.85rem;
+            letter-spacing: 1px; transition: all 0.3s ease; width: 100%; text-transform: uppercase;
+        }
+
+        .btn-pricing-outline { border: 2px solid var(--text-black); color: var(--text-black); background: transparent; }
+        .btn-pricing-outline:hover { background: var(--smooth-blue); color: var(--bg-white); border-color: var(--smooth-blue); }
+        .btn-pricing-solid { background: var(--bg-white); color: var(--text-black); border: 2px solid var(--bg-white); }
+        .btn-pricing-solid:hover { background: var(--smooth-blue); color: var(--bg-white); border-color: var(--smooth-blue); }
+
+        .contact { padding: 8rem 5%; text-align: center; background-color: var(--light-gray); position: relative; z-index: 2;}
+        .contact h2 { font-size: 3rem; letter-spacing: -2px; }
+
+        .btn-primary {
+            display: inline-block; margin-top: 3rem; padding: 1.2rem 3.5rem;
+            background-color: var(--bg-white); color: var(--text-black); text-decoration: none;
+            font-family: 'Montserrat', sans-serif; font-weight: 900; letter-spacing: 1px;
+            border: 2px solid var(--text-black); transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover { background-color: var(--smooth-blue); color: var(--bg-white); border-color: var(--smooth-blue); }
+
+        footer {
+            padding: 3rem 5%; display: flex; justify-content: space-between; align-items: center;
+            font-size: 0.85rem; color: #999; background-color: var(--bg-white); position: relative; z-index: 2;
+        }
+
+        .tmca-signature { font-weight: 600; color: var(--text-black); }
+
+        .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        @media (max-width: 900px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 3.5rem; }
+            .section-title { font-size: 2rem; }
+            .portfolio-masonry { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 60px; }
+            .p-item--tall, .p-item--square, .p-item--small { grid-column: span 1; grid-row: span 5; }
+            .p-item--wide, .p-item--hero, .p-item--mid { grid-column: span 2; grid-row: span 5; }
+            .session-label { grid-column: span 2; }
+            .pricing-card.highlight { transform: scale(1); }
+            .pricing-card.highlight:hover { transform: translateY(-10px); }
+            .marquee-container { transform: rotate(0) scale(1); bottom: 0; }
+        }
+
+        @media (max-width: 500px) {
+            .portfolio-masonry { grid-template-columns: 1fr; grid-auto-rows: 55px; }
+            .p-item--tall, .p-item--square, .p-item--small, .p-item--wide, .p-item--hero, .p-item--mid { grid-column: span 1; grid-row: span 5; }
+            .session-label { grid-column: span 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="custom-cursor" id="cursor"></div>
+
+    <nav>
+        <a href="#" class="brand hover-target">
+            <img src="https://drive.google.com/uc?export=view&id=14JvZYUxywIRUAR7gjaplAKydfEJh0N2v" alt="Logo Otra Vaina">
+            <span class="logo-text">OTRA VAINA.</span>
+        </a>
+        <div class="nav-links">
+            <a href="#servicios" class="hover-target">El Laboratorio</a>
+            <a href="#catalogo" class="hover-target">Catálogo</a>
+            <a href="#planes" class="hover-target">Inversión</a>
+            <a href="#contacto" class="hover-target">Agendar</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1 class="reveal">OTRA <span class="outline-text">VAINA</span><br>STUDIOS</h1>
+        <p class="reveal">Estética limpia. Producción premium. Elevando la fotografía de estudio y la creación visual a su máxima expresión en Monte Plata y el mundo.</p>
+        
+        <div class="marquee-container reveal">
+            <div class="marquee-content">
+                <span>DIRECCIÓN DE ARTE</span>
+                <span>FOTOGRAFÍA EDITORIAL</span>
+                <span>CINEMATOGRAFÍA</span>
+                <span>DISEÑO 3D</span>
+                <span>RESTAURACIÓN</span>
+                <span>DIRECCIÓN DE ARTE</span>
+                <span>FOTOGRAFÍA EDITORIAL</span>
+                <span>CINEMATOGRAFÍA</span>
+                <span>DISEÑO 3D</span>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">[ SCROLL ]</div>
+    </section>
+
+    <section id="servicios" class="services">
+        <h2 class="section-title reveal">El Laboratorio</h2>
+        <div class="services-grid">
+            <div class="service-card reveal hover-target">
+                <h3>[ F ] Fotografía de Estudio</h3>
+                <p>Retratos de alto nivel, fotografía de producto y moda. Iluminación precisa y fondos inmaculados.</p>
+            </div>
+            <div class="service-card reveal hover-target">
+                <h3>[ C ] Catálogos Digitales</h3>
+                <p>Estructuración visual impecable. Mostramos tus productos con una estética que vende por sí sola.</p>
+            </div>
+            <div class="service-card reveal hover-target">
+                <h3>[ R ] Restauración</h3>
+                <p>Recuperación meticulosa de fotografías antiguas o dañadas, devolviéndoles la vida y el detalle exacto.</p>
+            </div>
+            <div class="service-card reveal hover-target">
+                <h3><span class="rec-dot"></span> Edición & Contenido</h3>
+                <p>Cortes precisos, corrección de color cinematográfica y creación de contenido dinámico para marcas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogo" class="portfolio">
+        <h2 class="section-title reveal">Catálogo</h2>
+        <div class="portfolio-filters reveal">
+            <button class="filter-btn active hover-target" data-filter="all">Todos</button>
+            <button class="filter-btn hover-target" data-filter="editorial">Editorial</button>
+            <button class="filter-btn hover-target" data-filter="estudio">Estudio</button>
+            <button class="filter-btn hover-target" data-filter="conceptual">Conceptual</button>
+            <button class="filter-btn hover-target" data-filter="familia">Familia</button>
+        </div>
+
+        <div class="portfolio-masonry">
+            <div class="session-label"><span>Conceptual — Serie Verde</span></div>
+            <div class="p-item p-item--tall hover-target" data-cat="conceptual">
+                <img src="https://drive.google.com/uc?export=view&id=19LSA6vqC6AcU61my7v7w6cpf9S7xSmzQ" alt="Conceptual" loading="lazy">
+                <div class="p-overlay"><div class="p-overlay-tag">Conceptual</div><div class="p-overlay-title">En el Campo</div></div>
+                <div class="p-brackets"></div>
+            </div>
+            <div class="p-item p-item--wide hover-target" data-cat="conceptual">
+                <img src="https://drive.google.com/uc?export=view&id=19LSA6vqC6AcU61my7v7w6cpf9S7xSmzQ" alt="Conceptual" loading="lazy">
+                <div class="p-overlay"><div class="p-overlay-tag">Conceptual</div><div class="p-overlay-title">La Última Cena</div></div>
+                <div class="p-brackets"></div>
+            </div>
+
+            <div class="session-label"><span>Editorial — Moda & Retrato</span></div>
+            <div class="p-item p-item--hero hover-target" data-cat="editorial">
+                <img src="https://drive.google.com/uc?export=view&id=19LSA6vqC6AcU61my7v7w6cpf9S7xSmzQ" alt="Editorial fashion" loading="lazy">
+                <div class="p-overlay"><div class="p-overlay-tag">Editorial</div><div class="p-overlay-title">Tierra</div></div>
+                <div class="p-brackets"></div>
+            </div>
+            <div class="p-item p-item--small hover-target" data-cat="editorial">
+                <img src="https://drive.google.com/uc?export=view&id=19LSA6vqC6AcU61my7v7w6cpf9S7xSmzQ" alt="Editorial" loading="lazy">
+                <div class="p-overlay"><div class="p-overlay-tag">Editorial</div><div class="p-overlay-title">Reposo</div></div>
+                <div class="p-brackets"></div>
+            </div>
+            <div class="p-item p-item--mid hover-target" data-cat="editorial">
+                <img src="https://drive.google.com/uc?export=view&id=19LSA6vqC6AcU61my7v7w6cpf9S7xSmzQ" alt="Editorial" loading="lazy">
+                <div class="p-overlay"><div class="p-overlay-tag">Editorial</div><div class="p-overlay-title">Calma</div></div>
+                <div class="p-brackets"></div>
+            </div>
+
+            <div class="session-label"><span>Estudio — Sesión de Parejas</span></div>
+            <div class="p-item p-item--wide hover-target" data-cat="estudio">
+                <img src="https://drive.google.com/uc?export=view&id=19LSA6vqC6AcU61my7v7w6cpf9S7xSmzQ" alt="Estudio" loading="lazy">
+                <div class="p-overlay"><div class="p-overlay-tag">Estudio</div><div class="p-overlay-title">Juntos</div></div>
+                <div class="p-brackets"></div>
+            </div>
+            <div class="p-item p-item--tall hover-target" data-cat="estudio">
+                <img src="https://drive.google.com/uc?export=view&id=19LSA6vqC6AcU61my7v7w6cpf9S7xSmzQ" alt="Estudio" loading="lazy">
+                <div class="p-overlay"><div class="p-overlay-tag">Estudio</div><div class="p-overlay-title">Baile</div></div>
+                <div class="p-brackets"></div>
+            </div>
+
+            <div class="session-label"><span>Familia — Al Aire Libre</span></div>
+            <div class="p-item p-item--wide hover-target" data-cat="familia">
+                <img src="https://drive.google.com/uc?export=view&id=19LSA6vqC6AcU61my7v7w6cpf9S7xSmzQ" alt="Familia" loading="lazy">
+                <div class="p-overlay"><div class="p-overlay-tag">Familia</div><div class="p-overlay-title">Inocencia</div></div>
+                <div class="p-brackets"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planes" class="pricing-section">
+        <h2 class="section-title reveal">Inversión</h2>
+        
+        <div class="pricing-grid">
+            
+            <div class="pricing-card reveal hover-target">
+                <h3>Sesión Básica</h3>
+                <div class="price"><span>RD$</span>3,500</div>
+                <ul>
+                    <li>1 Hora de sesión fotográfica</li>
+                    <li>1 Cambio de vestuario</li>
+                    <li>10 Fotografías retocadas (High-End)</li>
+                    <li>Entrega digital en 48 horas</li>
+                </ul>
+                <a href="https://wa.me/18090000000?text=Hola,%20me%20interesa%20agendar%20la%20Sesión%20Básica%20en%20Otra%20Vaina%20Studios." target="_blank" class="btn-pricing btn-pricing-outline">Reservar</a>
+            </div>
+
+            <div class="pricing-card highlight reveal hover-target">
+                <div class="badge-popular">Más Solicitado</div>
+                <h3>Estudio Pro & Editorial</h3>
+                <div class="price"><span>RD$</span>8,500</div>
+                <ul>
+                    <li>2 Horas de sesión</li>
+                    <li>Hasta 3 cambios de vestuario</li>
+                    <li>25 Fotografías retocadas (High-End)</li>
+                    <li>Asesoría de dirección de arte</li>
+                    <li>Ideal para artistas y marcas</li>
+                </ul>
+                <a href="https://wa.me/18090000000?text=Hola,%20me%20interesa%20agendar%20el%20plan%20Estudio%20Pro%20en%20Otra%20Vaina%20Studios." target="_blank" class="btn-pricing btn-pricing-solid">Agendar Sesión</a>
+            </div>
+
+            <div class="pricing-card reveal hover-target">
+                <h3>Catálogos Digitales</h3>
+                <div class="price"><span>RD$</span>12,000</div>
+                <ul>
+                    <li>Media Jornada (4 Horas)</li>
+                    <li>Fotografía de productos/modelos</li>
+                    <li>Diagramación digital profesional</li>
+                    <li>Diseño optimizado para E-commerce</li>
+                    <li>Entrega en PDF y formatos web</li>
+                </ul>
+                <a href="https://wa.me/18090000000?text=Hola,%20me%20interesa%20cotizar%20la%20creación%20de%20un%20Catálogo%20Digital%20con%20Otra%20Vaina%20Studios." target="_blank" class="btn-pricing btn-pricing-outline">Cotizar Catálogo</a>
+            </div>
+
+            <div class="pricing-card reveal hover-target">
+                <h3>Producción de Video</h3>
+                <div class="price"><span>RD$</span>18,000</div>
+                <ul>
+                    <li>Grabación a 2 cámaras (4K)</li>
+                    <li>Videoclips, eventos o corporativo</li>
+                    <li>Edición y corrección de color</li>
+                    <li>1 Video principal + 1 Reel para redes</li>
+                    <li>Diseño sonoro incluido</li>
+                </ul>
+                <a href="https://wa.me/18090000000?text=Hola,%20me%20interesa%20cotizar%20una%20Producción%20de%20Video%20con%20Otra%20Vaina%20Studios." target="_blank" class="btn-pricing btn-pricing-outline">Cotizar Video</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contacto" class="contact reveal">
+        <h2>¿Listo para enfocar tu visión?</h2>
+        <a href="https://wa.me/18090000000?text=Hola,%20quiero%20cotizar%20un%20proyecto%20personalizado%20con%20Otra%20Vaina%20Studios" target="_blank" class="btn-primary hover-target">CONTACTO DIRECTO</a>
+    </section>
+
+    <footer>
+        <div>© 2026 OTRA VAINA STUDIOS.</div>
+        <div class="tmca-signature">Engineered by TMCA.</div>
+    </footer>
+
+    <script>
+        const cursor = document.getElementById('cursor');
+        const hoverTargets = document.querySelectorAll('.hover-target');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        hoverTargets.forEach(target => {
+            target.addEventListener('mouseenter', () => cursor.classList.add('hover-effect'));
+            target.addEventListener('mouseleave', () => cursor.classList.remove('hover-effect'));
+        });
+
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+        reveals.forEach(r => observer.observe(r));
+
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const pItems = document.querySelectorAll('.p-item');
+        const sessionLabels = document.querySelectorAll('.session-label');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+
+                pItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.cat === filter) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+
+                sessionLabels.forEach(label => {
+                    const next = label.nextElementSibling;
+                    if (next && next.classList.contains('hidden') && filter !== 'all') {
+                        label.style.display = 'none';
+                    } else {
+                        label.style.display = '';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
