@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTRA VAINA STUDIOS | Producción Visual Premium</title>
+    <meta name="description" content="Estudio de fotografía y producción visual premium en Monte Plata. Fotografía de estudio, cinematografía, diseño 3D y más.">
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         :root {
             --bg-white: #FFFFFF;
-            --text-black: #0A0A0A; /* Negro ligeramente más suave, más premium */
+            --text-black: #0A0A0A;
             --smooth-blue: #8CA6BC;
             --navy: #1B3A6B;
             --light-gray: #F5F5F5;
             --grid-color: rgba(0, 0, 0, 0.03);
+            --accent-red: #E74C3C;
         }
 
         * {
@@ -40,13 +43,12 @@
             position: relative;
         }
 
-        /* 🎬 EFECTO FILM GRAIN (RUIDO FOTOGRÁFICO) 🎬 */
         body::after {
             content: "";
             position: fixed;
             top: 0; left: 0; width: 100vw; height: 100vh;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-            opacity: 0.04; /* Sutil y elegante */
+            opacity: 0.04;
             pointer-events: none;
             z-index: 9998;
         }
@@ -56,7 +58,6 @@
             text-transform: uppercase;
         }
 
-        /* TIPOGRAFÍA OUTLINE PARA EL HERO */
         .outline-text {
             color: transparent;
             -webkit-text-stroke: 2px var(--text-black);
@@ -71,7 +72,7 @@
             z-index: 9999;
             transform: translate(-50%, -50%);
             transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1), height 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s;
-            mix-blend-mode: exclusion; /* Se adapta mejor a fondos oscuros y claros */
+            mix-blend-mode: exclusion;
         }
 
         .custom-cursor.hover-effect {
@@ -80,14 +81,66 @@
             border: 1.5px solid var(--smooth-blue);
         }
 
+        /* WHATSAPP FLOTANTE */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #25D366 0%, #20BA5A 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 999;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float i {
+            color: white;
+            font-size: 28px;
+        }
+
+        @keyframes pulse-whatsapp {
+            0%, 100% { box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8); }
+        }
+
+        /* CONTADOR */
+        .counter-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: var(--accent-red);
+            color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
         nav {
             padding: 1.5rem 5%;
             display: flex; justify-content: space-between; align-items: center;
             position: fixed; width: 100%; top: 0;
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(12px);
             z-index: 100;
             border-bottom: 1px solid var(--light-gray);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
 
         .brand { display: flex; align-items: center; gap: 15px; text-decoration: none; }
@@ -101,30 +154,102 @@
         }
         .nav-links a:hover { color: var(--smooth-blue); }
 
+        /* HERO MEJORADO */
         .hero {
             height: 100vh; display: flex; flex-direction: column;
             justify-content: center; align-items: center; text-align: center;
             padding: 0 5%; position: relative;
+            background: linear-gradient(135deg, #0A0A0A 0%, #1B3A6B 50%, #2d5f8d 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(140, 166, 188, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(231, 76, 60, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .hero h1 {
             font-size: clamp(3.5rem, 12vw, 9rem);
             line-height: 0.85; letter-spacing: -4px;
             z-index: 2;
+            color: white;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
 
         .hero p {
-            margin-top: 2rem; font-size: 1.1rem; color: #555;
+            margin-top: 2rem; font-size: 1.1rem; color: rgba(255, 255, 255, 0.9);
             max-width: 550px; font-weight: 300; line-height: 1.6;
             z-index: 2;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
 
-        /* 🚀 CINTA INFINITA (MARQUEE TICKER) 🚀 */
+        .hero-cta {
+            margin-top: 3rem;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-hero {
+            padding: 1rem 2.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .btn-hero:hover {
+            background: var(--smooth-blue);
+            border-color: var(--smooth-blue);
+        }
+
+        .btn-hero.primary {
+            background: white;
+            color: var(--text-black);
+            border-color: white;
+        }
+
+        .btn-hero.primary:hover {
+            background: var(--smooth-blue);
+            color: white;
+            border-color: var(--smooth-blue);
+        }
+
         .marquee-container {
             position: absolute; bottom: 10%; width: 100vw;
             overflow: hidden; white-space: nowrap;
             background: var(--text-black); color: var(--bg-white);
-            padding: 12px 0; transform: rotate(-2deg) scale(1.05); /* Ligeramente inclinado */
+            padding: 12px 0; transform: rotate(-2deg) scale(1.05);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             z-index: 10;
         }
@@ -144,6 +269,7 @@
             position: absolute; bottom: 30px; font-size: 0.75rem;
             letter-spacing: 3px; font-weight: 600; text-transform: uppercase;
             animation: bounce 2s infinite; z-index: 2;
+            color: white;
         }
 
         @keyframes bounce {
@@ -178,23 +304,23 @@
             padding: 0.5rem 1.5rem; border: 1.5px solid var(--text-black);
             background: transparent; font-family: 'Montserrat', sans-serif;
             font-weight: 800; font-size: 0.75rem; letter-spacing: 1px;
-            text-transform: uppercase; cursor: none; transition: all 0.3s ease;
+            text-transform: uppercase; cursor: pointer; transition: all 0.3s ease;
         }
         .filter-btn:hover, .filter-btn.active { background: var(--text-black); color: var(--bg-white); }
         .filter-btn.active { background: var(--navy); border-color: var(--navy); }
 
-        .portfolio-masonry { display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 80px; gap: 1.2rem; }
-        .p-item { position: relative; overflow: hidden; background: var(--light-gray); transition: opacity 0.5s ease, transform 0.5s ease; }
+        .portfolio-masonry { display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-rows: auto; gap: 1.2rem; }
+        .p-item { position: relative; overflow: hidden; background: var(--light-gray); transition: opacity 0.5s ease, transform 0.5s ease; min-height: 250px; }
         
-        .p-item--tall   { grid-column: span 4; grid-row: span 6; }
-        .p-item--wide   { grid-column: span 8; grid-row: span 5; }
-        .p-item--square { grid-column: span 4; grid-row: span 5; }
-        .p-item--hero   { grid-column: span 8; grid-row: span 7; }
-        .p-item--small  { grid-column: span 4; grid-row: span 4; }
-        .p-item--mid    { grid-column: span 6; grid-row: span 5; }
+        .p-item--tall   { grid-column: span 4; }
+        .p-item--wide   { grid-column: span 8; }
+        .p-item--square { grid-column: span 4; }
+        .p-item--hero   { grid-column: span 8; }
+        .p-item--small  { grid-column: span 4; }
+        .p-item--mid    { grid-column: span 6; }
 
         .p-item img {
-            width: 100%; height: 100%; object-fit: cover; object-position: top center;
+            width: 100%; height: 100%; object-fit: contain;
             transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.5s ease;
             filter: grayscale(10%); display: block;
         }
@@ -233,6 +359,172 @@
         .session-label span { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; color: #999; white-space: nowrap; }
         .session-label::after { content: ''; flex: 1; height: 1px; background: #E0E0E0; }
 
+        /* TESTIMONIOS */
+        .testimonials {
+            padding: 8rem 5%;
+            background: linear-gradient(135deg, #f9f9f9 0%, #f5f5f5 100%);
+            position: relative;
+            z-index: 2;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .stars {
+            color: #FFD700;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .testimonial-text {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: var(--smooth-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .author-info h4 {
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .author-info p {
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        /* STATS/NÚMEROS */
+        .stats-section {
+            padding: 4rem 5%;
+            background: var(--text-black);
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--smooth-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* FORMULARIO */
+        .contact-section {
+            padding: 8rem 5%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-black);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #E0E0E0;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--smooth-blue);
+            box-shadow: 0 0 0 3px rgba(140, 166, 188, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 1rem;
+            background: var(--text-black);
+            color: white;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .btn-submit:hover {
+            background: var(--smooth-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(140, 166, 188, 0.3);
+        }
+
         .pricing-section { padding: 8rem 5%; background-color: var(--bg-white); position: relative; z-index: 2;}
         .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; align-items: stretch; }
         .pricing-card {
@@ -249,10 +541,9 @@
         .pricing-card ul li { font-size: 0.9rem; color: #666; margin-bottom: 1rem; border-bottom: 1px solid #F0F0F0; padding-bottom: 1rem; }
         .pricing-card ul li:last-child { border-bottom: none; }
 
-        /* 🔥 GLOW EN LA TARJETA PREMIUM 🔥 */
         .pricing-card.highlight {
             background-color: var(--text-black); color: var(--bg-white); border: none;
-            transform: scale(1.05); box-shadow: 0 20px 50px rgba(140, 166, 188, 0.35); /* Resplandor Smooth Blue */
+            transform: scale(1.05); box-shadow: 0 20px 50px rgba(140, 166, 188, 0.35);
             z-index: 2;
         }
 
@@ -279,18 +570,6 @@
         .btn-pricing-solid { background: var(--bg-white); color: var(--text-black); border: 2px solid var(--bg-white); }
         .btn-pricing-solid:hover { background: var(--smooth-blue); color: var(--bg-white); border-color: var(--smooth-blue); }
 
-        .contact { padding: 8rem 5%; text-align: center; background-color: var(--light-gray); position: relative; z-index: 2;}
-        .contact h2 { font-size: 3rem; letter-spacing: -2px; }
-
-        .btn-primary {
-            display: inline-block; margin-top: 3rem; padding: 1.2rem 3.5rem;
-            background-color: var(--bg-white); color: var(--text-black); text-decoration: none;
-            font-family: 'Montserrat', sans-serif; font-weight: 900; letter-spacing: 1px;
-            border: 2px solid var(--text-black); transition: all 0.3s ease;
-        }
-
-        .btn-primary:hover { background-color: var(--smooth-blue); color: var(--bg-white); border-color: var(--smooth-blue); }
-
         footer {
             padding: 3rem 5%; display: flex; justify-content: space-between; align-items: center;
             font-size: 0.85rem; color: #999; background-color: var(--bg-white); position: relative; z-index: 2;
@@ -305,19 +584,23 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 3.5rem; }
             .section-title { font-size: 2rem; }
-            .portfolio-masonry { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 60px; }
-            .p-item--tall, .p-item--square, .p-item--small { grid-column: span 1; grid-row: span 5; }
-            .p-item--wide, .p-item--hero, .p-item--mid { grid-column: span 2; grid-row: span 5; }
+            .portfolio-masonry { grid-template-columns: repeat(2, 1fr); }
+            .p-item--tall, .p-item--square, .p-item--small { grid-column: span 1; }
+            .p-item--wide, .p-item--hero, .p-item--mid { grid-column: span 2; }
             .session-label { grid-column: span 2; }
             .pricing-card.highlight { transform: scale(1); }
             .pricing-card.highlight:hover { transform: translateY(-10px); }
             .marquee-container { transform: rotate(0) scale(1); bottom: 0; }
+            .hero-cta { flex-direction: column; }
+            .btn-hero { width: 100%; }
         }
 
         @media (max-width: 500px) {
-            .portfolio-masonry { grid-template-columns: 1fr; grid-auto-rows: 55px; }
-            .p-item--tall, .p-item--square, .p-item--small, .p-item--wide, .p-item--hero, .p-item--mid { grid-column: span 1; grid-row: span 5; }
+            .portfolio-masonry { grid-template-columns: 1fr; }
+            .p-item--tall, .p-item--square, .p-item--small, .p-item--wide, .p-item--hero, .p-item--mid { grid-column: span 1; }
             .session-label { grid-column: span 1; }
+            .whatsapp-float { bottom: 20px; right: 20px; width: 50px; height: 50px; }
+            .whatsapp-float i { font-size: 24px; }
         }
     </style>
 </head>
@@ -325,7 +608,13 @@
 
     <div class="custom-cursor" id="cursor"></div>
 
-    <!-- NAVEGACIÓN CON LOGO LOCAL -->
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/18090000000?text=Hola%20OTRA%20VAINA%20STUDIOS%2C%20me%20interesa%20tu%20servicio" target="_blank" class="whatsapp-float hover-target">
+        <i class="fab fa-whatsapp"></i>
+        <div class="counter-badge">1</div>
+    </a>
+
+    <!-- NAVEGACIÓN -->
     <nav>
         <a href="#" class="brand hover-target">
             <img src="LOGO%20(2).png" alt="Logo Otra Vaina">
@@ -334,14 +623,23 @@
         <div class="nav-links">
             <a href="#servicios" class="hover-target">El Laboratorio</a>
             <a href="#catalogo" class="hover-target">Catálogo</a>
+            <a href="#testimonios" class="hover-target">Testimonios</a>
             <a href="#planes" class="hover-target">Inversión</a>
-            <a href="#contacto" class="hover-target">Agendar</a>
+            <a href="#contacto" class="hover-target">Contacto</a>
         </div>
     </nav>
 
+    <!-- HERO MEJORADO -->
     <section class="hero">
-        <h1 class="reveal">OTRA <span class="outline-text">VAINA</span><br>STUDIOS</h1>
-        <p class="reveal">Estética limpia. Producción premium. Elevando la fotografía de estudio y la creación visual a su máxima expresión en Monte Plata y el mundo.</p>
+        <div class="hero-content">
+            <h1 class="reveal">OTRA <span class="outline-text">VAINA</span><br>STUDIOS</h1>
+            <p class="reveal">Estética limpia. Producción premium. Elevando la fotografía de estudio y la creación visual a su máxima expresión.</p>
+            
+            <div class="hero-cta reveal">
+                <a href="#catalogo" class="btn-hero primary hover-target">Ver Catálogo</a>
+                <a href="#contacto" class="btn-hero hover-target">Solicitar Cotización</a>
+            </div>
+        </div>
         
         <div class="marquee-container reveal">
             <div class="marquee-content">
@@ -360,6 +658,7 @@
         <div class="scroll-indicator">[ SCROLL ]</div>
     </section>
 
+    <!-- SERVICIOS -->
     <section id="servicios" class="services">
         <h2 class="section-title reveal">El Laboratorio</h2>
         <div class="services-grid">
@@ -382,7 +681,7 @@
         </div>
     </section>
 
-    <!-- PORTFOLIO CON IMÁGENES LOCALES DEL REPOSITORIO -->
+    <!-- PORTFOLIO -->
     <section id="catalogo" class="portfolio">
         <h2 class="section-title reveal">Catálogo</h2>
         <div class="portfolio-filters reveal">
@@ -394,7 +693,6 @@
         </div>
 
         <div class="portfolio-masonry">
-            <!-- SERIE CONCEPTUAL - VERDE -->
             <div class="session-label"><span>Conceptual — Serie Verde</span></div>
             <div class="p-item p-item--tall hover-target" data-cat="conceptual">
                 <img src="WhatsApp%20Image%202026-04-11%20at%202.44.42%20PM.jpeg" alt="Conceptual - En el Campo" loading="lazy">
@@ -407,7 +705,6 @@
                 <div class="p-brackets"></div>
             </div>
 
-            <!-- SERIE EDITORIAL - MODA & RETRATO -->
             <div class="session-label"><span>Editorial — Moda & Retrato</span></div>
             <div class="p-item p-item--hero hover-target" data-cat="editorial">
                 <img src="WhatsApp%20Image%202026-04-22%20at%2010.17.05%20PM.jpeg" alt="Editorial - Tierra" loading="lazy">
@@ -425,7 +722,6 @@
                 <div class="p-brackets"></div>
             </div>
 
-            <!-- SERIE ESTUDIO - SESIÓN DE PAREJAS -->
             <div class="session-label"><span>Estudio — Sesión de Parejas</span></div>
             <div class="p-item p-item--wide hover-target" data-cat="estudio">
                 <img src="WhatsApp%20Image%202026-04-23%20at%2012.02.54%20AM.jpeg" alt="Estudio - Juntos" loading="lazy">
@@ -438,7 +734,6 @@
                 <div class="p-brackets"></div>
             </div>
 
-            <!-- SERIE FAMILIA - AL AIRE LIBRE -->
             <div class="session-label"><span>Familia — Al Aire Libre</span></div>
             <div class="p-item p-item--wide hover-target" data-cat="familia">
                 <img src="WhatsApp%20Image%202026-04-25%20at%205.17.51%20PM.jpeg" alt="Familia - Inocencia" loading="lazy">
@@ -446,7 +741,6 @@
                 <div class="p-brackets"></div>
             </div>
 
-            <!-- SERIE EXTRA - CONTENIDO ADICIONAL -->
             <div class="session-label"><span>Sesiones Especiales</span></div>
             <div class="p-item p-item--square hover-target" data-cat="estudio">
                 <img src="WhatsApp%20Image%202026-04-29%20at%202.53.53%20PM.jpeg" alt="Sesión Especial 1" loading="lazy">
@@ -471,11 +765,75 @@
         </div>
     </section>
 
+    <!-- ESTADÍSTICAS -->
+    <section class="stats-section reveal">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3 id="stat-proyectos">250+</h3>
+                <p>Proyectos Completados</p>
+            </div>
+            <div class="stat-item">
+                <h3 id="stat-clientes">180+</h3>
+                <p>Clientes Satisfechos</p>
+            </div>
+            <div class="stat-item">
+                <h3>5+</h3>
+                <p>Años de Experiencia</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Calidad Premium</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="testimonials reveal">
+        <h2 class="section-title reveal">Lo Que Dicen Nuestros Clientes</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal hover-target">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Excelente trabajo, muy profesionales. Las fotos de mi sesión quedaron increíbles. Definitivamente volveré."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MC</div>
+                    <div class="author-info">
+                        <h4>María Campos</h4>
+                        <p>Modelo Profesional</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card reveal hover-target">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Transformaron mi catálogo de productos. Las ventas aumentaron un 300% después de la sesión. Muy recomendado."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JM</div>
+                    <div class="author-info">
+                        <h4>Juan Martínez</h4>
+                        <p>Dueño de Empresa</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card reveal hover-target">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"La atención al detalle es impresionante. Cada foto tiene un toque artístico que destaca. Muy satisfecho con el resultado."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">LP</div>
+                    <div class="author-info">
+                        <h4>Laura Pérez</h4>
+                        <p>Artista Visual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANES DE INVERSIÓN -->
     <section id="planes" class="pricing-section">
         <h2 class="section-title reveal">Inversión</h2>
         
         <div class="pricing-grid">
-            
             <div class="pricing-card reveal hover-target">
                 <h3>Sesión Básica</h3>
                 <div class="price"><span>RD$</span>3,500</div>
@@ -527,13 +885,49 @@
                 </ul>
                 <a href="https://wa.me/18090000000?text=Hola,%20me%20interesa%20cotizar%20una%20Producción%20de%20Video%20con%20Otra%20Vaina%20Studios." target="_blank" class="btn-pricing btn-pricing-outline hover-target">COTIZAR</a>
             </div>
-
         </div>
     </section>
 
-    <section id="contacto" class="contact reveal">
-        <h2>¿Listo para enfocar tu visión?</h2>
-        <a href="https://wa.me/18090000000?text=Hola,%20quiero%20cotizar%20un%20proyecto%20personalizado%20con%20Otra%20Vaina%20Studios" target="_blank" class="btn-primary hover-target">CONTACTO DIRECTO</a>
+    <!-- FORMULARIO DE CONTACTO -->
+    <section id="contacto" class="contact-section reveal">
+        <h2 class="section-title reveal" style="text-align: center; margin-bottom: 3rem;">¿Listo para tu sesión?</h2>
+        <div class="contact-container reveal">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="servicio">Servicio de Interés</label>
+                    <select id="servicio" name="servicio" required style="width: 100%; padding: 0.75rem; border: 1px solid #E0E0E0; border-radius: 4px; font-family: 'Inter', sans-serif; font-size: 0.95rem;">
+                        <option value="">Selecciona un servicio</option>
+                        <option value="sesion-basica">Sesión Básica</option>
+                        <option value="estudio-pro">Estudio Pro & Editorial</option>
+                        <option value="catalogo">Catálogos Digitales</option>
+                        <option value="video">Producción de Video</option>
+                        <option value="otro">Otro Proyecto</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit hover-target">Enviar Solicitud</button>
+            </form>
+        </div>
     </section>
 
     <footer>
@@ -555,11 +949,35 @@
             target.addEventListener('mouseleave', () => cursor.classList.remove('hover-effect'));
         });
 
+        // ANIMACIÓN DE CONTADOR
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 50;
+            const interval = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target + '+';
+                    clearInterval(interval);
+                } else {
+                    element.textContent = Math.floor(current) + '+';
+                }
+            }, 30);
+        }
+
         const reveals = document.querySelectorAll('.reveal');
         const observer = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
+                    
+                    // Animar contadores cuando llegan a la vista
+                    if (entry.target.id === 'stat-proyectos') {
+                        animateCounter(entry.target, 250);
+                    }
+                    if (entry.target.id === 'stat-clientes') {
+                        animateCounter(entry.target, 180);
+                    }
+                    
                     obs.unobserve(entry.target);
                 }
             });
@@ -567,6 +985,7 @@
 
         reveals.forEach(r => observer.observe(r));
 
+        // FILTRO DE PORTFOLIO
         const filterBtns = document.querySelectorAll('.filter-btn');
         const pItems = document.querySelectorAll('.p-item');
         const sessionLabels = document.querySelectorAll('.session-label');
@@ -595,6 +1014,24 @@
                     }
                 });
             });
+        });
+
+        // FORMULARIO
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const telefono = document.getElementById('telefono').value;
+            const servicio = document.getElementById('servicio').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const whatsappMessage = `Hola OTRA VAINA STUDIOS, tengo la siguiente solicitud:%0A%0A👤 Nombre: ${nombre}%0A📧 Email: ${email}%0A📱 Teléfono: ${telefono}%0A💼 Servicio: ${servicio}%0A📝 Mensaje: ${mensaje}`;
+
+            window.open(`https://wa.me/18090000000?text=${whatsappMessage}`, '_blank');
+            
+            contactForm.reset();
         });
     </script>
 </body>
