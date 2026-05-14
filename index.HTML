@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otra Vaina Studios — Producción Visual Premium · Monte Plata</title>
+    <title>Otra Vaina Studios — Producción Visual · Monte Plata</title>
 
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="canonical" href="https://otravainastudios.netlify.app/">
 
-    <meta name="description" content="Estudio independiente de fotografía y producción audiovisual premium en Monte Plata, RD. Editorial, cinematografía, catálogos digitales, diseño 3D y restauración.">
-    <meta name="theme-color" content="#070707">
+    <meta name="description" content="Estudio independiente de fotografía y producción audiovisual en Monte Plata, RD. Editorial, cinematografía, catálogos digitales, diseño 3D y restauración.">
+    <meta name="theme-color" content="#F5F2EC">
 
-    <meta property="og:title" content="Otra Vaina Studios — Producción Visual Premium">
+    <meta property="og:title" content="Otra Vaina Studios — Producción Visual">
     <meta property="og:description" content="Una vaina distinta. Estudio independiente de imagen editorial desde Monte Plata.">
     <meta property="og:image" content="https://otravainastudios.netlify.app/assets/images/editorial-tierra.jpeg">
     <meta property="og:url" content="https://otravainastudios.netlify.app/">
     <meta property="og:type" content="website">
-
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Otra Vaina Studios">
-    <meta name="twitter:description" content="Producción visual de alto nivel. Estética limpia y disruptiva.">
     <meta name="twitter:image" content="https://otravainastudios.netlify.app/assets/images/editorial-tierra.jpeg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script type="application/ld+json">
@@ -33,7 +30,7 @@
       "@type": "ProfessionalService",
       "name": "Otra Vaina Studios",
       "image": "https://otravainastudios.netlify.app/assets/images/logo.png",
-      "description": "Estudio independiente de fotografía y producción visual premium en Monte Plata, República Dominicana.",
+      "description": "Estudio independiente de fotografía y producción visual en Monte Plata, República Dominicana.",
       "url": "https://otravainastudios.netlify.app/",
       "telephone": "+1-809-268-0341",
       "priceRange": "RD$1,500 - RD$25,000",
@@ -44,255 +41,252 @@
 
     <style>
         :root {
-            --bg: #070707;
-            --surface: #121212;
-            --glass-base: rgba(255,255,255,0.025);
-            --glass-hi: rgba(255,255,255,0.06);
-            --glass-border: rgba(255,255,255,0.10);
-            --glass-border-strong: rgba(255,255,255,0.22);
-            --text: #F7F7F7;
-            --text-soft: rgba(247,247,247,0.62);
-            --text-mute: rgba(247,247,247,0.38);
-            --gold: #D4AF37;
-            --gold-soft: rgba(212,175,55,0.18);
+            --bg: #F5F2EC;
+            --bg-deep: #EDE9E0;
+            --surface: #FFFFFF;
+            --glass: rgba(255,255,255,0.55);
+            --glass-hi: rgba(255,255,255,0.78);
+            --glass-border: rgba(17,17,17,0.07);
+            --glass-border-strong: rgba(17,17,17,0.14);
+            --text: #111111;
+            --text-soft: rgba(17,17,17,0.62);
+            --text-mute: rgba(17,17,17,0.38);
+            --accent: #5F7A8C;
+            --accent-deep: #45596A;
+            --accent-soft: rgba(95,122,140,0.12);
+            --accent-tint: #E8EEF2;
         }
 
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: auto; background: var(--bg); }
+        html { background: var(--bg); }
         body {
             background: var(--bg);
             color: var(--text);
-            font-family: 'Outfit', system-ui, sans-serif;
-            font-weight: 300;
+            font-family: 'Manrope', system-ui, sans-serif;
+            font-weight: 400;
             line-height: 1.55;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             position: relative;
             min-height: 100vh;
         }
-        ::selection { background: var(--gold); color: var(--bg); }
+        ::selection { background: var(--text); color: var(--bg); }
 
-        /* Grain + glow background */
+        /* Subtle ambient background */
         body::before {
             content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 1;
             background:
-                radial-gradient(900px circle at 15% 10%, rgba(212,175,55,0.06), transparent 60%),
-                radial-gradient(700px circle at 85% 90%, rgba(140,166,188,0.04), transparent 60%);
+                radial-gradient(900px circle at 12% 8%, var(--accent-tint), transparent 55%),
+                radial-gradient(700px circle at 88% 92%, rgba(95,122,140,0.07), transparent 55%);
         }
         body::after {
             content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 2;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
-            opacity: 0.08;
-            mix-blend-mode: overlay;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+            opacity: 0.035;
+            mix-blend-mode: multiply;
         }
 
         a { color: inherit; text-decoration: none; }
         img { display: block; max-width: 100%; }
 
         h1, h2, h3, h4, .display {
-            font-family: 'Cormorant Garamond', 'Times New Roman', serif;
-            font-weight: 500;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 600;
             letter-spacing: -0.02em;
-            line-height: 1;
+            line-height: 1.05;
         }
-        h1 em, h2 em, h3 em { font-style: italic; font-weight: 300; color: var(--gold); }
 
-        :focus-visible { outline: 1.5px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
+        :focus-visible { outline: 1.5px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
 
         /* CUSTOM CURSOR */
         @media (hover: hover) and (pointer: fine) {
             body, a, button, input, textarea, select, .hover-target { cursor: none; }
-            input, textarea, select { caret-color: var(--gold); }
+            input, textarea, select { caret-color: var(--accent); }
         }
         .cursor-dot, .cursor-ring {
             position: fixed; top: 0; left: 0; pointer-events: none;
             border-radius: 50%; z-index: 9999;
-            transform: translate(-50%, -50%); will-change: transform, width, height;
-            transition: width 0.4s cubic-bezier(.2,.9,.2,1), height 0.4s cubic-bezier(.2,.9,.2,1),
-                        background-color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+            transform: translate(-50%, -50%);
             display: none;
         }
         @media (hover: hover) and (pointer: fine) {
             .cursor-dot, .cursor-ring { display: block; }
         }
         .cursor-dot {
-            width: 5px; height: 5px; background: var(--text);
-            mix-blend-mode: difference;
+            width: 6px; height: 6px; background: var(--text);
+            transition: opacity 0.3s ease;
         }
         .cursor-ring {
-            width: 28px; height: 28px;
-            border: 1px solid rgba(255,255,255,0.4);
+            width: 30px; height: 30px;
+            border: 1px solid rgba(17,17,17,0.25);
             backdrop-filter: blur(3px);
-            -webkit-backdrop-filter: blur(3px);
-            transition: width 0.5s cubic-bezier(.2,.9,.2,1), height 0.5s cubic-bezier(.2,.9,.2,1),
-                        background 0.3s ease, border-color 0.3s ease, opacity 0.3s ease, top 0.18s linear, left 0.18s linear;
+            transition: width 0.45s cubic-bezier(.2,.9,.2,1), height 0.45s cubic-bezier(.2,.9,.2,1),
+                        border-color 0.3s ease, background 0.3s ease, top 0.18s linear, left 0.18s linear;
         }
         .cursor-ring.hover {
             width: 64px; height: 64px;
-            border-color: var(--gold);
-            background: rgba(212,175,55,0.06);
+            border-color: var(--accent);
+            background: rgba(95,122,140,0.07);
         }
         .cursor-ring.view::after {
             content: 'VER';
-            font-family: 'Outfit', sans-serif; font-size: 9px; letter-spacing: 0.35em;
-            color: var(--gold); position: absolute; inset: 0;
+            font-family: 'Manrope', sans-serif; font-size: 9px; letter-spacing: 0.35em; font-weight: 600;
+            color: var(--accent); position: absolute; inset: 0;
             display: flex; align-items: center; justify-content: center;
         }
 
-        /* GLASS COMPONENTS */
+        /* GLASS */
         .glass {
-            background: var(--glass-base);
-            backdrop-filter: blur(24px) saturate(150%);
-            -webkit-backdrop-filter: blur(24px) saturate(150%);
+            background: var(--glass);
+            backdrop-filter: blur(20px) saturate(160%);
+            -webkit-backdrop-filter: blur(20px) saturate(160%);
             border: 1px solid var(--glass-border);
             box-shadow:
-                inset 0 1px 0 rgba(255,255,255,0.06),
-                0 8px 32px rgba(0,0,0,0.45);
+                inset 0 1px 0 rgba(255,255,255,0.6),
+                0 4px 24px rgba(17,17,17,0.04),
+                0 12px 40px rgba(17,17,17,0.06);
         }
         .glass-strong {
             background: var(--glass-hi);
-            backdrop-filter: blur(28px) saturate(170%);
-            -webkit-backdrop-filter: blur(28px) saturate(170%);
+            backdrop-filter: blur(28px) saturate(180%);
+            -webkit-backdrop-filter: blur(28px) saturate(180%);
             border: 1px solid var(--glass-border-strong);
         }
 
         /* NAV */
         nav {
-            position: fixed; top: 1.25rem; left: 50%;
+            position: fixed; top: 1.1rem; left: 50%;
             transform: translateX(-50%);
             display: flex; align-items: center; gap: 1.5rem;
-            padding: 0.65rem 0.65rem 0.65rem 1.5rem;
+            padding: 0.55rem 0.55rem 0.55rem 1.4rem;
             border-radius: 100px;
             z-index: 100; width: max-content;
-            background: rgba(7,7,7,0.45);
-            backdrop-filter: blur(20px) saturate(150%);
-            -webkit-backdrop-filter: blur(20px) saturate(150%);
+            background: rgba(245,242,236,0.75);
+            backdrop-filter: blur(20px) saturate(160%);
+            -webkit-backdrop-filter: blur(20px) saturate(160%);
             border: 1px solid var(--glass-border);
+            box-shadow: 0 4px 24px rgba(17,17,17,0.04);
         }
         .brand { display: flex; align-items: center; gap: 0.6rem; }
         .brand-mark {
             width: 28px; height: 28px; border-radius: 50%;
-            background: var(--gold); color: var(--bg);
+            background: var(--text); color: var(--bg);
             display: flex; align-items: center; justify-content: center;
-            font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 0.95rem;
-            font-style: italic;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 700; font-size: 0.92rem;
         }
         .brand-text {
-            font-family: 'Outfit', sans-serif; font-weight: 400; font-size: 0.78rem;
-            letter-spacing: 0.22em; text-transform: uppercase;
+            font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 0.78rem;
+            letter-spacing: 0.04em;
         }
         .nav-links { display: flex; gap: 1.4rem; }
         .nav-links a {
-            font-family: 'Outfit', sans-serif; font-size: 0.74rem;
-            letter-spacing: 0.18em; text-transform: uppercase;
+            font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 500;
             color: var(--text-soft); transition: color 0.3s ease;
         }
         .nav-links a:hover { color: var(--text); }
         .nav-cta {
             padding: 0.55rem 1.1rem; border-radius: 100px;
-            background: var(--gold); color: var(--bg) !important;
-            font-family: 'Outfit', sans-serif; font-weight: 400;
-            font-size: 0.72rem !important; letter-spacing: 0.22em !important; text-transform: uppercase;
+            background: var(--text); color: var(--bg) !important;
+            font-family: 'Manrope', sans-serif; font-weight: 600;
+            font-size: 0.78rem !important;
             transition: transform 0.3s ease, background 0.3s ease;
         }
-        .nav-cta:hover { transform: translateY(-1px); background: #e6c14a; }
+        .nav-cta:hover { transform: translateY(-1px); background: var(--accent); }
 
         .menu-toggle {
             display: none; background: transparent; border: none;
             color: var(--text); font-size: 1.1rem;
         }
 
-        /* CONTENT WRAPPER (above bg) */
         section, footer { position: relative; z-index: 3; }
 
         /* HERO */
         .hero {
-            min-height: 100vh; padding: 9rem 6vw 5rem 6vw;
-            display: grid; grid-template-columns: 1.2fr 1fr; gap: 4vw;
-            align-items: center; position: relative;
+            min-height: 100vh; padding: 8.5rem 6vw 5rem 6vw;
+            display: grid; grid-template-columns: 1.15fr 1fr; gap: 4vw;
+            align-items: center;
         }
         .hero-left { position: relative; z-index: 4; }
         .hero-eyebrow {
             display: inline-flex; align-items: center; gap: 0.75rem;
-            font-size: 0.72rem; letter-spacing: 0.32em; text-transform: uppercase;
-            color: var(--gold); margin-bottom: 2.5rem;
+            font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 2.5rem; font-weight: 600;
         }
         .hero-eyebrow::before {
-            content: ''; width: 36px; height: 1px; background: var(--gold);
+            content: ''; width: 32px; height: 1px; background: var(--accent);
         }
         .hero h1 {
-            font-size: clamp(3.6rem, 10vw, 9rem);
-            font-weight: 400;
-            line-height: 0.88;
-            letter-spacing: -0.04em;
+            font-size: clamp(3.4rem, 10vw, 8.8rem);
+            font-weight: 500;
+            line-height: 0.94;
+            letter-spacing: -0.045em;
         }
         .hero h1 .line { display: block; overflow: hidden; }
         .hero h1 .line-inner { display: inline-block; }
         .hero h1 .outline {
             color: transparent;
-            -webkit-text-stroke: 1px var(--text-soft);
+            -webkit-text-stroke: 1.5px var(--text-soft);
         }
-        .hero h1 em {
-            font-style: italic; font-weight: 300; color: var(--gold);
-        }
+        .hero h1 .accent { color: var(--accent); font-weight: 400; font-style: italic; }
         .hero-meta {
             margin-top: 2.5rem;
             display: flex; gap: 2.5rem; flex-wrap: wrap;
-            color: var(--text-soft); font-size: 0.85rem;
+            color: var(--text-soft); font-size: 0.88rem;
         }
         .hero-meta div span:first-child {
-            display: block; font-size: 0.65rem; letter-spacing: 0.28em;
-            text-transform: uppercase; color: var(--text-mute); margin-bottom: 0.35rem;
+            display: block; font-size: 0.65rem; letter-spacing: 0.2em;
+            text-transform: uppercase; color: var(--text-mute); margin-bottom: 0.3rem; font-weight: 600;
         }
-        .hero-cta {
-            margin-top: 3rem; display: flex; gap: 0.75rem; flex-wrap: wrap;
-        }
+        .hero-meta div span:last-child { font-weight: 500; color: var(--text); }
+        .hero-cta { margin-top: 3rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
         .btn {
-            display: inline-flex; align-items: center; gap: 0.7rem;
-            padding: 0.95rem 1.6rem; border-radius: 100px;
-            font-family: 'Outfit', sans-serif; font-size: 0.78rem;
-            letter-spacing: 0.18em; text-transform: uppercase;
-            transition: all 0.4s cubic-bezier(.2,.9,.2,1);
+            display: inline-flex; align-items: center; gap: 0.65rem;
+            padding: 0.95rem 1.55rem; border-radius: 100px;
+            font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 600;
+            transition: all 0.35s cubic-bezier(.2,.9,.2,1);
             border: 1px solid var(--glass-border-strong);
-            background: var(--glass-base);
+            background: var(--glass);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             color: var(--text);
         }
-        .btn:hover { background: var(--glass-hi); transform: translateY(-2px); }
-        .btn-gold {
-            background: var(--gold); color: var(--bg); border-color: var(--gold);
+        .btn:hover { background: var(--surface); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(17,17,17,0.06); }
+        .btn-dark {
+            background: var(--text); color: var(--bg); border-color: var(--text);
         }
-        .btn-gold:hover { background: #e6c14a; border-color: #e6c14a; }
+        .btn-dark:hover { background: var(--accent); border-color: var(--accent); color: white; }
 
-        /* HERO RIGHT — Editorial photo with glass frame */
+        /* HERO RIGHT */
         .hero-right {
             position: relative; aspect-ratio: 4/5;
-            max-height: 75vh; overflow: hidden;
-            border-radius: 4px;
+            max-height: 76vh; overflow: hidden;
+            border-radius: 6px;
             border: 1px solid var(--glass-border);
+            box-shadow: 0 20px 60px rgba(17,17,17,0.08);
         }
         .hero-right::before {
             content: ''; position: absolute; inset: 0;
-            background: linear-gradient(180deg, rgba(7,7,7,0) 50%, rgba(7,7,7,0.55) 100%);
+            background: linear-gradient(180deg, rgba(245,242,236,0) 60%, rgba(245,242,236,0.5) 100%);
             z-index: 2;
         }
         .hero-right img {
             width: 100%; height: 100%; object-fit: cover;
-            filter: brightness(0.85) contrast(1.05);
+            filter: brightness(0.99) contrast(1.02);
         }
         .hero-photo-caption {
             position: absolute; bottom: 1.25rem; left: 1.25rem; right: 1.25rem;
             z-index: 3; display: flex; justify-content: space-between; align-items: end;
-            font-family: 'Outfit', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em;
-            text-transform: uppercase; color: var(--text-soft);
+            font-family: 'Manrope', sans-serif; font-size: 0.66rem; letter-spacing: 0.16em;
+            text-transform: uppercase; color: rgba(255,255,255,0.85); font-weight: 600;
         }
         .hero-photo-caption em {
-            font-family: 'Cormorant Garamond', serif; font-style: italic;
-            font-size: 1.1rem; letter-spacing: -0.01em; color: var(--text); text-transform: none;
+            font-family: 'Bricolage Grotesque', sans-serif; font-style: normal; font-weight: 500;
+            font-size: 1.05rem; letter-spacing: -0.01em; color: white; text-transform: none;
         }
 
-        /* HERO MARQUEE */
+        /* MARQUEE */
         .marquee {
             position: relative; z-index: 3;
             margin-top: 1rem;
@@ -303,97 +297,106 @@
         }
         .marquee-content {
             display: inline-block;
-            font-family: 'Cormorant Garamond', serif; font-style: italic;
-            font-size: 1.3rem; color: var(--text-soft);
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 1.15rem; font-weight: 500; color: var(--text);
             animation: marquee 38s linear infinite;
         }
-        .marquee-content span { margin: 0 2.5rem; }
+        .marquee-content span { margin: 0 2rem; }
+        .marquee-content span.alt { color: var(--accent); font-weight: 400; }
         .marquee-content i {
-            color: var(--gold); margin: 0 0.5rem; font-style: normal;
-            font-family: 'Outfit', sans-serif; font-size: 0.7rem;
+            color: var(--accent); margin: 0 0.6rem; font-style: normal;
+            font-family: 'Manrope', sans-serif; font-size: 0.75rem;
             vertical-align: middle;
         }
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
-        /* SECTION GENERIC */
-        .section { padding: 9rem 6vw; position: relative; }
-        .section-head { margin-bottom: 5rem; max-width: 900px; }
+        /* SECTION */
+        .section { padding: 8rem 6vw; }
+        .section-head { margin-bottom: 4.5rem; max-width: 900px; }
         .eyebrow {
             display: inline-flex; align-items: center; gap: 0.75rem;
-            font-family: 'Outfit', sans-serif; font-size: 0.7rem;
-            letter-spacing: 0.32em; text-transform: uppercase;
-            color: var(--gold); margin-bottom: 1.5rem;
+            font-family: 'Manrope', sans-serif; font-size: 0.72rem; font-weight: 600;
+            letter-spacing: 0.16em; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 1.25rem;
         }
-        .eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--gold); }
+        .eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--accent); }
         .section-title {
-            font-size: clamp(2.2rem, 5.5vw, 4.5rem);
-            font-weight: 400; line-height: 1.02; letter-spacing: -0.025em;
+            font-size: clamp(2.2rem, 5.2vw, 4.2rem);
+            font-weight: 500; line-height: 1.05; letter-spacing: -0.03em;
         }
-        .section-title em { font-style: italic; color: var(--gold); font-weight: 300; }
+        .section-title .accent { color: var(--accent); font-weight: 400; }
         .section-sub {
-            margin-top: 1.5rem; color: var(--text-soft); font-size: 1rem;
+            margin-top: 1.4rem; color: var(--text-soft); font-size: 1rem;
             max-width: 620px; line-height: 1.65;
         }
 
-        /* SERVICES — List with floating preview */
-        .services-list {
-            border-top: 1px solid var(--glass-border);
-            position: relative;
-        }
+        /* SERVICES LIST */
+        .services-list { border-top: 1px solid var(--glass-border); position: relative; }
         .service-row {
             display: flex; align-items: center; justify-content: space-between;
-            padding: 2.2rem 0.5rem;
+            padding: 2rem 0.5rem;
             border-bottom: 1px solid var(--glass-border);
-            cursor: pointer; position: relative;
-            transition: padding 0.5s cubic-bezier(.2,.9,.2,1);
+            position: relative;
+            transition: padding 0.5s cubic-bezier(.2,.9,.2,1), background 0.4s ease;
         }
-        .service-row:hover { padding-left: 1.5rem; }
+        .service-row:hover { padding-left: 1.5rem; background: rgba(255,255,255,0.4); }
         .service-row::before {
             content: ''; position: absolute; left: 0; top: 50%;
-            width: 0; height: 1px; background: var(--gold);
+            width: 0; height: 2px; background: var(--accent);
             transform: translateY(-50%);
             transition: width 0.5s cubic-bezier(.2,.9,.2,1);
         }
-        .service-row:hover::before { width: 1rem; }
+        .service-row:hover::before { width: 1.2rem; }
         .service-row-left { display: flex; align-items: baseline; gap: 1.5rem; }
         .service-num {
-            font-family: 'Outfit', sans-serif; font-size: 0.7rem; letter-spacing: 0.25em;
-            color: var(--text-mute); min-width: 2.5rem;
+            font-family: 'Manrope', sans-serif; font-size: 0.7rem; letter-spacing: 0.15em;
+            color: var(--text-mute); min-width: 2.5rem; font-weight: 600;
         }
         .service-name {
-            font-family: 'Cormorant Garamond', serif; font-weight: 400;
-            font-size: clamp(1.8rem, 4vw, 3rem); letter-spacing: -0.02em;
-            color: var(--text); transition: color 0.3s ease, font-style 0.3s ease;
+            font-family: 'Bricolage Grotesque', sans-serif; font-weight: 500;
+            font-size: clamp(1.6rem, 3.6vw, 2.7rem); letter-spacing: -0.025em;
+            color: var(--text); transition: color 0.3s ease;
         }
-        .service-row:hover .service-name {
-            font-style: italic; color: var(--gold);
-        }
+        .service-row:hover .service-name { color: var(--accent); }
         .service-row-right {
             display: flex; align-items: center; gap: 2rem;
-            font-family: 'Outfit', sans-serif; font-size: 0.75rem;
-            letter-spacing: 0.18em; text-transform: uppercase;
+            font-family: 'Manrope', sans-serif; font-size: 0.78rem; font-weight: 500;
             color: var(--text-soft);
         }
         .service-price strong {
-            font-weight: 400; color: var(--text);
-            font-family: 'Cormorant Garamond', serif; font-size: 1.05rem;
-            font-style: italic; letter-spacing: 0;
+            font-weight: 600; color: var(--text);
         }
         .service-arrow {
-            width: 36px; height: 36px; border-radius: 50%;
-            border: 1px solid var(--glass-border);
+            width: 38px; height: 38px; border-radius: 50%;
+            border: 1px solid var(--glass-border-strong);
             display: flex; align-items: center; justify-content: center;
             transition: all 0.4s ease;
+            background: var(--surface);
         }
         .service-row:hover .service-arrow {
-            background: var(--gold); border-color: var(--gold); color: var(--bg);
+            background: var(--accent); border-color: var(--accent); color: white;
             transform: rotate(-45deg);
         }
+        .service-details {
+            display: none;
+            padding: 0 0 1.5rem 4rem;
+            color: var(--text-soft); font-size: 0.92rem;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .service-details p { margin-bottom: 1rem; }
+        .service-details .mini-cta {
+            display: inline-flex; gap: 0.5rem; padding: 0.6rem 1.2rem;
+            border: 1px solid var(--glass-border-strong); border-radius: 100px;
+            font-family: 'Manrope', sans-serif; font-size: 0.74rem; font-weight: 600;
+            color: var(--text); background: var(--surface);
+        }
+        @media (max-width: 900px) {
+            .service-details { display: block; }
+            .service-row { flex-direction: column; align-items: flex-start; gap: 0.6rem; padding-bottom: 1rem; }
+            .service-row-right { gap: 1rem; }
+        }
 
-        /* Floating preview image (desktop only) */
+        /* SERVICE PREVIEW */
         .service-preview {
             position: fixed; pointer-events: none;
             width: 320px; height: 400px; border-radius: 6px;
@@ -402,121 +405,76 @@
             transition: opacity 0.45s ease, transform 0.45s cubic-bezier(.2,.9,.2,1);
             z-index: 50;
             border: 1px solid var(--glass-border-strong);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+            box-shadow: 0 20px 60px rgba(17,17,17,0.18);
         }
         .service-preview.active { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-        .service-preview img {
-            width: 100%; height: 100%; object-fit: cover;
-            filter: brightness(0.95);
-        }
-        .service-preview::after {
-            content: ''; position: absolute; inset: 0;
-            background: linear-gradient(180deg, transparent 60%, rgba(7,7,7,0.6));
-        }
+        .service-preview img { width: 100%; height: 100%; object-fit: cover; }
         @media (max-width: 900px) { .service-preview { display: none; } }
 
-        /* Service details (mobile / always visible) */
-        .service-details {
-            display: none;
-            padding: 0 0 2rem 4rem;
-            color: var(--text-soft); font-size: 0.92rem;
-            border-bottom: 1px solid var(--glass-border);
-        }
-        .service-details p { margin-bottom: 1rem; }
-        .service-details .mini-cta {
-            display: inline-flex; gap: 0.5rem; padding: 0.65rem 1.2rem;
-            border: 1px solid var(--glass-border-strong); border-radius: 100px;
-            font-family: 'Outfit', sans-serif; font-size: 0.72rem;
-            letter-spacing: 0.18em; text-transform: uppercase; color: var(--text);
-        }
-        @media (max-width: 900px) {
-            .service-details { display: block; }
-            .service-row { flex-direction: column; align-items: flex-start; gap: 0.6rem; padding-bottom: 1rem; }
-            .service-row-right { gap: 1rem; }
-        }
-
-        /* PROCESS — sticky stack */
-        .process { padding: 9rem 6vw; }
-        .process-track {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.25rem;
-        }
+        /* PROCESS */
+        .process { padding: 8rem 6vw; background: linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%); }
+        .process-track { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; }
         .process-card {
-            padding: 2rem 1.75rem 2.5rem; border-radius: 8px; min-height: 360px;
+            padding: 2rem 1.6rem 2.4rem; border-radius: 8px; min-height: 320px;
             display: flex; flex-direction: column; justify-content: space-between;
             position: relative; overflow: hidden;
         }
-        .process-card::before {
-            content: ''; position: absolute; inset: 0;
-            background: radial-gradient(circle at 80% 0%, rgba(212,175,55,0.07), transparent 55%);
-            pointer-events: none;
-        }
         .process-num {
-            font-family: 'Cormorant Garamond', serif; font-style: italic;
-            font-size: 4.5rem; color: var(--gold); line-height: 0.9;
-            margin-bottom: 0.5rem;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 3.2rem; color: var(--accent); line-height: 1; font-weight: 700;
+            margin-bottom: 0.75rem; letter-spacing: -0.03em;
         }
         .process-card h4 {
-            font-size: 1.6rem; margin-bottom: 0.75rem;
-            font-family: 'Cormorant Garamond', serif; font-weight: 500;
+            font-size: 1.45rem; margin-bottom: 0.65rem;
+            font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600;
         }
-        .process-card p {
-            color: var(--text-soft); font-size: 0.9rem; line-height: 1.6;
-        }
+        .process-card p { color: var(--text-soft); font-size: 0.9rem; line-height: 1.6; }
         .process-card-foot {
-            margin-top: 1.5rem; font-size: 0.65rem; letter-spacing: 0.3em;
-            text-transform: uppercase; color: var(--text-mute);
+            margin-top: 1.4rem; font-size: 0.66rem; font-weight: 600;
+            letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-mute);
         }
         @media (max-width: 900px) { .process-track { grid-template-columns: 1fr; } .process-card { min-height: auto; } }
 
-        /* PORTFOLIO — Bento grid */
-        .portfolio-filters {
-            display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 3rem;
-        }
+        /* PORTFOLIO */
+        .portfolio-filters { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 3rem; }
         .filter-btn {
-            background: transparent; border: 1px solid var(--glass-border);
+            background: var(--surface); border: 1px solid var(--glass-border);
             color: var(--text-soft); padding: 0.55rem 1.2rem;
-            border-radius: 100px; font-family: 'Outfit', sans-serif;
-            font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+            border-radius: 100px; font-family: 'Manrope', sans-serif;
+            font-size: 0.78rem; font-weight: 500;
             transition: all 0.3s ease;
         }
         .filter-btn:hover { color: var(--text); border-color: var(--glass-border-strong); }
-        .filter-btn.active {
-            background: var(--gold); color: var(--bg); border-color: var(--gold);
-        }
+        .filter-btn.active { background: var(--text); color: var(--bg); border-color: var(--text); }
 
-        .bento {
-            display: grid; gap: 0.85rem;
-            grid-template-columns: repeat(12, 1fr);
-            grid-auto-rows: 150px;
-        }
+        .bento { display: grid; gap: 0.85rem; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 150px; }
         .b-item {
-            position: relative; overflow: hidden; border-radius: 4px;
+            position: relative; overflow: hidden; border-radius: 6px;
             background: var(--surface);
             border: 1px solid var(--glass-border);
-            transition: opacity 0.6s ease, transform 0.6s ease, filter 0.6s ease;
+            transition: opacity 0.6s ease, transform 0.6s ease;
         }
         .b-item img {
             width: 100%; height: 100%; object-fit: cover;
             transition: transform 1s cubic-bezier(.2,.9,.2,1), filter 0.5s ease;
-            filter: brightness(0.78) saturate(0.95);
+            filter: saturate(0.92);
         }
-        .b-item:hover img { transform: scale(1.05); filter: brightness(1) saturate(1); }
+        .b-item:hover img { transform: scale(1.05); filter: saturate(1.05); }
         .b-item .b-overlay {
             position: absolute; inset: 0; padding: 1.5rem;
             display: flex; flex-direction: column; justify-content: flex-end;
-            background: linear-gradient(180deg, transparent 40%, rgba(7,7,7,0.85));
+            background: linear-gradient(180deg, transparent 45%, rgba(17,17,17,0.7));
             opacity: 0; transition: opacity 0.5s ease;
         }
         .b-item:hover .b-overlay { opacity: 1; }
         .b-tag {
-            font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase;
-            color: var(--gold); margin-bottom: 0.5rem;
+            font-family: 'Manrope', sans-serif; font-size: 0.66rem; font-weight: 600;
+            letter-spacing: 0.18em; text-transform: uppercase;
+            color: rgba(255,255,255,0.85); margin-bottom: 0.5rem;
         }
         .b-title {
-            font-family: 'Cormorant Garamond', serif; font-style: italic;
-            font-size: 1.6rem; color: var(--text);
+            font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600;
+            font-size: 1.5rem; color: white; letter-spacing: -0.02em;
         }
         .b-item.hidden { opacity: 0; pointer-events: none; transform: scale(0.96); display: none; }
 
@@ -537,227 +495,218 @@
 
         /* ABOUT */
         .about {
-            padding: 11rem 6vw; text-align: center;
-            position: relative; overflow: hidden;
+            padding: 10rem 6vw; text-align: center; position: relative;
         }
         .about-headline {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(2rem, 5vw, 4rem);
-            font-weight: 300; line-height: 1.18;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: clamp(1.9rem, 4.4vw, 3.6rem);
+            font-weight: 500; line-height: 1.2;
             max-width: 1000px; margin: 0 auto;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.025em;
         }
-        .about-headline em { font-style: italic; color: var(--gold); }
+        .about-headline .accent { color: var(--accent); font-weight: 400; }
         .about-sign {
-            margin-top: 3rem; font-family: 'Outfit', sans-serif;
-            font-size: 0.7rem; letter-spacing: 0.32em; text-transform: uppercase;
-            color: var(--text-mute);
+            margin-top: 3rem; font-family: 'Manrope', sans-serif;
+            font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+            color: var(--text-mute); font-weight: 600;
         }
-        .about-sign::before, .about-sign::after { content: ' — '; }
+        .about-sign::before, .about-sign::after { content: ' · '; }
 
         /* STATS */
         .stats {
-            padding: 0 6vw 9rem;
+            padding: 0 6vw 8rem;
             display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
         }
-        .stat {
-            padding: 2rem 1.5rem; border-radius: 8px; text-align: left;
-            position: relative; overflow: hidden;
-        }
+        .stat { padding: 2rem 1.5rem; border-radius: 8px; text-align: left; position: relative; }
         .stat-num {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(2.4rem, 5vw, 3.8rem);
-            font-weight: 400; color: var(--text);
-            letter-spacing: -0.03em; line-height: 1;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: clamp(2.4rem, 5vw, 3.6rem);
+            font-weight: 600; color: var(--text);
+            letter-spacing: -0.035em; line-height: 1;
         }
-        .stat-num em { font-style: italic; color: var(--gold); font-weight: 300; font-size: 0.65em; vertical-align: super; }
+        .stat-num em {
+            font-style: normal; color: var(--accent); font-weight: 500;
+            font-size: 0.6em; vertical-align: super;
+        }
         .stat-label {
-            margin-top: 0.75rem; font-size: 0.7rem;
-            letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-soft);
+            margin-top: 0.75rem; font-size: 0.78rem; font-weight: 500;
+            color: var(--text-soft);
         }
         @media (max-width: 900px) { .stats { grid-template-columns: repeat(2, 1fr); } }
 
         /* PRICING */
-        .pricing-grid {
-            display: grid; gap: 1.25rem;
-            grid-template-columns: repeat(4, 1fr);
-        }
+        .pricing-grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(4, 1fr); }
         .price-card {
-            padding: 2.5rem 1.75rem; border-radius: 10px;
+            padding: 2.4rem 1.7rem; border-radius: 10px;
             display: flex; flex-direction: column; position: relative;
-            transition: transform 0.5s ease, border-color 0.5s ease;
-            overflow: hidden;
-            min-height: 480px;
-        }
-        .price-card::before {
-            content: ''; position: absolute; inset: -1px;
-            background: conic-gradient(from 0deg, transparent 0%, rgba(212,175,55,0.55) 50%, transparent 100%);
-            opacity: 0; transition: opacity 0.6s ease;
-            border-radius: 10px; z-index: 0;
-            animation: spin 6s linear infinite; pointer-events: none;
-        }
-        .price-card:hover::before { opacity: 0.6; }
-        .price-card-inner {
-            position: relative; z-index: 1;
-            background: var(--bg); margin: -1px; padding: 2.5rem 1.75rem;
-            border-radius: 10px; flex: 1;
-            display: flex; flex-direction: column;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            background: var(--surface);
             border: 1px solid var(--glass-border);
+            min-height: 460px;
         }
-        .price-card.featured .price-card-inner { background: linear-gradient(180deg, rgba(212,175,55,0.06), rgba(7,7,7,1) 60%); }
-        @keyframes spin { to { transform: rotate(360deg); } }
+        .price-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(17,17,17,0.08); }
+        .price-card.featured {
+            background: var(--text); color: var(--bg);
+            border-color: var(--text);
+        }
+        .price-card.featured .price-tag,
+        .price-card.featured .price-list li { color: rgba(245,242,236,0.7); }
+        .price-card.featured .price-list li::before { background: var(--accent); }
+        .price-card.featured .price-amount em { color: rgba(245,242,236,0.5); }
 
         .price-card h3 {
-            font-size: 1.5rem; margin-bottom: 0.5rem;
+            font-size: 1.45rem; margin-bottom: 0.5rem;
+            font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600;
+            letter-spacing: -0.02em;
         }
         .price-tag {
-            font-family: 'Outfit', sans-serif; font-size: 0.7rem;
-            letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-mute);
-            margin-bottom: 2rem;
+            font-family: 'Manrope', sans-serif; font-size: 0.74rem; font-weight: 500;
+            color: var(--text-mute); margin-bottom: 1.8rem;
         }
         .price-amount {
-            font-family: 'Cormorant Garamond', serif; font-size: 3rem;
-            font-weight: 400; letter-spacing: -0.03em;
-            margin-bottom: 2rem;
+            font-family: 'Bricolage Grotesque', sans-serif; font-size: 2.6rem;
+            font-weight: 600; letter-spacing: -0.04em;
+            margin-bottom: 1.8rem;
         }
         .price-amount em {
-            font-family: 'Outfit', sans-serif; font-style: normal;
-            font-size: 0.7rem; letter-spacing: 0.25em; color: var(--text-mute);
-            margin-right: 0.5rem; vertical-align: middle;
+            font-family: 'Manrope', sans-serif; font-style: normal;
+            font-size: 0.65rem; letter-spacing: 0.16em; color: var(--text-mute);
+            margin-right: 0.4rem; vertical-align: middle; font-weight: 600;
         }
         .price-list { list-style: none; flex: 1; margin-bottom: 2rem; }
         .price-list li {
-            padding: 0.7rem 0; border-bottom: 1px solid var(--glass-border);
-            font-size: 0.85rem; color: var(--text-soft);
+            padding: 0.65rem 0; border-bottom: 1px solid var(--glass-border);
+            font-size: 0.86rem; color: var(--text-soft);
             display: flex; align-items: center; gap: 0.6rem;
         }
+        .price-card.featured .price-list li { border-color: rgba(255,255,255,0.08); }
         .price-list li::before {
-            content: ''; width: 4px; height: 4px; border-radius: 50%;
-            background: var(--gold); flex-shrink: 0;
+            content: ''; width: 5px; height: 5px; border-radius: 50%;
+            background: var(--accent); flex-shrink: 0;
         }
         .badge-featured {
-            position: absolute; top: 1.25rem; right: 1.25rem;
-            font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase;
-            color: var(--gold); padding: 0.3rem 0.7rem;
-            border: 1px solid var(--gold-soft); border-radius: 100px;
-            background: rgba(212,175,55,0.05); z-index: 2;
+            position: absolute; top: 1.2rem; right: 1.2rem;
+            font-size: 0.6rem; font-weight: 700;
+            letter-spacing: 0.12em; text-transform: uppercase;
+            color: var(--accent); padding: 0.3rem 0.7rem;
+            border: 1px solid var(--accent-soft); border-radius: 100px;
+            background: rgba(95,122,140,0.08);
+        }
+        .price-card.featured .badge-featured {
+            background: var(--accent); color: white; border-color: var(--accent);
         }
         .price-cta {
             display: flex; align-items: center; justify-content: space-between;
-            padding: 0.9rem 1.4rem; border-radius: 100px;
+            padding: 0.9rem 1.35rem; border-radius: 100px;
             border: 1px solid var(--glass-border-strong);
-            font-family: 'Outfit', sans-serif; font-size: 0.74rem;
-            letter-spacing: 0.2em; text-transform: uppercase;
+            font-family: 'Manrope', sans-serif; font-size: 0.8rem; font-weight: 600;
             transition: all 0.4s ease; color: var(--text);
+            background: var(--surface);
         }
-        .price-cta:hover { background: var(--gold); color: var(--bg); border-color: var(--gold); }
-        .price-card.featured .price-cta { background: var(--gold); color: var(--bg); border-color: var(--gold); }
-        .price-card.featured .price-cta:hover { background: #e6c14a; }
+        .price-cta:hover { background: var(--accent); color: white; border-color: var(--accent); }
+        .price-card.featured .price-cta {
+            background: var(--accent); color: white; border-color: var(--accent);
+        }
+        .price-card.featured .price-cta:hover { background: var(--accent-deep); border-color: var(--accent-deep); }
 
         @media (max-width: 1100px) { .pricing-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 600px) { .pricing-grid { grid-template-columns: 1fr; } }
 
         /* INSTAGRAM */
-        .insta-grid {
-            display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.6rem;
-        }
+        .insta-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.6rem; }
         .insta-item {
-            aspect-ratio: 1; overflow: hidden; position: relative; border-radius: 4px;
+            aspect-ratio: 1; overflow: hidden; position: relative; border-radius: 6px;
             border: 1px solid var(--glass-border);
         }
-        .insta-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; filter: brightness(0.85); }
-        .insta-item:hover img { transform: scale(1.06); filter: brightness(1); }
+        .insta-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
+        .insta-item:hover img { transform: scale(1.06); }
         .insta-item .insta-icon {
             position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-            color: var(--text); font-size: 1.6rem; opacity: 0;
-            background: rgba(7,7,7,0.55); transition: opacity 0.4s ease;
+            color: white; font-size: 1.5rem; opacity: 0;
+            background: rgba(17,17,17,0.45); transition: opacity 0.4s ease;
         }
         .insta-item:hover .insta-icon { opacity: 1; }
         @media (max-width: 700px) { .insta-grid { grid-template-columns: repeat(2, 1fr); } }
 
         /* TESTIMONIALS */
-        .testi-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;
-        }
+        .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
         .testi-card {
-            padding: 2.2rem 1.85rem; border-radius: 8px; position: relative;
-            display: flex; flex-direction: column; gap: 1.5rem;
+            padding: 2rem 1.8rem; border-radius: 8px; position: relative;
+            display: flex; flex-direction: column; gap: 1.3rem;
         }
         .testi-card::before {
-            content: '"'; position: absolute; top: 0.5rem; right: 1.5rem;
-            font-family: 'Cormorant Garamond', serif; font-size: 5rem;
-            color: var(--gold); opacity: 0.35; line-height: 1;
+            content: '"'; position: absolute; top: 0.3rem; right: 1.3rem;
+            font-family: 'Bricolage Grotesque', sans-serif; font-size: 4.5rem; font-weight: 700;
+            color: var(--accent); opacity: 0.18; line-height: 1;
         }
         .testi-card p {
-            font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 400;
-            font-size: 1.15rem; line-height: 1.45; color: var(--text);
+            font-family: 'Manrope', sans-serif; font-weight: 400;
+            font-size: 1rem; line-height: 1.6; color: var(--text);
         }
         .testi-author { display: flex; align-items: center; gap: 0.85rem; margin-top: auto; }
         .testi-avatar {
             width: 40px; height: 40px; border-radius: 50%;
-            background: var(--gold-soft); color: var(--gold);
+            background: var(--accent-soft); color: var(--accent);
             display: flex; align-items: center; justify-content: center;
-            font-family: 'Cormorant Garamond', serif; font-weight: 500; font-style: italic;
-            border: 1px solid var(--gold-soft);
+            font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700;
+            font-size: 0.95rem;
         }
         .testi-author-info span:first-child {
-            display: block; font-size: 0.85rem; color: var(--text);
+            display: block; font-size: 0.88rem; color: var(--text); font-weight: 600;
         }
         .testi-author-info span:last-child {
-            display: block; font-size: 0.65rem; letter-spacing: 0.25em;
-            text-transform: uppercase; color: var(--text-mute); margin-top: 0.15rem;
+            display: block; font-size: 0.7rem; letter-spacing: 0.06em;
+            color: var(--text-mute); margin-top: 0.15rem; font-weight: 500;
         }
         @media (max-width: 900px) { .testi-grid { grid-template-columns: 1fr; } }
 
-        /* CONTACT (footer 100vh) */
+        /* HABLEMOS */
         .hablemos {
-            min-height: 100vh; padding: 8rem 6vw 4rem;
+            min-height: 100vh; padding: 7rem 6vw 4rem;
             display: flex; flex-direction: column; justify-content: space-between;
             position: relative; overflow: hidden;
+            background: linear-gradient(180deg, var(--bg-deep), var(--bg));
         }
         .hablemos::before {
             content: ''; position: absolute; top: -30%; left: 50%;
             transform: translateX(-50%);
             width: 120%; height: 120%;
-            background: radial-gradient(circle, rgba(212,175,55,0.10), transparent 55%);
+            background: radial-gradient(circle, rgba(95,122,140,0.10), transparent 55%);
             pointer-events: none;
         }
         .hablemos-eyebrow {
-            font-family: 'Outfit', sans-serif; font-size: 0.7rem;
-            letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold);
+            font-family: 'Manrope', sans-serif; font-size: 0.72rem; font-weight: 600;
+            letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent);
             display: flex; align-items: center; gap: 0.75rem;
             position: relative; z-index: 2;
         }
-        .hablemos-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--gold); }
+        .hablemos-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--accent); }
 
         .hablemos h2 {
-            font-size: clamp(5rem, 22vw, 22rem);
-            font-weight: 300; line-height: 0.85;
+            font-size: clamp(4.5rem, 22vw, 22rem);
+            font-weight: 500; line-height: 0.88;
             letter-spacing: -0.05em;
             text-align: center; position: relative; z-index: 2;
         }
-        .hablemos h2 em {
-            font-style: italic; color: var(--gold);
-            display: inline-block;
-        }
+        .hablemos h2 .accent { color: var(--accent); font-weight: 400; }
+
         .hablemos-cta-row {
-            display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;
+            display: flex; justify-content: center; gap: 0.85rem; flex-wrap: wrap;
             position: relative; z-index: 2;
         }
         .hablemos-btn {
-            padding: 1.1rem 2rem; border-radius: 100px;
-            font-family: 'Outfit', sans-serif; font-size: 0.78rem;
-            letter-spacing: 0.22em; text-transform: uppercase;
-            display: inline-flex; align-items: center; gap: 0.7rem;
+            padding: 1rem 1.9rem; border-radius: 100px;
+            font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 600;
+            display: inline-flex; align-items: center; gap: 0.6rem;
             transition: transform 0.4s ease, background 0.4s ease;
         }
-        .hablemos-btn.primary { background: var(--gold); color: var(--bg); }
-        .hablemos-btn.primary:hover { transform: translateY(-2px); background: #e6c14a; }
+        .hablemos-btn.primary { background: var(--text); color: var(--bg); }
+        .hablemos-btn.primary:hover { transform: translateY(-2px); background: var(--accent); }
         .hablemos-btn.ghost {
-            background: transparent; color: var(--text);
+            background: var(--surface); color: var(--text);
             border: 1px solid var(--glass-border-strong);
         }
-        .hablemos-btn.ghost:hover { background: var(--glass-hi); transform: translateY(-2px); }
+        .hablemos-btn.ghost:hover { background: var(--accent-tint); transform: translateY(-2px); border-color: var(--accent); }
 
         .hablemos-bottom {
             display: flex; justify-content: space-between; align-items: end;
@@ -765,68 +714,67 @@
             position: relative; z-index: 2;
             border-top: 1px solid var(--glass-border);
             padding-top: 2.5rem; margin-top: 4rem;
-            font-family: 'Outfit', sans-serif; font-size: 0.72rem;
-            letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-soft);
+            font-family: 'Manrope', sans-serif; font-size: 0.74rem;
+            color: var(--text-soft);
         }
-        .hablemos-info {
-            display: flex; gap: 3rem; flex-wrap: wrap;
-        }
+        .hablemos-info { display: flex; gap: 3rem; flex-wrap: wrap; }
         .hablemos-info div span:first-child {
-            display: block; color: var(--text-mute); font-size: 0.62rem;
-            margin-bottom: 0.4rem; letter-spacing: 0.3em;
+            display: block; color: var(--text-mute); font-size: 0.66rem; font-weight: 600;
+            margin-bottom: 0.35rem; letter-spacing: 0.18em; text-transform: uppercase;
         }
         .hablemos-info div span:last-child {
-            font-family: 'Cormorant Garamond', serif; font-style: italic;
-            font-size: 1.15rem; color: var(--text); text-transform: none; letter-spacing: 0;
+            font-family: 'Bricolage Grotesque', sans-serif; font-weight: 500;
+            font-size: 1.05rem; color: var(--text); letter-spacing: -0.01em;
         }
-        .hablemos-socials { display: flex; gap: 0.6rem; }
+        .hablemos-socials { display: flex; gap: 0.55rem; }
         .hablemos-socials a {
             width: 40px; height: 40px; border-radius: 50%;
             border: 1px solid var(--glass-border-strong);
+            background: var(--surface);
             display: flex; align-items: center; justify-content: center;
             color: var(--text); font-size: 0.95rem;
             transition: all 0.3s ease;
         }
-        .hablemos-socials a:hover { background: var(--gold); color: var(--bg); border-color: var(--gold); }
+        .hablemos-socials a:hover { background: var(--accent); color: white; border-color: var(--accent); }
 
         /* FLOAT BUTTONS */
         .float-buttons {
-            position: fixed; bottom: 24px; right: 24px;
-            display: flex; flex-direction: column; gap: 0.6rem; z-index: 200;
+            position: fixed; bottom: 22px; right: 22px;
+            display: flex; flex-direction: column; gap: 0.55rem; z-index: 200;
         }
         .float-btn {
-            width: 54px; height: 54px; border-radius: 50%;
+            width: 52px; height: 52px; border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            color: var(--text); font-size: 1.2rem;
+            color: var(--text); font-size: 1.15rem;
             transition: transform 0.4s ease, background 0.3s ease, color 0.3s ease;
             position: relative;
         }
         .float-btn::before {
             content: ''; position: absolute; inset: 0; border-radius: 50%;
-            background: var(--gold); opacity: 0;
-            animation: pulse 2.8s ease-in-out infinite;
-            z-index: -1;
+            background: var(--accent); opacity: 0;
+            animation: pulse 2.8s ease-in-out infinite; z-index: -1;
         }
         @keyframes pulse {
-            0% { transform: scale(0.9); opacity: 0.5; }
+            0% { transform: scale(0.9); opacity: 0.35; }
             70%, 100% { transform: scale(1.5); opacity: 0; }
         }
         .float-btn:hover { transform: scale(1.08) translateY(-2px); }
-        .float-btn.wa:hover { background: rgba(37,211,102,0.15); color: #25D366; border-color: #25D366; }
-        .float-btn.ig:hover { color: var(--gold); }
+        .float-btn.wa:hover { background: rgba(37,211,102,0.12); color: #1faa50; }
+        .float-btn.ig:hover { color: var(--accent); }
 
-        /* FOOTER credit */
+        /* FOOTER CREDIT */
         .footer-credit {
-            text-align: center; padding: 2rem 6vw;
-            font-family: 'Outfit', sans-serif; font-size: 0.65rem;
-            letter-spacing: 0.28em; text-transform: uppercase;
+            text-align: center; padding: 1.8rem 6vw;
+            font-family: 'Manrope', sans-serif; font-size: 0.7rem;
             color: var(--text-mute); border-top: 1px solid var(--glass-border);
-            position: relative; z-index: 3;
+            position: relative; z-index: 3; background: var(--bg);
         }
-        .footer-credit em {
-            color: var(--text-soft); font-style: italic; letter-spacing: 0;
-            font-family: 'Cormorant Garamond', serif; font-size: 0.9rem; text-transform: none;
+        .footer-credit a {
+            color: var(--text-soft); font-weight: 600;
+            border-bottom: 1px solid transparent; transition: border-color 0.3s ease;
         }
+        .footer-credit a:hover { border-color: var(--accent); }
+        .footer-credit em { color: var(--text); font-style: normal; font-weight: 600; }
 
         /* REVEAL */
         .reveal { opacity: 0; transform: translateY(40px); transition: opacity 1s cubic-bezier(.2,.9,.2,1), transform 1s cubic-bezier(.2,.9,.2,1); }
@@ -839,19 +787,16 @@
         .reveal-stagger.active > *:nth-child(4) { transition-delay: 0.26s; }
         .reveal-stagger.active > *:nth-child(5) { transition-delay: 0.33s; }
         .reveal-stagger.active > *:nth-child(6) { transition-delay: 0.40s; }
-        .reveal-stagger.active > *:nth-child(7) { transition-delay: 0.47s; }
-        .reveal-stagger.active > *:nth-child(8) { transition-delay: 0.54s; }
 
-        /* RESPONSIVE NAV */
+        /* MOBILE NAV */
         @media (max-width: 900px) {
-            nav { gap: 0.75rem; padding: 0.55rem 0.55rem 0.55rem 1.1rem; }
+            nav { gap: 0.6rem; padding: 0.5rem 0.5rem 0.5rem 1rem; }
             .nav-links { display: none; }
-            .nav-cta { padding: 0.5rem 0.95rem; font-size: 0.65rem !important; }
+            .nav-cta { padding: 0.5rem 0.95rem; font-size: 0.7rem !important; }
             .menu-toggle { display: block; padding: 0.5rem; }
             .hero { grid-template-columns: 1fr; padding-top: 7rem; gap: 3rem; }
-            .hero-right { max-height: 50vh; aspect-ratio: 4/3; }
-            .section { padding: 6rem 6vw; }
-            .process { padding: 6rem 6vw; }
+            .hero-right { max-height: 52vh; aspect-ratio: 4/3; }
+            .section, .process { padding: 6rem 6vw; }
             .about { padding: 7rem 6vw; }
             .stats { grid-template-columns: repeat(2, 1fr); padding-bottom: 6rem; }
             .insta-grid { grid-template-columns: repeat(2, 1fr); }
@@ -860,12 +805,11 @@
             .hablemos h2 { font-size: clamp(3.5rem, 18vw, 8rem); }
         }
 
-        /* MOBILE DRAWER */
         .mobile-drawer {
-            position: fixed; top: 0; right: 0; height: 100vh; width: 84vw; max-width: 360px;
-            background: rgba(7,7,7,0.92);
-            backdrop-filter: blur(28px) saturate(150%);
-            -webkit-backdrop-filter: blur(28px) saturate(150%);
+            position: fixed; top: 0; right: 0; height: 100vh; width: 86vw; max-width: 360px;
+            background: rgba(245,242,236,0.95);
+            backdrop-filter: blur(28px) saturate(160%);
+            -webkit-backdrop-filter: blur(28px) saturate(160%);
             border-left: 1px solid var(--glass-border);
             z-index: 199; transform: translateX(100%);
             transition: transform 0.5s cubic-bezier(.2,.9,.2,1);
@@ -874,38 +818,229 @@
         }
         .mobile-drawer.open { transform: translateX(0); }
         .mobile-drawer a {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2rem; font-weight: 400;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 1.85rem; font-weight: 500;
             padding: 0.5rem 0; border-bottom: 1px solid var(--glass-border);
+            letter-spacing: -0.02em;
         }
-        .mobile-drawer a:last-child { border-bottom: none; color: var(--gold); font-style: italic; }
+        .mobile-drawer a.cta { border-bottom: none; color: var(--accent); }
         .drawer-close {
             position: absolute; top: 1.25rem; right: 1.5rem;
-            background: transparent; border: none; color: var(--text);
-            font-size: 1.5rem;
+            background: transparent; border: none; color: var(--text); font-size: 1.5rem;
+        }
+
+        /* ===================== PRESS KIT MODAL ===================== */
+        .pk-modal {
+            position: fixed; inset: 0; z-index: 500;
+            display: none;
+            background: rgba(17,17,17,0.5);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            align-items: flex-start; justify-content: center;
+            padding: 3rem 1.5rem; overflow-y: auto;
+        }
+        .pk-modal.open { display: flex; }
+        .pk-doc {
+            background: var(--surface); color: var(--text);
+            width: 100%; max-width: 800px;
+            border-radius: 8px; box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+            position: relative;
+            font-family: 'Manrope', sans-serif;
+            border: 1px solid var(--glass-border);
+        }
+        .pk-toolbar {
+            position: sticky; top: 0; z-index: 5;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.85rem 1.5rem;
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--glass-border);
+            border-radius: 8px 8px 0 0;
+        }
+        .pk-toolbar-info {
+            font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase;
+            color: var(--text-mute); font-weight: 600;
+        }
+        .pk-toolbar-actions { display: flex; gap: 0.5rem; }
+        .pk-action {
+            display: inline-flex; align-items: center; gap: 0.45rem;
+            padding: 0.55rem 1rem; border-radius: 100px;
+            font-family: 'Manrope', sans-serif; font-size: 0.75rem; font-weight: 600;
+            border: 1px solid var(--glass-border-strong);
+            background: var(--surface); color: var(--text);
+            transition: all 0.3s ease;
+        }
+        .pk-action:hover { background: var(--accent-tint); border-color: var(--accent); color: var(--accent-deep); }
+        .pk-action.primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+        .pk-action.primary:hover { background: var(--accent); border-color: var(--accent); color: white; }
+        .pk-close {
+            background: transparent; border: none; color: var(--text-soft);
+            font-size: 1.1rem; padding: 0.3rem;
+        }
+
+        .pk-page { padding: 3rem 3rem 2.5rem; }
+        .pk-page + .pk-page {
+            border-top: 1px solid var(--glass-border);
+            margin-top: 0;
+        }
+        .pk-header {
+            display: flex; justify-content: space-between; align-items: start;
+            margin-bottom: 3rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .pk-header-brand { display: flex; align-items: center; gap: 0.7rem; }
+        .pk-header-brand-mark {
+            width: 36px; height: 36px; border-radius: 50%;
+            background: var(--text); color: var(--bg);
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700;
+        }
+        .pk-header-brand-text {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 1.1rem; font-weight: 600; letter-spacing: -0.01em;
+        }
+        .pk-header-meta { font-size: 0.7rem; text-align: right; color: var(--text-mute); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
+
+        .pk-eyebrow {
+            font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase;
+            color: var(--accent); font-weight: 700; margin-bottom: 1rem;
+        }
+        .pk-title {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 2.6rem; font-weight: 500; letter-spacing: -0.035em;
+            line-height: 1.05; margin-bottom: 1.5rem;
+        }
+        .pk-title .accent { color: var(--accent); font-weight: 400; }
+        .pk-lead {
+            font-size: 1.02rem; color: var(--text-soft); line-height: 1.65;
+            max-width: 620px;
+        }
+
+        .pk-section { margin-top: 2.5rem; }
+        .pk-section h3 {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.78rem; font-weight: 700; letter-spacing: 0.18em;
+            text-transform: uppercase; color: var(--text-mute);
+            margin-bottom: 1.25rem; padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .pk-services {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem 2rem;
+        }
+        .pk-service {
+            display: flex; justify-content: space-between; align-items: baseline;
+            gap: 1rem;
+            padding: 0.6rem 0; border-bottom: 1px dotted var(--glass-border);
+        }
+        .pk-service-name {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 500; font-size: 0.98rem; letter-spacing: -0.01em;
+        }
+        .pk-service-price {
+            font-family: 'Manrope', sans-serif; font-weight: 600;
+            font-size: 0.85rem; color: var(--accent); white-space: nowrap;
+        }
+
+        .pk-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+        .pk-stat {
+            padding: 1.1rem; border-radius: 6px;
+            background: var(--accent-tint);
+            border: 1px solid var(--glass-border);
+        }
+        .pk-stat-num {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 600; font-size: 1.7rem; color: var(--text);
+            letter-spacing: -0.03em; line-height: 1;
+        }
+        .pk-stat-num em { font-style: normal; color: var(--accent); font-weight: 500; font-size: 0.7em; vertical-align: super; }
+        .pk-stat-label {
+            font-size: 0.66rem; font-weight: 600; letter-spacing: 0.1em;
+            text-transform: uppercase; color: var(--text-mute);
+            margin-top: 0.4rem;
+        }
+
+        .pk-portfolio {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem; margin-top: 0.5rem;
+        }
+        .pk-portfolio img {
+            width: 100%; aspect-ratio: 4/5; object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid var(--glass-border);
+        }
+
+        .pk-contact-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+        }
+        .pk-contact-item span:first-child {
+            display: block; font-size: 0.65rem; font-weight: 700;
+            letter-spacing: 0.18em; text-transform: uppercase;
+            color: var(--text-mute); margin-bottom: 0.35rem;
+        }
+        .pk-contact-item span:last-child {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 500; font-size: 1.05rem; color: var(--text);
+        }
+
+        .pk-footer {
+            margin-top: 3rem; padding-top: 1.5rem;
+            border-top: 1px solid var(--glass-border);
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 0.7rem; color: var(--text-mute); letter-spacing: 0.08em;
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            .pk-page { padding: 2rem 1.5rem; }
+            .pk-title { font-size: 2rem; }
+            .pk-services, .pk-stats, .pk-contact-grid { grid-template-columns: 1fr; }
+            .pk-portfolio { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* ===================== PRINT STYLES (PDF) ===================== */
+        @media print {
+            @page { size: A4; margin: 12mm; }
+            html, body { background: white !important; color: black !important; }
+            body::before, body::after { display: none !important; }
+            nav, .float-buttons, .cursor-dot, .cursor-ring, .service-preview, .pk-toolbar,
+            main > section, .marquee, .footer-credit, .mobile-drawer,
+            .pk-modal { background: none !important; backdrop-filter: none !important; }
+            section:not(.pk-doc):not(.pk-doc *) { display: none !important; }
+            body > *:not(.pk-modal) { display: none !important; }
+            .pk-modal {
+                display: block !important; position: static !important;
+                background: white !important; padding: 0 !important; backdrop-filter: none !important;
+            }
+            .pk-doc {
+                box-shadow: none !important; border: none !important; max-width: 100% !important;
+            }
+            .pk-toolbar { display: none !important; }
+            .pk-page {
+                page-break-after: always;
+                padding: 0 !important;
+            }
+            .pk-page:last-child { page-break-after: auto; }
+            .pk-page + .pk-page { border-top: none; }
         }
     </style>
 </head>
 <body data-testid="page-root">
 
-<!-- CUSTOM CURSOR -->
 <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
 
 <!-- FLOAT BUTTONS -->
 <div class="float-buttons">
     <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%20Studios%2C%20me%20interesa%20conocer%20m%C3%A1s"
-       target="_blank" rel="noopener"
-       class="float-btn wa hover-target glass-strong"
-       data-testid="whatsapp-fab"
-       aria-label="Contactar por WhatsApp">
+       target="_blank" rel="noopener" class="float-btn wa hover-target glass-strong"
+       data-testid="whatsapp-fab" aria-label="WhatsApp">
         <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
     <a href="https://instagram.com/otravainaestudios"
-       target="_blank" rel="noopener"
-       class="float-btn ig hover-target glass-strong"
-       data-testid="instagram-fab"
-       aria-label="Seguir en Instagram">
+       target="_blank" rel="noopener" class="float-btn ig hover-target glass-strong"
+       data-testid="instagram-fab" aria-label="Instagram">
         <i class="fab fa-instagram" aria-hidden="true"></i>
     </a>
 </div>
@@ -914,13 +1049,14 @@
 <nav data-testid="main-nav">
     <a href="#" class="brand hover-target" aria-label="Otra Vaina Studios">
         <span class="brand-mark">o</span>
-        <span class="brand-text">Otra Vaina<span style="color:var(--gold)">.</span></span>
+        <span class="brand-text">Otra Vaina<span style="color:var(--accent)">.</span></span>
     </a>
     <div class="nav-links">
         <a href="#servicios" class="hover-target" data-testid="nav-servicios">Servicios</a>
         <a href="#proceso" class="hover-target" data-testid="nav-proceso">Proceso</a>
         <a href="#catalogo" class="hover-target" data-testid="nav-catalogo">Catálogo</a>
         <a href="#planes" class="hover-target" data-testid="nav-planes">Inversión</a>
+        <a href="#" class="hover-target" id="navPresskit" data-testid="nav-presskit">Press Kit</a>
     </div>
     <a href="#hablemos" class="nav-cta hover-target" data-testid="nav-cta">Cotizar</a>
     <button class="menu-toggle hover-target" id="menuOpen" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
@@ -934,17 +1070,19 @@
     <a href="#catalogo" class="drawer-link">Catálogo</a>
     <a href="#nosotros" class="drawer-link">Nosotros</a>
     <a href="#planes" class="drawer-link">Inversión</a>
-    <a href="#hablemos" class="drawer-link"><em>Cotizar</em></a>
+    <a href="#" class="drawer-link" id="drawerPresskit">Press Kit</a>
+    <a href="#hablemos" class="drawer-link cta">Cotizar →</a>
 </div>
 
+<main>
 <!-- HERO -->
 <section class="hero" id="top">
     <div class="hero-left">
-        <div class="hero-eyebrow reveal">Estudio Independiente · Monte Plata, RD</div>
+        <div class="hero-eyebrow reveal">Estudio independiente · Monte Plata, RD</div>
         <h1 class="reveal-stagger">
             <span class="line"><span class="line-inner">Otra</span></span>
             <span class="line"><span class="line-inner outline">Vaina</span></span>
-            <span class="line"><span class="line-inner"><em>Studios.</em></span></span>
+            <span class="line"><span class="line-inner accent">Studios.</span></span>
         </h1>
         <div class="hero-meta reveal">
             <div><span>Desde</span><span>2020</span></div>
@@ -956,9 +1094,12 @@
                 Ver Catálogo <i class="fas fa-arrow-down" aria-hidden="true"></i>
             </a>
             <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%20Studios%2C%20quiero%20cotizar"
-               target="_blank" rel="noopener" class="btn btn-gold hover-target" data-testid="hero-cta-quote">
+               target="_blank" rel="noopener" class="btn btn-dark hover-target" data-testid="hero-cta-quote">
                 Cotizar Ahora <i class="fab fa-whatsapp" aria-hidden="true"></i>
             </a>
+            <button class="btn hover-target" id="heroPresskit" data-testid="hero-cta-presskit">
+                Press Kit <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </button>
         </div>
     </div>
 
@@ -975,15 +1116,15 @@
 <div class="marquee">
     <div class="marquee-content">
         <span>Fotografía de Estudio</span><i>✦</i>
-        <span><em>Editorial &amp; Moda</em></span><i>✦</i>
+        <span class="alt">Editorial &amp; Moda</span><i>✦</i>
         <span>Cinematografía</span><i>✦</i>
-        <span><em>Catálogos Digitales</em></span><i>✦</i>
+        <span class="alt">Catálogos Digitales</span><i>✦</i>
         <span>Diseño 3D</span><i>✦</i>
-        <span><em>Restauración</em></span><i>✦</i>
+        <span class="alt">Restauración</span><i>✦</i>
         <span>Fotografía de Estudio</span><i>✦</i>
-        <span><em>Editorial &amp; Moda</em></span><i>✦</i>
+        <span class="alt">Editorial &amp; Moda</span><i>✦</i>
         <span>Cinematografía</span><i>✦</i>
-        <span><em>Catálogos Digitales</em></span><i>✦</i>
+        <span class="alt">Catálogos Digitales</span><i>✦</i>
     </div>
 </div>
 
@@ -991,16 +1132,13 @@
 <section class="section" id="servicios">
     <div class="section-head reveal">
         <div class="eyebrow">01 — El Laboratorio</div>
-        <h2 class="section-title">Servicios que <em>elevan</em><br>tu imagen al nivel editorial.</h2>
+        <h2 class="section-title">Servicios que <span class="accent">elevan</span><br>tu imagen al nivel editorial.</h2>
         <p class="section-sub">Seis disciplinas que se cruzan en cada proyecto. Pasa el cursor sobre cada servicio para ver una muestra del trabajo.</p>
     </div>
 
     <div class="services-list" id="servicesList">
         <article class="service-row hover-target" data-image="assets/images/estudio-juntos.jpeg" data-testid="service-estudio">
-            <div class="service-row-left">
-                <span class="service-num">01</span>
-                <span class="service-name">Fotografía de Estudio</span>
-            </div>
+            <div class="service-row-left"><span class="service-num">01</span><span class="service-name">Fotografía de Estudio</span></div>
             <div class="service-row-right">
                 <span class="service-price">Desde <strong>RD$3,500</strong></span>
                 <span class="service-arrow"><i class="fas fa-arrow-right"></i></span>
@@ -1012,10 +1150,7 @@
         </article>
 
         <article class="service-row hover-target" data-image="assets/images/editorial-tierra.jpeg" data-testid="service-editorial">
-            <div class="service-row-left">
-                <span class="service-num">02</span>
-                <span class="service-name">Editorial &amp; Moda</span>
-            </div>
+            <div class="service-row-left"><span class="service-num">02</span><span class="service-name">Editorial &amp; Moda</span></div>
             <div class="service-row-right">
                 <span class="service-price">Desde <strong>RD$8,500</strong></span>
                 <span class="service-arrow"><i class="fas fa-arrow-right"></i></span>
@@ -1027,10 +1162,7 @@
         </article>
 
         <article class="service-row hover-target" data-image="assets/images/especial-momento.jpeg" data-testid="service-cinema">
-            <div class="service-row-left">
-                <span class="service-num">03</span>
-                <span class="service-name">Cinematografía &amp; Video</span>
-            </div>
+            <div class="service-row-left"><span class="service-num">03</span><span class="service-name">Cinematografía &amp; Video</span></div>
             <div class="service-row-right">
                 <span class="service-price">Desde <strong>RD$18,000</strong></span>
                 <span class="service-arrow"><i class="fas fa-arrow-right"></i></span>
@@ -1042,10 +1174,7 @@
         </article>
 
         <article class="service-row hover-target" data-image="assets/images/conceptual-ultima-cena.jpeg" data-testid="service-catalog">
-            <div class="service-row-left">
-                <span class="service-num">04</span>
-                <span class="service-name">Catálogos Digitales</span>
-            </div>
+            <div class="service-row-left"><span class="service-num">04</span><span class="service-name">Catálogos Digitales</span></div>
             <div class="service-row-right">
                 <span class="service-price">Desde <strong>RD$12,000</strong></span>
                 <span class="service-arrow"><i class="fas fa-arrow-right"></i></span>
@@ -1057,10 +1186,7 @@
         </article>
 
         <article class="service-row hover-target" data-image="assets/images/especial-arte.jpeg" data-testid="service-3d">
-            <div class="service-row-left">
-                <span class="service-num">05</span>
-                <span class="service-name">Diseño 3D &amp; Arte</span>
-            </div>
+            <div class="service-row-left"><span class="service-num">05</span><span class="service-name">Diseño 3D &amp; Arte</span></div>
             <div class="service-row-right">
                 <span class="service-price">Desde <strong>RD$6,000</strong></span>
                 <span class="service-arrow"><i class="fas fa-arrow-right"></i></span>
@@ -1072,10 +1198,7 @@
         </article>
 
         <article class="service-row hover-target" data-image="assets/images/familia-inocencia.jpeg" data-testid="service-restauracion">
-            <div class="service-row-left">
-                <span class="service-num">06</span>
-                <span class="service-name">Restauración Fotográfica</span>
-            </div>
+            <div class="service-row-left"><span class="service-num">06</span><span class="service-name">Restauración Fotográfica</span></div>
             <div class="service-row-right">
                 <span class="service-price">Desde <strong>RD$1,500</strong></span>
                 <span class="service-arrow"><i class="fas fa-arrow-right"></i></span>
@@ -1087,50 +1210,47 @@
         </article>
     </div>
 
-    <!-- Floating preview -->
-    <div class="service-preview" id="servicePreview">
-        <img src="" alt="" id="servicePreviewImg">
-    </div>
+    <div class="service-preview" id="servicePreview"><img src="" alt="" id="servicePreviewImg"></div>
 </section>
 
 <!-- PROCESS -->
 <section class="process" id="proceso">
     <div class="section-head reveal">
-        <div class="eyebrow">02 — Cómo Trabajamos</div>
-        <h2 class="section-title">Un proceso <em>claro,</em><br>sin sorpresas.</h2>
+        <div class="eyebrow">02 — Cómo trabajamos</div>
+        <h2 class="section-title">Un proceso <span class="accent">claro,</span><br>sin sorpresas.</h2>
     </div>
     <div class="process-track reveal-stagger">
         <div class="process-card glass">
             <div>
-                <div class="process-num"><em>i</em></div>
+                <div class="process-num">01</div>
                 <h4>Briefing</h4>
                 <p>Conversamos tu visión, audiencia y objetivos. Definimos referencias y entregables.</p>
             </div>
-            <div class="process-card-foot">01 — Día 1</div>
+            <div class="process-card-foot">Día 1</div>
         </div>
         <div class="process-card glass">
             <div>
-                <div class="process-num"><em>ii</em></div>
+                <div class="process-num">02</div>
                 <h4>Pre-producción</h4>
                 <p>Moodboard, escenografía, locación, vestuario y cronograma cerrado por escrito.</p>
             </div>
-            <div class="process-card-foot">02 — Días 2-5</div>
+            <div class="process-card-foot">Días 2-5</div>
         </div>
         <div class="process-card glass">
             <div>
-                <div class="process-num"><em>iii</em></div>
+                <div class="process-num">03</div>
                 <h4>Producción</h4>
                 <p>Dirección de cámara, luz e interpretación. Te mostramos avances en pantalla.</p>
             </div>
-            <div class="process-card-foot">03 — Día de sesión</div>
+            <div class="process-card-foot">Día de sesión</div>
         </div>
         <div class="process-card glass">
             <div>
-                <div class="process-num"><em>iv</em></div>
+                <div class="process-num">04</div>
                 <h4>Entrega</h4>
                 <p>Selección, retoque High-End y entrega digital en 48–72 h por enlace privado.</p>
             </div>
-            <div class="process-card-foot">04 — Final</div>
+            <div class="process-card-foot">Final</div>
         </div>
     </div>
 </section>
@@ -1139,7 +1259,7 @@
 <section class="section" id="catalogo">
     <div class="section-head reveal">
         <div class="eyebrow">03 — Catálogo</div>
-        <h2 class="section-title">Trabajos <em>seleccionados.</em></h2>
+        <h2 class="section-title">Trabajos <span class="accent">seleccionados.</span></h2>
         <p class="section-sub">Una muestra curada de sesiones recientes. Filtra por categoría para enfocar tu búsqueda.</p>
     </div>
 
@@ -1210,9 +1330,9 @@
 <!-- ABOUT -->
 <section class="about" id="nosotros">
     <div class="about-headline reveal">
-        No tomamos fotos. <em>Construimos imágenes</em> que sostienen marcas, identidades y memorias — desde un estudio independiente en <em>Monte Plata.</em>
+        No tomamos fotos. <span class="accent">Construimos imágenes</span> que sostienen marcas, identidades y memorias — desde un estudio independiente en <span class="accent">Monte Plata.</span>
     </div>
-    <div class="about-sign reveal">Otra Vaina Studios · MMXXVI</div>
+    <div class="about-sign reveal">Otra Vaina Studios · 2026</div>
 </section>
 
 <div class="stats reveal-stagger">
@@ -1238,37 +1358,28 @@
 <section class="section" id="testimonios">
     <div class="section-head reveal">
         <div class="eyebrow">04 — Clientes</div>
-        <h2 class="section-title">Lo que <em>dicen.</em></h2>
+        <h2 class="section-title">Lo que <span class="accent">dicen.</span></h2>
     </div>
     <div class="testi-grid reveal-stagger">
         <div class="testi-card glass">
             <p>Excelente trabajo, muy profesionales. Las fotos de mi sesión quedaron increíbles. Definitivamente volveré.</p>
             <div class="testi-author">
                 <div class="testi-avatar">M</div>
-                <div class="testi-author-info">
-                    <span>María Campos</span>
-                    <span>Modelo profesional</span>
-                </div>
+                <div class="testi-author-info"><span>María Campos</span><span>Modelo profesional</span></div>
             </div>
         </div>
         <div class="testi-card glass">
             <p>Transformaron mi catálogo de productos. Las ventas aumentaron significativamente después de la sesión. Muy recomendado.</p>
             <div class="testi-author">
                 <div class="testi-avatar">J</div>
-                <div class="testi-author-info">
-                    <span>Juan Martínez</span>
-                    <span>Dueño de empresa</span>
-                </div>
+                <div class="testi-author-info"><span>Juan Martínez</span><span>Dueño de empresa</span></div>
             </div>
         </div>
         <div class="testi-card glass">
             <p>La atención al detalle es impresionante. Cada foto tiene un toque artístico que destaca. Muy satisfecha con el resultado.</p>
             <div class="testi-author">
                 <div class="testi-avatar">L</div>
-                <div class="testi-author-info">
-                    <span>Laura Pérez</span>
-                    <span>Artista visual</span>
-                </div>
+                <div class="testi-author-info"><span>Laura Pérez</span><span>Artista visual</span></div>
             </div>
         </div>
     </div>
@@ -1278,78 +1389,70 @@
 <section class="section" id="planes">
     <div class="section-head reveal">
         <div class="eyebrow">05 — Inversión</div>
-        <h2 class="section-title">Planes <em>diseñados</em><br>para cada momento.</h2>
+        <h2 class="section-title">Planes <span class="accent">diseñados</span><br>para cada momento.</h2>
     </div>
     <div class="pricing-grid reveal-stagger">
         <div class="price-card">
-            <div class="price-card-inner">
-                <h3>Sesión Básica</h3>
-                <div class="price-tag">Retratos personales</div>
-                <div class="price-amount"><em>RD$</em>3,500</div>
-                <ul class="price-list">
-                    <li>1 hora de sesión</li>
-                    <li>1 cambio de vestuario</li>
-                    <li>10 fotos retocadas High-End</li>
-                    <li>Entrega en 48 h</li>
-                </ul>
-                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20la%20Sesi%C3%B3n%20B%C3%A1sica" target="_blank" rel="noopener" class="price-cta hover-target" data-testid="plan-basic">
-                    Agendar <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
+            <h3>Sesión Básica</h3>
+            <div class="price-tag">Retratos personales</div>
+            <div class="price-amount"><em>RD$</em>3,500</div>
+            <ul class="price-list">
+                <li>1 hora de sesión</li>
+                <li>1 cambio de vestuario</li>
+                <li>10 fotos retocadas High-End</li>
+                <li>Entrega en 48 h</li>
+            </ul>
+            <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20la%20Sesi%C3%B3n%20B%C3%A1sica" target="_blank" rel="noopener" class="price-cta hover-target" data-testid="plan-basic">
+                Agendar <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
 
         <div class="price-card featured">
-            <div class="price-card-inner">
-                <span class="badge-featured">Más solicitado</span>
-                <h3>Estudio Pro</h3>
-                <div class="price-tag">Artistas &amp; marcas</div>
-                <div class="price-amount"><em>RD$</em>8,500</div>
-                <ul class="price-list">
-                    <li>2 horas de sesión</li>
-                    <li>Hasta 3 cambios de vestuario</li>
-                    <li>25 fotos retocadas High-End</li>
-                    <li>Asesoría de dirección de arte</li>
-                    <li>Moodboard previo</li>
-                </ul>
-                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20el%20plan%20Estudio%20Pro" target="_blank" rel="noopener" class="price-cta hover-target" data-testid="plan-pro">
-                    Agendar <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
+            <span class="badge-featured">Más solicitado</span>
+            <h3>Estudio Pro</h3>
+            <div class="price-tag">Artistas &amp; marcas</div>
+            <div class="price-amount"><em>RD$</em>8,500</div>
+            <ul class="price-list">
+                <li>2 horas de sesión</li>
+                <li>Hasta 3 cambios de vestuario</li>
+                <li>25 fotos retocadas High-End</li>
+                <li>Asesoría de dirección de arte</li>
+                <li>Moodboard previo</li>
+            </ul>
+            <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20el%20plan%20Estudio%20Pro" target="_blank" rel="noopener" class="price-cta hover-target" data-testid="plan-pro">
+                Agendar <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
 
         <div class="price-card">
-            <div class="price-card-inner">
-                <h3>Catálogo Digital</h3>
-                <div class="price-tag">E-commerce</div>
-                <div class="price-amount"><em>RD$</em>12,000</div>
-                <ul class="price-list">
-                    <li>Media jornada (4 h)</li>
-                    <li>Fotografía de productos</li>
-                    <li>Diagramación profesional</li>
-                    <li>Optimizado para e-commerce</li>
-                    <li>Entrega PDF + Web</li>
-                </ul>
-                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20un%20Cat%C3%A1logo%20Digital" target="_blank" rel="noopener" class="price-cta hover-target" data-testid="plan-catalog">
-                    Cotizar <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
+            <h3>Catálogo Digital</h3>
+            <div class="price-tag">E-commerce</div>
+            <div class="price-amount"><em>RD$</em>12,000</div>
+            <ul class="price-list">
+                <li>Media jornada (4 h)</li>
+                <li>Fotografía de productos</li>
+                <li>Diagramación profesional</li>
+                <li>Optimizado para e-commerce</li>
+                <li>Entrega PDF + Web</li>
+            </ul>
+            <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20un%20Cat%C3%A1logo%20Digital" target="_blank" rel="noopener" class="price-cta hover-target" data-testid="plan-catalog">
+                Cotizar <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
 
         <div class="price-card">
-            <div class="price-card-inner">
-                <h3>Producción Video</h3>
-                <div class="price-tag">Videoclips · eventos</div>
-                <div class="price-amount"><em>RD$</em>18,000</div>
-                <ul class="price-list">
-                    <li>Grabación 2 cámaras 4K</li>
-                    <li>Edición y color grading</li>
-                    <li>1 video principal + 1 reel</li>
-                    <li>Diseño sonoro incluido</li>
-                </ul>
-                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20una%20Producci%C3%B3n%20de%20Video" target="_blank" rel="noopener" class="price-cta hover-target" data-testid="plan-video">
-                    Cotizar <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
+            <h3>Producción Video</h3>
+            <div class="price-tag">Videoclips · eventos</div>
+            <div class="price-amount"><em>RD$</em>18,000</div>
+            <ul class="price-list">
+                <li>Grabación 2 cámaras 4K</li>
+                <li>Edición y color grading</li>
+                <li>1 video principal + 1 reel</li>
+                <li>Diseño sonoro incluido</li>
+            </ul>
+            <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20una%20Producci%C3%B3n%20de%20Video" target="_blank" rel="noopener" class="price-cta hover-target" data-testid="plan-video">
+                Cotizar <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
     </div>
 </section>
@@ -1358,36 +1461,36 @@
 <section class="section" id="instagram">
     <div class="section-head reveal">
         <div class="eyebrow">06 — Instagram</div>
-        <h2 class="section-title">@otravaina<em>estudios</em></h2>
+        <h2 class="section-title">@otravaina<span class="accent">estudios</span></h2>
         <p class="section-sub">Síguenos para ver behind-the-scenes, sesiones recientes y procesos del estudio.</p>
     </div>
     <div class="insta-grid reveal-stagger">
-        <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="insta-item hover-target" data-cursor="view" data-testid="insta-1">
-            <img src="assets/images/conceptual-en-el-campo.jpeg" alt="Instagram - Sesión conceptual" loading="lazy">
+        <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="insta-item hover-target" data-cursor="view">
+            <img src="assets/images/conceptual-en-el-campo.jpeg" alt="Instagram" loading="lazy">
             <div class="insta-icon"><i class="fab fa-instagram"></i></div>
         </a>
-        <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="insta-item hover-target" data-cursor="view" data-testid="insta-2">
-            <img src="assets/images/editorial-tierra.jpeg" alt="Instagram - Editorial moda" loading="lazy">
+        <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="insta-item hover-target" data-cursor="view">
+            <img src="assets/images/editorial-tierra.jpeg" alt="Instagram" loading="lazy">
             <div class="insta-icon"><i class="fab fa-instagram"></i></div>
         </a>
-        <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="insta-item hover-target" data-cursor="view" data-testid="insta-3">
-            <img src="assets/images/familia-inocencia.jpeg" alt="Instagram - Familia" loading="lazy">
+        <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="insta-item hover-target" data-cursor="view">
+            <img src="assets/images/familia-inocencia.jpeg" alt="Instagram" loading="lazy">
             <div class="insta-icon"><i class="fab fa-instagram"></i></div>
         </a>
-        <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="insta-item hover-target" data-cursor="view" data-testid="insta-4">
-            <img src="assets/images/especial-momento.jpeg" alt="Instagram - Sesión estudio" loading="lazy">
+        <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="insta-item hover-target" data-cursor="view">
+            <img src="assets/images/especial-momento.jpeg" alt="Instagram" loading="lazy">
             <div class="insta-icon"><i class="fab fa-instagram"></i></div>
         </a>
     </div>
 </section>
 
-<!-- HABLEMOS (Footer 100vh) -->
+<!-- HABLEMOS -->
 <section class="hablemos" id="hablemos">
     <div class="hablemos-eyebrow reveal">07 — Contacto</div>
 
     <h2 class="reveal-stagger">
         <span style="display:block">Hable</span>
-        <span style="display:block"><em>mos.</em></span>
+        <span style="display:block"><span class="accent">mos.</span></span>
     </h2>
 
     <div class="hablemos-cta-row reveal">
@@ -1397,6 +1500,9 @@
         <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="hablemos-btn ghost hover-target" data-testid="cta-instagram-main">
             <i class="fab fa-instagram"></i> Ver Instagram
         </a>
+        <button class="hablemos-btn ghost hover-target" id="hablemosPresskit" data-testid="cta-presskit-main">
+            <i class="fas fa-file-lines"></i> Press Kit
+        </button>
     </div>
 
     <div class="hablemos-bottom">
@@ -1411,53 +1517,141 @@
         </div>
     </div>
 </section>
+</main>
 
 <div class="footer-credit">
-    © MMXXVI · Otra Vaina Studios · Engineered by <em>TMCA</em>
+    © 2026 · Otra Vaina Studios · Engineered by <em>TMCA</em>
 </div>
 
-<!-- LIBRARIES -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
+<!-- ====================== PRESS KIT MODAL ====================== -->
+<div class="pk-modal" id="pkModal" role="dialog" aria-modal="true" aria-labelledby="pkTitle">
+    <div class="pk-doc">
+        <div class="pk-toolbar">
+            <span class="pk-toolbar-info">Press Kit · 2026 · v1.0</span>
+            <div class="pk-toolbar-actions">
+                <button class="pk-action primary hover-target" id="pkPrint" data-testid="pk-print">
+                    <i class="fas fa-file-arrow-down"></i> Descargar PDF
+                </button>
+                <button class="pk-action hover-target" id="pkShare" data-testid="pk-share">
+                    <i class="fas fa-share-nodes"></i> Compartir
+                </button>
+                <button class="pk-close hover-target" id="pkClose" aria-label="Cerrar" data-testid="pk-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Page 1 -->
+        <div class="pk-page">
+            <div class="pk-header">
+                <div class="pk-header-brand">
+                    <div class="pk-header-brand-mark">o</div>
+                    <div class="pk-header-brand-text">Otra Vaina Studios</div>
+                </div>
+                <div class="pk-header-meta">
+                    Press Kit · 2026<br>Monte Plata, RD
+                </div>
+            </div>
+
+            <div class="pk-eyebrow">Carta de Presentación</div>
+            <h2 class="pk-title" id="pkTitle">Producción visual <span class="accent">premium</span><br>desde Monte Plata.</h2>
+            <p class="pk-lead">Somos un estudio independiente especializado en fotografía editorial, cinematografía y producción audiovisual. Trabajamos con artistas, marcas, familias y empresas que entienden que la imagen no es un costo: es la primera impresión que define todo lo demás.</p>
+
+            <div class="pk-section">
+                <h3>Métricas</h3>
+                <div class="pk-stats">
+                    <div class="pk-stat"><div class="pk-stat-num">250<em>+</em></div><div class="pk-stat-label">Proyectos</div></div>
+                    <div class="pk-stat"><div class="pk-stat-num">180<em>+</em></div><div class="pk-stat-label">Clientes</div></div>
+                    <div class="pk-stat"><div class="pk-stat-num">5<em>+</em></div><div class="pk-stat-label">Años</div></div>
+                    <div class="pk-stat"><div class="pk-stat-num">100<em>%</em></div><div class="pk-stat-label">In-house</div></div>
+                </div>
+            </div>
+
+            <div class="pk-section">
+                <h3>Especialidades</h3>
+                <div class="pk-services">
+                    <div class="pk-service"><span class="pk-service-name">Fotografía de Estudio</span><span class="pk-service-price">Desde RD$3,500</span></div>
+                    <div class="pk-service"><span class="pk-service-name">Editorial &amp; Moda</span><span class="pk-service-price">Desde RD$8,500</span></div>
+                    <div class="pk-service"><span class="pk-service-name">Cinematografía &amp; Video</span><span class="pk-service-price">Desde RD$18,000</span></div>
+                    <div class="pk-service"><span class="pk-service-name">Catálogos Digitales</span><span class="pk-service-price">Desde RD$12,000</span></div>
+                    <div class="pk-service"><span class="pk-service-name">Diseño 3D &amp; Arte</span><span class="pk-service-price">Desde RD$6,000</span></div>
+                    <div class="pk-service"><span class="pk-service-name">Restauración Fotográfica</span><span class="pk-service-price">Desde RD$1,500</span></div>
+                </div>
+            </div>
+
+            <div class="pk-footer">
+                <span>otravainastudios.netlify.app</span>
+                <span>Página 1 / 2</span>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="pk-page">
+            <div class="pk-header">
+                <div class="pk-header-brand">
+                    <div class="pk-header-brand-mark">o</div>
+                    <div class="pk-header-brand-text">Otra Vaina Studios</div>
+                </div>
+                <div class="pk-header-meta">Portfolio · Selección 2026</div>
+            </div>
+
+            <div class="pk-eyebrow">Trabajos seleccionados</div>
+            <h2 class="pk-title">Una muestra de lo que <span class="accent">construimos.</span></h2>
+
+            <div class="pk-section">
+                <div class="pk-portfolio">
+                    <img src="assets/images/editorial-tierra.jpeg" alt="Editorial - Tierra">
+                    <img src="assets/images/conceptual-en-el-campo.jpeg" alt="Conceptual - En el Campo">
+                    <img src="assets/images/estudio-baile.jpeg" alt="Estudio - Baile">
+                    <img src="assets/images/editorial-calma.jpeg" alt="Editorial - Calma">
+                    <img src="assets/images/familia-inocencia.jpeg" alt="Familia - Inocencia">
+                    <img src="assets/images/especial-vision.jpeg" alt="Especial - Visión">
+                </div>
+            </div>
+
+            <div class="pk-section">
+                <h3>Contacto Directo</h3>
+                <div class="pk-contact-grid">
+                    <div class="pk-contact-item"><span>WhatsApp</span><span>+1 (809) 268-0341</span></div>
+                    <div class="pk-contact-item"><span>Instagram</span><span>@otravainaestudios</span></div>
+                    <div class="pk-contact-item"><span>Ubicación</span><span>Monte Plata, RD</span></div>
+                </div>
+            </div>
+
+            <div class="pk-section">
+                <h3>Proceso de trabajo</h3>
+                <p style="font-size: 0.92rem; color: var(--text-soft); line-height: 1.65;">
+                    <strong style="color:var(--text);">01 Briefing</strong> — Visión, audiencia, objetivos y entregables. ·
+                    <strong style="color:var(--text);">02 Pre-producción</strong> — Moodboard, locación, vestuario, cronograma. ·
+                    <strong style="color:var(--text);">03 Producción</strong> — Dirección de cámara con avances en pantalla. ·
+                    <strong style="color:var(--text);">04 Entrega</strong> — Retoque High-End en 48–72 horas vía enlace privado.
+                </p>
+            </div>
+
+            <div class="pk-footer">
+                <span>© 2026 Otra Vaina Studios</span>
+                <span>Página 2 / 2</span>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
-// =====================
-// LENIS SMOOTH SCROLL
-// =====================
-let lenis;
-try {
-    lenis = new Lenis({
-        duration: 1.2,
-        easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        smoothWheel: true
-    });
-    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
-    requestAnimationFrame(raf);
-} catch(e) { console.warn('Lenis no cargó, scroll nativo OK', e); }
-
-// =====================
 // CUSTOM CURSOR
-// =====================
 const cursorDot = document.getElementById('cursorDot');
 const cursorRing = document.getElementById('cursorRing');
 const supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-
 if (supportsHover && cursorDot && cursorRing) {
     let mx = 0, my = 0, rx = 0, ry = 0;
     document.addEventListener('mousemove', e => {
         mx = e.clientX; my = e.clientY;
-        cursorDot.style.left = mx + 'px';
-        cursorDot.style.top = my + 'px';
+        cursorDot.style.left = mx + 'px'; cursorDot.style.top = my + 'px';
     });
-    function loop() {
-        rx += (mx - rx) * 0.18;
-        ry += (my - ry) * 0.18;
-        cursorRing.style.left = rx + 'px';
-        cursorRing.style.top = ry + 'px';
+    (function loop() {
+        rx += (mx - rx) * 0.18; ry += (my - ry) * 0.18;
+        cursorRing.style.left = rx + 'px'; cursorRing.style.top = ry + 'px';
         requestAnimationFrame(loop);
-    }
-    loop();
+    })();
     document.querySelectorAll('.hover-target').forEach(el => {
         el.addEventListener('mouseenter', () => {
             cursorRing.classList.add('hover');
@@ -1470,46 +1664,31 @@ if (supportsHover && cursorDot && cursorRing) {
     });
 }
 
-// =====================
-// SERVICE PREVIEW (Floating image)
-// =====================
-const servicePreview = document.getElementById('servicePreview');
-const servicePreviewImg = document.getElementById('servicePreviewImg');
-const serviceRows = document.querySelectorAll('.service-row');
-let previewMX = 0, previewMY = 0, previewRX = 0, previewRY = 0;
-
-if (supportsHover && servicePreview && servicePreviewImg) {
-    document.addEventListener('mousemove', e => {
-        previewMX = e.clientX;
-        previewMY = e.clientY;
-    });
-    function previewLoop() {
-        previewRX += (previewMX - previewRX) * 0.08;
-        previewRY += (previewMY - previewRY) * 0.08;
-        servicePreview.style.left = previewRX + 'px';
-        servicePreview.style.top = previewRY + 'px';
-        requestAnimationFrame(previewLoop);
-    }
-    previewLoop();
-
-    serviceRows.forEach(row => {
+// SERVICE PREVIEW (floating image)
+const sp = document.getElementById('servicePreview');
+const spImg = document.getElementById('servicePreviewImg');
+if (supportsHover && sp && spImg) {
+    let smx=0,smy=0,srx=0,sry=0;
+    document.addEventListener('mousemove', e => { smx = e.clientX; smy = e.clientY; });
+    (function spLoop() {
+        srx += (smx - srx) * 0.08; sry += (smy - sry) * 0.08;
+        sp.style.left = srx + 'px'; sp.style.top = sry + 'px';
+        requestAnimationFrame(spLoop);
+    })();
+    document.querySelectorAll('.service-row').forEach(row => {
         row.addEventListener('mouseenter', () => {
             const img = row.dataset.image;
-            if (img && img !== servicePreviewImg.src) {
-                servicePreviewImg.src = img;
-                servicePreviewImg.alt = row.querySelector('.service-name').textContent;
+            if (img && img !== spImg.src) {
+                spImg.src = img;
+                spImg.alt = row.querySelector('.service-name').textContent;
             }
-            servicePreview.classList.add('active');
+            sp.classList.add('active');
         });
-        row.addEventListener('mouseleave', () => {
-            servicePreview.classList.remove('active');
-        });
+        row.addEventListener('mouseleave', () => sp.classList.remove('active'));
     });
 }
 
-// =====================
 // REVEAL ON SCROLL
-// =====================
 const reveals = document.querySelectorAll('.reveal, .reveal-stagger');
 const obs = new IntersectionObserver((entries, o) => {
     entries.forEach(entry => {
@@ -1521,9 +1700,7 @@ const obs = new IntersectionObserver((entries, o) => {
 }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
 reveals.forEach(r => obs.observe(r));
 
-// =====================
-// COUNTER ANIMATION
-// =====================
+// COUNTER
 function animateCounter(el, target) {
     let cur = 0;
     const step = Math.max(1, Math.floor(target / 60));
@@ -1533,7 +1710,7 @@ function animateCounter(el, target) {
         else { el.firstChild.nodeValue = cur; }
     }, 28);
 }
-const counterObs = new IntersectionObserver((entries, o) => {
+const cObs = new IntersectionObserver((entries, o) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             const el = entry.target;
@@ -1543,14 +1720,9 @@ const counterObs = new IntersectionObserver((entries, o) => {
         }
     });
 }, { threshold: 0.4 });
-['stat-1', 'stat-2'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) counterObs.observe(el);
-});
+['stat-1','stat-2'].forEach(id => { const el = document.getElementById(id); if (el) cObs.observe(el); });
 
-// =====================
 // PORTFOLIO FILTER
-// =====================
 const filterBtns = document.querySelectorAll('.filter-btn');
 const bItems = document.querySelectorAll('.b-item');
 filterBtns.forEach(btn => {
@@ -1565,9 +1737,7 @@ filterBtns.forEach(btn => {
     });
 });
 
-// =====================
 // MOBILE DRAWER
-// =====================
 const menuOpen = document.getElementById('menuOpen');
 const menuClose = document.getElementById('menuClose');
 const drawer = document.getElementById('mobileDrawer');
@@ -1577,31 +1747,62 @@ if (menuOpen && drawer) {
     drawer.querySelectorAll('.drawer-link').forEach(a => a.addEventListener('click', () => drawer.classList.remove('open')));
 }
 
-// =====================
-// GSAP — Hero stagger + Process pin (subtle)
-// =====================
-if (window.gsap && window.ScrollTrigger) {
-    gsap.registerPlugin(ScrollTrigger);
-    // Hero lines stagger
-    gsap.from('.hero h1 .line-inner', {
-        yPercent: 110,
-        duration: 1.1,
-        stagger: 0.12,
-        ease: 'power3.out',
-        delay: 0.2
-    });
-    // Parallax on hero photo
-    gsap.to('.hero-right img', {
-        yPercent: 12,
-        ease: 'none',
-        scrollTrigger: {
-            trigger: '.hero',
-            start: 'top top',
-            end: 'bottom top',
-            scrub: true
-        }
-    });
+// ============ PRESS KIT MODAL ============
+const pkModal = document.getElementById('pkModal');
+const pkOpenButtons = [
+    document.getElementById('navPresskit'),
+    document.getElementById('drawerPresskit'),
+    document.getElementById('heroPresskit'),
+    document.getElementById('hablemosPresskit')
+].filter(Boolean);
+const pkClose = document.getElementById('pkClose');
+const pkPrint = document.getElementById('pkPrint');
+const pkShare = document.getElementById('pkShare');
+
+function openPK(e) {
+    if (e) e.preventDefault();
+    pkModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
 }
+function closePK() {
+    pkModal.classList.remove('open');
+    document.body.style.overflow = '';
+}
+pkOpenButtons.forEach(btn => btn.addEventListener('click', openPK));
+pkClose?.addEventListener('click', closePK);
+pkModal?.addEventListener('click', e => { if (e.target === pkModal) closePK(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && pkModal.classList.contains('open')) closePK(); });
+
+pkPrint?.addEventListener('click', () => {
+    // print stylesheet hides everything else and prints only pk-modal
+    window.print();
+});
+
+pkShare?.addEventListener('click', async () => {
+    const url = location.href;
+    const shareData = {
+        title: 'Otra Vaina Studios — Press Kit',
+        text: 'Estudio de fotografía y producción visual premium en Monte Plata.',
+        url: url
+    };
+    try {
+        if (navigator.share) await navigator.share(shareData);
+        else {
+            await navigator.clipboard.writeText(url);
+            pkShare.innerHTML = '<i class="fas fa-check"></i> Enlace copiado';
+            setTimeout(() => pkShare.innerHTML = '<i class="fas fa-share-nodes"></i> Compartir', 2500);
+        }
+    } catch (err) { console.warn('Share cancelado', err); }
+});
+
+// HERO STAGGER (simple no GSAP)
+window.addEventListener('load', () => {
+    document.querySelectorAll('.hero h1 .line-inner').forEach((el, i) => {
+        el.style.transition = 'transform 1.1s cubic-bezier(.2,.9,.2,1)';
+        el.style.transform = 'translateY(110%)';
+        setTimeout(() => { el.style.transform = 'translateY(0)'; }, 200 + i * 130);
+    });
+});
 </script>
 </body>
 </html>
