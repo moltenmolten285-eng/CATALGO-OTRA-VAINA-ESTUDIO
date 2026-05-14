@@ -1,0 +1,93 @@
+{
+  "project_name": "OTRA VAINA STUDIOS",
+  "theme_archetype": "Archetype 5 (Jewel & Luxury) - DARK THEME",
+  "design_philosophy": {
+    "overview": "A highly immersive, cinematic, and minimalist presentation letter for a premium photography studio. Focus on negative space, typography as art, and optical clarity via glassmorphism.",
+    "keywords": ["minimalist", "glassmorphism", "immersive", "creative", "premium", "editorial"]
+  },
+  "color_palette": {
+    "background_base": "#070707",
+    "background_surface": "#121212",
+    "glass_base": "rgba(255, 255, 255, 0.02)",
+    "glass_highlight": "rgba(255, 255, 255, 0.06)",
+    "glass_border": "rgba(255, 255, 255, 0.1)",
+    "text_primary": "#F7F7F7",
+    "text_secondary": "rgba(247, 247, 247, 0.6)",
+    "text_accent": "#D4AF37", 
+    "glow_effect": "radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 60%)"
+  },
+  "typography": {
+    "primary_heading": {
+      "family": "'Cormorant Garamond', serif",
+      "weights": [300, 400, 600, 700],
+      "usage": "H1, H2, large editorial statements, massive hero text. Use tracking-tight (-0.02em) for large sizes."
+    },
+    "secondary_body": {
+      "family": "'Outfit', sans-serif",
+      "weights": [200, 300, 400],
+      "usage": "Prices, paragraphs, nav links, micro-copy, UI elements. High legibility, geometric, tracking-wide for overlines (0.2em)."
+    },
+    "import_urls": [
+      "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@200;300;400&display=swap"
+    ]
+  },
+  "glassmorphism_treatment": {
+    "optical_clarity": "Use backdrop-filter: blur(24px) saturate(150%). This ensures colors behind the glass pop and don't look muddy.",
+    "borders": "1px solid rgba(255, 255, 255, 0.1) on the top/left to simulate light catching the edge, and rgba(255, 255, 255, 0.02) on bottom/right.",
+    "shadows": "box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);",
+    "hover_state": "Increase background to rgba(255, 255, 255, 0.05) and border to rgba(255, 255, 255, 0.2), transform translate-y slightly."
+  },
+  "micro_interactions": {
+    "custom_cursor": "A minimalist white dot (4px) that expands to a 40px glass circle (backdrop-filter) when hovering over images, displaying a subtle 'VER' text.",
+    "scroll_engine": "Lenis.js for buttery smooth momentum scrolling. Crucial for the immersive feel.",
+    "entrance_animations": "GSAP ScrollTrigger for fading in elements slightly from below as they enter the viewport. Staggered text reveals.",
+    "image_parallax": "Images in the portfolio section should have a subtle parallax effect on scroll (image translates Y within its hidden overflow container)."
+  },
+  "layout_sections": [
+    {
+      "name": "Hero",
+      "structure": "Asymmetrical layout. Massive 'OTRA VAINA' overlapping an editorial photo on the right. Left side contains the brand intro. Floating glass navigation bar at top.",
+      "visuals": "assets/images/editorial-calma.jpeg",
+      "immersive_detail": "Subtle animated film grain overlay (via CSS noise) on the entire background."
+    },
+    {
+      "name": "Services (List to Image Reveal)",
+      "structure": "A stark, minimalist vertical list of services in large Outfit font. No grid.",
+      "immersive_detail": "Hovering over a service name reveals its corresponding image in a floating glass frame that loosely follows the mouse position.",
+      "services": ["Fotografía de Estudio", "Editorial & Moda", "Cinematografía", "Catálogos Digitales", "Diseño 3D & Arte", "Restauración Fotográfica"]
+    },
+    {
+      "name": "Process (Sticky/Horizontal)",
+      "structure": "4 steps: Briefing, Pre-producción, Producción, Entrega.",
+      "immersive_detail": "As the user scrolls, the cards stack on top of each other using GSAP pinning, or scroll horizontally. Each card is a pristine glassmorphism block."
+    },
+    {
+      "name": "Portfolio / Catálogo",
+      "structure": "Bento-style asymmetric grid, strictly NOT a standard masonry. Mix large, medium, and tall image blocks.",
+      "immersive_detail": "Filter links at the top (Editorial, Estudio, Conceptual, Familia). Images have a dark overlay that clears on hover. Custom cursor expands here.",
+      "images": ["conceptual-en-el-campo.jpeg", "editorial-tierra.jpeg", "estudio-baile.jpeg", "familia-inocencia.jpeg", "especial-momento.jpeg", "especial-vision.jpeg"]
+    },
+    {
+      "name": "About & Stats",
+      "structure": "Centered editorial typography statement. Below it, a 3-column grid of glass modules for stats (250+ proyectos, 180+ clientes, 5+ años).",
+      "immersive_detail": "Numbers counter animate up on scroll."
+    },
+    {
+      "name": "Investment Plans (Planes)",
+      "structure": "4 pricing tiers in a grid or horizontal scroll track. Cards use the signature glass treatment.",
+      "immersive_detail": "A subtle gradient glow sweeps across the border of the cards on hover. 'Desde RD$' in secondary text."
+    },
+    {
+      "name": "Footer / Contact",
+      "structure": "100vh height. Huge 'HABLEMOS' text that fills the screen width.",
+      "immersive_detail": "A prominent floating glass button for WhatsApp (+1 809 268 0341) that pulses softly. Links to IG (@otravainaestudios)."
+    }
+  ],
+  "technical_instructions": {
+    "file_structure": "Everything must be in a single /app/index.html file (HTML, CSS in <style>, JS in <script>).",
+    "cdn_libraries": ["https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js", "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js", "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"],
+    "testing_attributes": "Add data-testid to all interactive elements (e.g., data-testid='whatsapp-fab', data-testid='filter-editorial', data-testid='plan-booking-button').",
+    "responsiveness": "Mobile-first approach. Ensure glassmorphism is performant on mobile.",
+    "assets_path": "./assets/images/"
+  }
+}
