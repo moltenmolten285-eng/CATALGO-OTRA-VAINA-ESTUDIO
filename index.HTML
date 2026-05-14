@@ -3,1660 +3,1605 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otra Vaina Studios | Fotografía & Producción Visual en Monte Plata</title>
+    <title>Otra Vaina Studios — Producción Visual Premium · Monte Plata</title>
 
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="canonical" href="https://otravainastudios.netlify.app/">
 
-    <meta name="description" content="Estudio de fotografía y producción visual premium en Monte Plata, RD. Fotografía editorial, cinematografía, catálogos digitales, diseño 3D y restauración. Cotiza por WhatsApp.">
-    <meta name="theme-color" content="#0A0A0A">
+    <meta name="description" content="Estudio independiente de fotografía y producción audiovisual premium en Monte Plata, RD. Editorial, cinematografía, catálogos digitales, diseño 3D y restauración.">
+    <meta name="theme-color" content="#070707">
 
-    <meta property="og:title" content="Otra Vaina Studios | Producción Visual Premium">
-    <meta property="og:description" content="Elevando la estética urbana al nivel editorial. Fotografía, catálogos digitales y cinematografía desde Monte Plata.">
-    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:title" content="Otra Vaina Studios — Producción Visual Premium">
+    <meta property="og:description" content="Una vaina distinta. Estudio independiente de imagen editorial desde Monte Plata.">
+    <meta property="og:image" content="https://otravainastudios.netlify.app/assets/images/editorial-tierra.jpeg">
     <meta property="og:url" content="https://otravainastudios.netlify.app/">
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Otra Vaina Studios">
     <meta name="twitter:description" content="Producción visual de alto nivel. Estética limpia y disruptiva.">
-    <meta name="twitter:image" content="assets/images/logo.png">
+    <meta name="twitter:image" content="https://otravainastudios.netlify.app/assets/images/editorial-tierra.jpeg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800;9..144,900&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Schema.org: Local Business -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "Otra Vaina Studios",
       "image": "https://otravainastudios.netlify.app/assets/images/logo.png",
-      "description": "Estudio de fotografía y producción visual premium en Monte Plata, República Dominicana.",
+      "description": "Estudio independiente de fotografía y producción visual premium en Monte Plata, República Dominicana.",
       "url": "https://otravainastudios.netlify.app/",
       "telephone": "+1-809-268-0341",
-      "priceRange": "RD$3,500 - RD$25,000",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Monte Plata",
-        "addressCountry": "DO"
-      },
-      "sameAs": [
-        "https://instagram.com/otravainaestudios",
-        "https://wa.me/18092680341"
-      ]
+      "priceRange": "RD$1,500 - RD$25,000",
+      "address": { "@type": "PostalAddress", "addressLocality": "Monte Plata", "addressCountry": "DO" },
+      "sameAs": ["https://instagram.com/otravainaestudios", "https://wa.me/18092680341"]
     }
     </script>
 
     <style>
         :root {
-            --bg-white: #FFFFFF;
-            --bg-cream: #F7F4EE;
-            --text-black: #0A0A0A;
-            --ink: #1A1A1A;
-            --muted: #6B6B6B;
-            --smooth-blue: #8CA6BC;
-            --navy: #1B3A6B;
-            --burnt: #C2502A;
-            --light-gray: #ECECEC;
-            --grid-color: rgba(0, 0, 0, 0.035);
-            --accent-red: #E74C3C;
-            --instagram-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+            --bg: #070707;
+            --surface: #121212;
+            --glass-base: rgba(255,255,255,0.025);
+            --glass-hi: rgba(255,255,255,0.06);
+            --glass-border: rgba(255,255,255,0.10);
+            --glass-border-strong: rgba(255,255,255,0.22);
+            --text: #F7F7F7;
+            --text-soft: rgba(247,247,247,0.62);
+            --text-mute: rgba(247,247,247,0.38);
+            --gold: #D4AF37;
+            --gold-soft: rgba(212,175,55,0.18);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        html { scroll-behavior: smooth; }
-
-        ::selection { background-color: var(--text-black); color: var(--bg-cream); }
-
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: auto; background: var(--bg); }
         body {
-            background-color: var(--bg-cream);
-            color: var(--text-black);
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 400;
-            overflow-x: hidden;
-            background-image: linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
-                              linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
-            background-size: 60px 60px;
-            position: relative;
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Outfit', system-ui, sans-serif;
+            font-weight: 300;
             line-height: 1.55;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+            min-height: 100vh;
         }
+        ::selection { background: var(--gold); color: var(--bg); }
 
+        /* Grain + glow background */
+        body::before {
+            content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 1;
+            background:
+                radial-gradient(900px circle at 15% 10%, rgba(212,175,55,0.06), transparent 60%),
+                radial-gradient(700px circle at 85% 90%, rgba(140,166,188,0.04), transparent 60%);
+        }
         body::after {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100vw; height: 100vh;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
-            opacity: 0.045;
-            pointer-events: none;
-            z-index: 9998;
-            mix-blend-mode: multiply;
+            content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 2;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+            opacity: 0.08;
+            mix-blend-mode: overlay;
         }
 
-        h1, h2, h3, h4 {
-            font-family: 'Fraunces', serif;
-            font-weight: 800;
+        a { color: inherit; text-decoration: none; }
+        img { display: block; max-width: 100%; }
+
+        h1, h2, h3, h4, .display {
+            font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+            font-weight: 500;
             letter-spacing: -0.02em;
-            line-height: 1.05;
+            line-height: 1;
         }
+        h1 em, h2 em, h3 em { font-style: italic; font-weight: 300; color: var(--gold); }
 
-        a { color: inherit; }
+        :focus-visible { outline: 1.5px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
 
-        :focus-visible {
-            outline: 2px solid var(--burnt);
-            outline-offset: 3px;
-            border-radius: 2px;
-        }
-
-        .outline-text {
-            color: transparent;
-            -webkit-text-stroke: 2px currentColor;
-        }
-
-        /* CUSTOM CURSOR: solo en desktop con pointer fino */
+        /* CUSTOM CURSOR */
         @media (hover: hover) and (pointer: fine) {
-            body { cursor: none; }
-            a, button, input, textarea, select, .hover-target { cursor: none; }
-            input, textarea, select { caret-color: var(--text-black); }
+            body, a, button, input, textarea, select, .hover-target { cursor: none; }
+            input, textarea, select { caret-color: var(--gold); }
         }
-
-        .custom-cursor {
-            position: fixed;
-            top: 0; left: 0; width: 10px; height: 10px;
-            background-color: var(--burnt);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
-            transform: translate(-50%, -50%);
-            transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1), height 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s;
-            mix-blend-mode: difference;
+        .cursor-dot, .cursor-ring {
+            position: fixed; top: 0; left: 0; pointer-events: none;
+            border-radius: 50%; z-index: 9999;
+            transform: translate(-50%, -50%); will-change: transform, width, height;
+            transition: width 0.4s cubic-bezier(.2,.9,.2,1), height 0.4s cubic-bezier(.2,.9,.2,1),
+                        background-color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
             display: none;
         }
-
         @media (hover: hover) and (pointer: fine) {
-            .custom-cursor { display: block; }
+            .cursor-dot, .cursor-ring { display: block; }
+        }
+        .cursor-dot {
+            width: 5px; height: 5px; background: var(--text);
+            mix-blend-mode: difference;
+        }
+        .cursor-ring {
+            width: 28px; height: 28px;
+            border: 1px solid rgba(255,255,255,0.4);
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            transition: width 0.5s cubic-bezier(.2,.9,.2,1), height 0.5s cubic-bezier(.2,.9,.2,1),
+                        background 0.3s ease, border-color 0.3s ease, opacity 0.3s ease, top 0.18s linear, left 0.18s linear;
+        }
+        .cursor-ring.hover {
+            width: 64px; height: 64px;
+            border-color: var(--gold);
+            background: rgba(212,175,55,0.06);
+        }
+        .cursor-ring.view::after {
+            content: 'VER';
+            font-family: 'Outfit', sans-serif; font-size: 9px; letter-spacing: 0.35em;
+            color: var(--gold); position: absolute; inset: 0;
+            display: flex; align-items: center; justify-content: center;
         }
 
-        .custom-cursor.hover-effect {
-            width: 56px; height: 56px;
-            background-color: transparent;
-            border: 1.5px solid var(--burnt);
+        /* GLASS COMPONENTS */
+        .glass {
+            background: var(--glass-base);
+            backdrop-filter: blur(24px) saturate(150%);
+            -webkit-backdrop-filter: blur(24px) saturate(150%);
+            border: 1px solid var(--glass-border);
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.06),
+                0 8px 32px rgba(0,0,0,0.45);
         }
-
-        /* BOTONES FLOTANTES */
-        .float-buttons {
-            position: fixed;
-            bottom: 28px;
-            right: 28px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            z-index: 999;
+        .glass-strong {
+            background: var(--glass-hi);
+            backdrop-filter: blur(28px) saturate(170%);
+            -webkit-backdrop-filter: blur(28px) saturate(170%);
+            border: 1px solid var(--glass-border-strong);
         }
-
-        .float-btn {
-            width: 58px;
-            height: 58px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-            color: white;
-            font-size: 24px;
-        }
-
-        .float-btn:hover { transform: scale(1.08); }
-
-        .whatsapp-btn { background: linear-gradient(135deg, #25D366 0%, #20BA5A 100%); }
-        .whatsapp-btn:hover { box-shadow: 0 8px 22px rgba(37, 211, 102, 0.55); }
-        .instagram-btn { background: var(--instagram-gradient); }
-        .instagram-btn:hover { box-shadow: 0 8px 22px rgba(131, 58, 180, 0.55); }
 
         /* NAV */
         nav {
-            padding: 1.25rem 5%;
-            display: flex; justify-content: space-between; align-items: center;
-            position: fixed; width: 100%; top: 0;
-            background: rgba(247, 244, 238, 0.85);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            z-index: 100;
-            border-bottom: 1px solid rgba(0,0,0,0.06);
+            position: fixed; top: 1.25rem; left: 50%;
+            transform: translateX(-50%);
+            display: flex; align-items: center; gap: 1.5rem;
+            padding: 0.65rem 0.65rem 0.65rem 1.5rem;
+            border-radius: 100px;
+            z-index: 100; width: max-content;
+            background: rgba(7,7,7,0.45);
+            backdrop-filter: blur(20px) saturate(150%);
+            -webkit-backdrop-filter: blur(20px) saturate(150%);
+            border: 1px solid var(--glass-border);
         }
-
-        .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .brand img { height: 32px; width: auto; object-fit: contain; }
-        .logo-text {
-            font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 900;
-            letter-spacing: -0.04em; color: var(--text-black);
+        .brand { display: flex; align-items: center; gap: 0.6rem; }
+        .brand-mark {
+            width: 28px; height: 28px; border-radius: 50%;
+            background: var(--gold); color: var(--bg);
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 0.95rem;
+            font-style: italic;
         }
-
+        .brand-text {
+            font-family: 'Outfit', sans-serif; font-weight: 400; font-size: 0.78rem;
+            letter-spacing: 0.22em; text-transform: uppercase;
+        }
+        .nav-links { display: flex; gap: 1.4rem; }
         .nav-links a {
-            margin-left: 2rem; text-decoration: none; color: var(--ink);
-            font-weight: 500; font-size: 0.82rem; letter-spacing: 0.04em;
-            transition: color 0.3s ease; position: relative;
+            font-family: 'Outfit', sans-serif; font-size: 0.74rem;
+            letter-spacing: 0.18em; text-transform: uppercase;
+            color: var(--text-soft); transition: color 0.3s ease;
         }
-        .nav-links a::after {
-            content: ''; position: absolute; bottom: -4px; left: 0;
-            width: 0; height: 1px; background: var(--burnt); transition: width 0.3s ease;
-        }
-        .nav-links a:hover { color: var(--burnt); }
-        .nav-links a:hover::after { width: 100%; }
-
+        .nav-links a:hover { color: var(--text); }
         .nav-cta {
-            background: var(--text-black); color: var(--bg-cream) !important;
             padding: 0.55rem 1.1rem; border-radius: 100px;
-            font-size: 0.78rem !important; font-weight: 600 !important;
-            margin-left: 2rem; transition: background 0.3s ease;
+            background: var(--gold); color: var(--bg) !important;
+            font-family: 'Outfit', sans-serif; font-weight: 400;
+            font-size: 0.72rem !important; letter-spacing: 0.22em !important; text-transform: uppercase;
+            transition: transform 0.3s ease, background 0.3s ease;
         }
-        .nav-cta::after { display: none; }
-        .nav-cta:hover { background: var(--burnt); color: white !important; }
+        .nav-cta:hover { transform: translateY(-1px); background: #e6c14a; }
+
+        .menu-toggle {
+            display: none; background: transparent; border: none;
+            color: var(--text); font-size: 1.1rem;
+        }
+
+        /* CONTENT WRAPPER (above bg) */
+        section, footer { position: relative; z-index: 3; }
 
         /* HERO */
         .hero {
-            min-height: 100vh; display: flex; flex-direction: column;
-            justify-content: center; align-items: flex-start; text-align: left;
-            padding: 8rem 5% 0 5%; position: relative;
-            background: var(--text-black);
-            color: var(--bg-cream);
-            overflow: hidden;
+            min-height: 100vh; padding: 9rem 6vw 5rem 6vw;
+            display: grid; grid-template-columns: 1.2fr 1fr; gap: 4vw;
+            align-items: center; position: relative;
         }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: radial-gradient(circle at 15% 30%, rgba(140, 166, 188, 0.18) 0%, transparent 55%),
-                        radial-gradient(circle at 85% 80%, rgba(194, 80, 42, 0.22) 0%, transparent 50%);
-            pointer-events: none;
-        }
-
+        .hero-left { position: relative; z-index: 4; }
         .hero-eyebrow {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.75rem;
-            letter-spacing: 0.4em;
-            text-transform: uppercase;
-            color: var(--smooth-blue);
-            margin-bottom: 1.5rem;
-            display: flex; align-items: center; gap: 0.75rem;
-            z-index: 2;
+            display: inline-flex; align-items: center; gap: 0.75rem;
+            font-size: 0.72rem; letter-spacing: 0.32em; text-transform: uppercase;
+            color: var(--gold); margin-bottom: 2.5rem;
         }
         .hero-eyebrow::before {
-            content: ''; width: 40px; height: 1px; background: var(--smooth-blue);
+            content: ''; width: 36px; height: 1px; background: var(--gold);
         }
-
-        .hero-content { position: relative; z-index: 2; max-width: 1100px; }
-
         .hero h1 {
-            font-size: clamp(3rem, 11vw, 8.5rem);
-            line-height: 0.88; letter-spacing: -0.045em;
-            color: var(--bg-cream);
-            font-weight: 900;
-        }
-
-        .hero h1 em {
-            font-style: italic;
+            font-size: clamp(3.6rem, 10vw, 9rem);
             font-weight: 400;
-            color: var(--smooth-blue);
+            line-height: 0.88;
+            letter-spacing: -0.04em;
         }
-
-        .hero p {
-            margin-top: 2rem; font-size: 1.05rem; color: rgba(247, 244, 238, 0.75);
-            max-width: 580px; font-weight: 300; line-height: 1.65;
+        .hero h1 .line { display: block; overflow: hidden; }
+        .hero h1 .line-inner { display: inline-block; }
+        .hero h1 .outline {
+            color: transparent;
+            -webkit-text-stroke: 1px var(--text-soft);
         }
-
-        .hero-cta {
+        .hero h1 em {
+            font-style: italic; font-weight: 300; color: var(--gold);
+        }
+        .hero-meta {
             margin-top: 2.5rem;
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
+            display: flex; gap: 2.5rem; flex-wrap: wrap;
+            color: var(--text-soft); font-size: 0.85rem;
+        }
+        .hero-meta div span:first-child {
+            display: block; font-size: 0.65rem; letter-spacing: 0.28em;
+            text-transform: uppercase; color: var(--text-mute); margin-bottom: 0.35rem;
+        }
+        .hero-cta {
+            margin-top: 3rem; display: flex; gap: 0.75rem; flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-flex; align-items: center; gap: 0.7rem;
+            padding: 0.95rem 1.6rem; border-radius: 100px;
+            font-family: 'Outfit', sans-serif; font-size: 0.78rem;
+            letter-spacing: 0.18em; text-transform: uppercase;
+            transition: all 0.4s cubic-bezier(.2,.9,.2,1);
+            border: 1px solid var(--glass-border-strong);
+            background: var(--glass-base);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            color: var(--text);
+        }
+        .btn:hover { background: var(--glass-hi); transform: translateY(-2px); }
+        .btn-gold {
+            background: var(--gold); color: var(--bg); border-color: var(--gold);
+        }
+        .btn-gold:hover { background: #e6c14a; border-color: #e6c14a; }
+
+        /* HERO RIGHT — Editorial photo with glass frame */
+        .hero-right {
+            position: relative; aspect-ratio: 4/5;
+            max-height: 75vh; overflow: hidden;
+            border-radius: 4px;
+            border: 1px solid var(--glass-border);
+        }
+        .hero-right::before {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(180deg, rgba(7,7,7,0) 50%, rgba(7,7,7,0.55) 100%);
+            z-index: 2;
+        }
+        .hero-right img {
+            width: 100%; height: 100%; object-fit: cover;
+            filter: brightness(0.85) contrast(1.05);
+        }
+        .hero-photo-caption {
+            position: absolute; bottom: 1.25rem; left: 1.25rem; right: 1.25rem;
+            z-index: 3; display: flex; justify-content: space-between; align-items: end;
+            font-family: 'Outfit', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em;
+            text-transform: uppercase; color: var(--text-soft);
+        }
+        .hero-photo-caption em {
+            font-family: 'Cormorant Garamond', serif; font-style: italic;
+            font-size: 1.1rem; letter-spacing: -0.01em; color: var(--text); text-transform: none;
         }
 
-        .btn-hero {
-            padding: 0.95rem 2rem;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 600;
-            font-size: 0.85rem;
-            letter-spacing: 0.05em;
-            border: 1.5px solid var(--bg-cream);
-            background: transparent;
-            color: var(--bg-cream);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border-radius: 100px;
-            display: inline-flex; align-items: center; gap: 0.5rem;
-        }
-        .btn-hero:hover {
-            background: var(--bg-cream); color: var(--text-black);
-            transform: translateY(-2px);
-        }
-        .btn-hero.primary {
-            background: var(--burnt); color: white; border-color: var(--burnt);
-        }
-        .btn-hero.primary:hover {
-            background: var(--bg-cream); color: var(--text-black); border-color: var(--bg-cream);
-        }
-
-        .marquee-container {
-            position: absolute; bottom: 0; left: 0; width: 100vw;
+        /* HERO MARQUEE */
+        .marquee {
+            position: relative; z-index: 3;
+            margin-top: 1rem;
+            padding: 1rem 0;
             overflow: hidden; white-space: nowrap;
-            background: var(--bg-cream); color: var(--text-black);
-            padding: 14px 0;
-            border-top: 1px solid rgba(0,0,0,0.08);
-            z-index: 10;
+            border-top: 1px solid var(--glass-border);
+            border-bottom: 1px solid var(--glass-border);
         }
         .marquee-content {
-            display: inline-block; font-family: 'Fraunces', serif;
-            font-weight: 800; font-size: 0.95rem; letter-spacing: 0.05em;
-            animation: marquee 28s linear infinite;
-            text-transform: uppercase;
+            display: inline-block;
+            font-family: 'Cormorant Garamond', serif; font-style: italic;
+            font-size: 1.3rem; color: var(--text-soft);
+            animation: marquee 38s linear infinite;
         }
-        .marquee-content span { margin-right: 3rem; }
-        .marquee-content span::after { content: '✦'; margin-left: 3rem; color: var(--burnt); }
-
+        .marquee-content span { margin: 0 2.5rem; }
+        .marquee-content i {
+            color: var(--gold); margin: 0 0.5rem; font-style: normal;
+            font-family: 'Outfit', sans-serif; font-size: 0.7rem;
+            vertical-align: middle;
+        }
         @keyframes marquee {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
         }
 
-        .scroll-indicator {
-            position: absolute; bottom: 70px; left: 5%; font-size: 0.7rem;
-            letter-spacing: 0.4em; font-weight: 500; text-transform: uppercase;
-            color: rgba(247, 244, 238, 0.5);
-            z-index: 2;
-            display: flex; flex-direction: column; align-items: flex-start; gap: 8px;
-        }
-        .scroll-indicator::after {
-            content: ''; width: 1px; height: 40px; background: rgba(247,244,238,0.3);
-            animation: scrollLine 2s ease-in-out infinite;
-        }
-        @keyframes scrollLine {
-            0%, 100% { transform: scaleY(0.3); transform-origin: top; }
-            50% { transform: scaleY(1); transform-origin: top; }
-        }
-
         /* SECTION GENERIC */
-        section { position: relative; z-index: 2; }
-
-        .section-eyebrow {
-            font-size: 0.75rem; letter-spacing: 0.4em; text-transform: uppercase;
-            color: var(--burnt); font-weight: 600; margin-bottom: 1rem;
-            display: flex; align-items: center; gap: 0.75rem;
+        .section { padding: 9rem 6vw; position: relative; }
+        .section-head { margin-bottom: 5rem; max-width: 900px; }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 0.75rem;
+            font-family: 'Outfit', sans-serif; font-size: 0.7rem;
+            letter-spacing: 0.32em; text-transform: uppercase;
+            color: var(--gold); margin-bottom: 1.5rem;
         }
-        .section-eyebrow::before {
-            content: ''; width: 30px; height: 1px; background: var(--burnt);
-        }
-
+        .eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--gold); }
         .section-title {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            margin-bottom: 3.5rem;
-            letter-spacing: -0.03em;
-            max-width: 800px;
+            font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+            font-weight: 400; line-height: 1.02; letter-spacing: -0.025em;
         }
-        .section-title em { font-style: italic; font-weight: 400; color: var(--muted); }
-
-        /* SERVICES — REDISEÑADO */
-        .services { padding: 7rem 5%; }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
+        .section-title em { font-style: italic; color: var(--gold); font-weight: 300; }
+        .section-sub {
+            margin-top: 1.5rem; color: var(--text-soft); font-size: 1rem;
+            max-width: 620px; line-height: 1.65;
         }
 
-        .service-card {
-            background: var(--bg-white);
-            padding: 2rem 1.75rem;
-            border-radius: 6px;
-            border: 1px solid rgba(0,0,0,0.06);
-            transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+        /* SERVICES — List with floating preview */
+        .services-list {
+            border-top: 1px solid var(--glass-border);
             position: relative;
-            display: flex; flex-direction: column;
-            overflow: hidden;
         }
-        .service-card::before {
-            content: ''; position: absolute; top: 0; left: 0; right: 0;
-            height: 3px; background: var(--burnt);
-            transform: scaleX(0); transform-origin: left;
-            transition: transform 0.4s ease;
+        .service-row {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 2.2rem 0.5rem;
+            border-bottom: 1px solid var(--glass-border);
+            cursor: pointer; position: relative;
+            transition: padding 0.5s cubic-bezier(.2,.9,.2,1);
         }
-        .service-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-            border-color: transparent;
+        .service-row:hover { padding-left: 1.5rem; }
+        .service-row::before {
+            content: ''; position: absolute; left: 0; top: 50%;
+            width: 0; height: 1px; background: var(--gold);
+            transform: translateY(-50%);
+            transition: width 0.5s cubic-bezier(.2,.9,.2,1);
         }
-        .service-card:hover::before { transform: scaleX(1); }
-
-        .service-card.featured {
-            background: var(--text-black);
-            color: var(--bg-cream);
-            border-color: var(--text-black);
+        .service-row:hover::before { width: 1rem; }
+        .service-row-left { display: flex; align-items: baseline; gap: 1.5rem; }
+        .service-num {
+            font-family: 'Outfit', sans-serif; font-size: 0.7rem; letter-spacing: 0.25em;
+            color: var(--text-mute); min-width: 2.5rem;
         }
-        .service-card.featured .service-icon { color: var(--burnt); }
-        .service-card.featured .service-card-bullets li { color: rgba(247,244,238,0.7); border-color: rgba(255,255,255,0.08); }
-        .service-card.featured .service-from { color: rgba(247,244,238,0.6); }
-        .service-card.featured .service-from-price { color: var(--bg-cream); }
-
-        .service-badge {
-            position: absolute; top: 1rem; right: 1rem;
-            background: var(--burnt); color: white;
-            font-size: 0.62rem; letter-spacing: 0.15em;
-            padding: 4px 10px; border-radius: 100px;
-            font-weight: 600; text-transform: uppercase;
+        .service-name {
+            font-family: 'Cormorant Garamond', serif; font-weight: 400;
+            font-size: clamp(1.8rem, 4vw, 3rem); letter-spacing: -0.02em;
+            color: var(--text); transition: color 0.3s ease, font-style 0.3s ease;
         }
-
-        .service-icon {
-            width: 48px; height: 48px;
-            background: rgba(194, 80, 42, 0.08);
-            border-radius: 12px;
+        .service-row:hover .service-name {
+            font-style: italic; color: var(--gold);
+        }
+        .service-row-right {
+            display: flex; align-items: center; gap: 2rem;
+            font-family: 'Outfit', sans-serif; font-size: 0.75rem;
+            letter-spacing: 0.18em; text-transform: uppercase;
+            color: var(--text-soft);
+        }
+        .service-price strong {
+            font-weight: 400; color: var(--text);
+            font-family: 'Cormorant Garamond', serif; font-size: 1.05rem;
+            font-style: italic; letter-spacing: 0;
+        }
+        .service-arrow {
+            width: 36px; height: 36px; border-radius: 50%;
+            border: 1px solid var(--glass-border);
             display: flex; align-items: center; justify-content: center;
-            font-size: 1.3rem; color: var(--burnt);
-            margin-bottom: 1.5rem;
+            transition: all 0.4s ease;
         }
-        .service-card.featured .service-icon { background: rgba(194, 80, 42, 0.18); }
-
-        .service-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 0.6rem;
-            letter-spacing: -0.02em;
-        }
-        .service-card > p {
-            color: var(--muted); font-size: 0.92rem; line-height: 1.6;
-            margin-bottom: 1.25rem;
-        }
-        .service-card.featured > p { color: rgba(247,244,238,0.65); }
-
-        .service-card-bullets {
-            list-style: none; margin-bottom: 1.5rem; flex-grow: 1;
-        }
-        .service-card-bullets li {
-            font-size: 0.85rem; color: #555; padding: 0.55rem 0;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-            display: flex; align-items: center; gap: 0.5rem;
-        }
-        .service-card-bullets li::before {
-            content: '→'; color: var(--burnt); font-weight: 600;
-        }
-        .service-card-bullets li:last-child { border-bottom: none; }
-
-        .service-from {
-            font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase;
-            color: var(--muted); margin-bottom: 0.25rem;
-        }
-        .service-from-price {
-            font-family: 'Fraunces', serif; font-weight: 800;
-            font-size: 1.5rem; color: var(--text-black);
-            margin-bottom: 1.5rem;
+        .service-row:hover .service-arrow {
+            background: var(--gold); border-color: var(--gold); color: var(--bg);
+            transform: rotate(-45deg);
         }
 
-        .service-ctas { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-        .service-ctas a {
-            flex: 1; min-width: 0;
-            padding: 0.7rem 0.9rem; text-decoration: none;
-            font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em;
-            text-align: center; border-radius: 100px;
-            transition: all 0.3s ease;
-            white-space: nowrap;
+        /* Floating preview image (desktop only) */
+        .service-preview {
+            position: fixed; pointer-events: none;
+            width: 320px; height: 400px; border-radius: 6px;
+            overflow: hidden; opacity: 0;
+            transform: translate(-50%, -50%) scale(0.92);
+            transition: opacity 0.45s ease, transform 0.45s cubic-bezier(.2,.9,.2,1);
+            z-index: 50;
+            border: 1px solid var(--glass-border-strong);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.6);
         }
-        .service-cta-primary {
-            background: var(--text-black); color: var(--bg-cream);
-        }
-        .service-cta-primary:hover { background: var(--burnt); }
-        .service-cta-secondary {
-            background: transparent; color: var(--text-black);
-            border: 1px solid rgba(0,0,0,0.15);
-        }
-        .service-cta-secondary:hover { border-color: var(--text-black); }
-        .service-card.featured .service-cta-primary { background: var(--burnt); color: white; }
-        .service-card.featured .service-cta-secondary { color: var(--bg-cream); border-color: rgba(255,255,255,0.25); }
-        .service-card.featured .service-cta-secondary:hover { border-color: var(--bg-cream); }
-
-        /* PROCESO */
-        .process {
-            padding: 6rem 5%;
-            background: var(--text-black);
-            color: var(--bg-cream);
-        }
-        .process .section-title { color: var(--bg-cream); }
-        .process .section-eyebrow { color: var(--smooth-blue); }
-        .process .section-eyebrow::before { background: var(--smooth-blue); }
-
-        .process-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 2rem;
-        }
-        .process-step {
-            position: relative; padding: 1.5rem 0;
-            border-top: 1px solid rgba(247,244,238,0.15);
-        }
-        .process-step-num {
-            font-family: 'Fraunces', serif; font-size: 0.85rem; font-weight: 600;
-            color: var(--burnt); letter-spacing: 0.1em;
-            margin-bottom: 1rem; display: block;
-        }
-        .process-step h4 {
-            font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--bg-cream);
-        }
-        .process-step p {
-            font-size: 0.88rem; color: rgba(247,244,238,0.65); line-height: 1.6;
-        }
-
-        /* PORTFOLIO */
-        .portfolio { padding: 7rem 5%; }
-        .portfolio-filters { display: flex; gap: 0.6rem; margin-bottom: 3rem; flex-wrap: wrap; }
-        .filter-btn {
-            padding: 0.5rem 1.25rem; border: 1px solid rgba(0,0,0,0.15);
-            background: transparent; font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 500; font-size: 0.78rem; letter-spacing: 0.05em;
-            text-transform: uppercase; transition: all 0.3s ease;
-            border-radius: 100px;
-            color: var(--text-black);
-        }
-        .filter-btn:hover { border-color: var(--text-black); }
-        .filter-btn.active { background: var(--text-black); color: var(--bg-cream); border-color: var(--text-black); }
-
-        .portfolio-masonry { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
-        .p-item {
-            position: relative; overflow: hidden;
-            background: var(--light-gray); transition: opacity 0.5s ease, transform 0.5s ease;
-            min-height: 300px;
-            border-radius: 4px;
-        }
-
-        .p-item--tall   { grid-column: span 4; min-height: 480px;}
-        .p-item--wide   { grid-column: span 8; }
-        .p-item--square { grid-column: span 4; min-height: 360px;}
-        .p-item--hero   { grid-column: span 8; min-height: 480px;}
-        .p-item--small  { grid-column: span 4; }
-        .p-item--mid    { grid-column: span 6; min-height: 400px;}
-
-        .p-item img {
+        .service-preview.active { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+        .service-preview img {
             width: 100%; height: 100%; object-fit: cover;
-            transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.5s ease;
-            filter: grayscale(15%) brightness(0.97);
-            display: block;
+            filter: brightness(0.95);
+        }
+        .service-preview::after {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(180deg, transparent 60%, rgba(7,7,7,0.6));
+        }
+        @media (max-width: 900px) { .service-preview { display: none; } }
+
+        /* Service details (mobile / always visible) */
+        .service-details {
+            display: none;
+            padding: 0 0 2rem 4rem;
+            color: var(--text-soft); font-size: 0.92rem;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .service-details p { margin-bottom: 1rem; }
+        .service-details .mini-cta {
+            display: inline-flex; gap: 0.5rem; padding: 0.65rem 1.2rem;
+            border: 1px solid var(--glass-border-strong); border-radius: 100px;
+            font-family: 'Outfit', sans-serif; font-size: 0.72rem;
+            letter-spacing: 0.18em; text-transform: uppercase; color: var(--text);
+        }
+        @media (max-width: 900px) {
+            .service-details { display: block; }
+            .service-row { flex-direction: column; align-items: flex-start; gap: 0.6rem; padding-bottom: 1rem; }
+            .service-row-right { gap: 1rem; }
         }
 
-        .p-overlay {
-            position: absolute; inset: 0;
-            background: linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.2) 50%, rgba(0,0,0,0) 100%);
-            opacity: 0; transition: opacity 0.4s ease;
-            display: flex; flex-direction: column;
-            justify-content: flex-end; padding: 1.75rem;
+        /* PROCESS — sticky stack */
+        .process { padding: 9rem 6vw; }
+        .process-track {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem;
+        }
+        .process-card {
+            padding: 2rem 1.75rem 2.5rem; border-radius: 8px; min-height: 360px;
+            display: flex; flex-direction: column; justify-content: space-between;
+            position: relative; overflow: hidden;
+        }
+        .process-card::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(circle at 80% 0%, rgba(212,175,55,0.07), transparent 55%);
+            pointer-events: none;
+        }
+        .process-num {
+            font-family: 'Cormorant Garamond', serif; font-style: italic;
+            font-size: 4.5rem; color: var(--gold); line-height: 0.9;
+            margin-bottom: 0.5rem;
+        }
+        .process-card h4 {
+            font-size: 1.6rem; margin-bottom: 0.75rem;
+            font-family: 'Cormorant Garamond', serif; font-weight: 500;
+        }
+        .process-card p {
+            color: var(--text-soft); font-size: 0.9rem; line-height: 1.6;
+        }
+        .process-card-foot {
+            margin-top: 1.5rem; font-size: 0.65rem; letter-spacing: 0.3em;
+            text-transform: uppercase; color: var(--text-mute);
+        }
+        @media (max-width: 900px) { .process-track { grid-template-columns: 1fr; } .process-card { min-height: auto; } }
+
+        /* PORTFOLIO — Bento grid */
+        .portfolio-filters {
+            display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 3rem;
+        }
+        .filter-btn {
+            background: transparent; border: 1px solid var(--glass-border);
+            color: var(--text-soft); padding: 0.55rem 1.2rem;
+            border-radius: 100px; font-family: 'Outfit', sans-serif;
+            font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        .filter-btn:hover { color: var(--text); border-color: var(--glass-border-strong); }
+        .filter-btn.active {
+            background: var(--gold); color: var(--bg); border-color: var(--gold);
         }
 
-        .p-overlay-tag {
-            font-family: 'IBM Plex Sans', sans-serif; font-size: 0.65rem; font-weight: 600;
-            letter-spacing: 0.3em; color: var(--burnt); text-transform: uppercase;
-            transform: translateY(10px); transition: transform 0.4s ease 0.05s;
-            margin-bottom: 0.4rem;
+        .bento {
+            display: grid; gap: 0.85rem;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: 150px;
         }
-        .p-overlay-title {
-            font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 800;
-            color: #fff; letter-spacing: -0.02em;
-            transform: translateY(10px); transition: transform 0.4s ease;
+        .b-item {
+            position: relative; overflow: hidden; border-radius: 4px;
+            background: var(--surface);
+            border: 1px solid var(--glass-border);
+            transition: opacity 0.6s ease, transform 0.6s ease, filter 0.6s ease;
         }
+        .b-item img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 1s cubic-bezier(.2,.9,.2,1), filter 0.5s ease;
+            filter: brightness(0.78) saturate(0.95);
+        }
+        .b-item:hover img { transform: scale(1.05); filter: brightness(1) saturate(1); }
+        .b-item .b-overlay {
+            position: absolute; inset: 0; padding: 1.5rem;
+            display: flex; flex-direction: column; justify-content: flex-end;
+            background: linear-gradient(180deg, transparent 40%, rgba(7,7,7,0.85));
+            opacity: 0; transition: opacity 0.5s ease;
+        }
+        .b-item:hover .b-overlay { opacity: 1; }
+        .b-tag {
+            font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase;
+            color: var(--gold); margin-bottom: 0.5rem;
+        }
+        .b-title {
+            font-family: 'Cormorant Garamond', serif; font-style: italic;
+            font-size: 1.6rem; color: var(--text);
+        }
+        .b-item.hidden { opacity: 0; pointer-events: none; transform: scale(0.96); display: none; }
 
-        .p-item:hover img { transform: scale(1.05); filter: grayscale(0%) brightness(1); }
-        .p-item:hover .p-overlay { opacity: 1; }
-        .p-item:hover .p-overlay-tag, .p-item:hover .p-overlay-title { transform: translateY(0); }
-        .p-item.hidden { opacity: 0; pointer-events: none; transform: scale(0.96); display: none; }
+        .b-tall    { grid-column: span 4; grid-row: span 4; }
+        .b-wide    { grid-column: span 8; grid-row: span 3; }
+        .b-square  { grid-column: span 4; grid-row: span 3; }
+        .b-hero    { grid-column: span 8; grid-row: span 4; }
+        .b-small   { grid-column: span 4; grid-row: span 2; }
+        .b-mid     { grid-column: span 6; grid-row: span 3; }
+        .b-thin    { grid-column: span 6; grid-row: span 2; }
 
-        .session-label {
-            grid-column: span 12; display: flex; align-items: center; gap: 1rem;
-            padding: 1.5rem 0 0.5rem 0;
+        @media (max-width: 900px) {
+            .bento { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; }
+            .b-tall, .b-wide, .b-square, .b-hero, .b-small, .b-mid, .b-thin {
+                grid-column: span 2; grid-row: span 1;
+            }
         }
-        .session-label span {
-            font-family: 'IBM Plex Sans', sans-serif; font-size: 0.7rem; font-weight: 500;
-            letter-spacing: 0.25em; text-transform: uppercase; color: var(--muted);
-            white-space: nowrap;
-        }
-        .session-label::after { content: ''; flex: 1; height: 1px; background: rgba(0,0,0,0.1); }
 
         /* ABOUT */
-        .about-section {
-            padding: 7rem 5%;
-            background: var(--bg-cream);
+        .about {
+            padding: 11rem 6vw; text-align: center;
+            position: relative; overflow: hidden;
         }
-        .about-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
+        .about-headline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 300; line-height: 1.18;
+            max-width: 1000px; margin: 0 auto;
+            letter-spacing: -0.02em;
         }
-        .about-image {
-            position: relative;
-            aspect-ratio: 4/5;
-            overflow: hidden;
-            border-radius: 4px;
+        .about-headline em { font-style: italic; color: var(--gold); }
+        .about-sign {
+            margin-top: 3rem; font-family: 'Outfit', sans-serif;
+            font-size: 0.7rem; letter-spacing: 0.32em; text-transform: uppercase;
+            color: var(--text-mute);
         }
-        .about-image img {
-            width: 100%; height: 100%; object-fit: cover;
-            filter: grayscale(20%);
-        }
-        .about-text h2 { margin-bottom: 1.5rem; }
-        .about-text p {
-            color: var(--muted); font-size: 1rem; line-height: 1.75;
-            margin-bottom: 1.25rem;
-        }
-        .about-quote {
-            font-family: 'Fraunces', serif; font-style: italic;
-            font-size: 1.35rem; line-height: 1.45;
-            color: var(--text-black);
-            padding-left: 1.5rem;
-            border-left: 3px solid var(--burnt);
-            margin: 2rem 0;
-        }
+        .about-sign::before, .about-sign::after { content: ' — '; }
 
         /* STATS */
-        .stats-section {
-            padding: 4rem 5%;
-            background: var(--text-black);
-            color: white;
+        .stats {
+            padding: 0 6vw 9rem;
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
         }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 2rem;
-            text-align: left;
-        }
-        .stat-item h3 {
-            font-size: 2.75rem;
-            color: var(--burnt);
-            margin-bottom: 0.25rem;
-            font-weight: 900;
-        }
-        .stat-item p {
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.65);
-            letter-spacing: 0.05em;
-        }
-
-        /* INSTAGRAM */
-        .instagram-section {
-            padding: 7rem 5%;
-            background: var(--bg-white);
-        }
-        .instagram-header {
-            display: flex; align-items: center; gap: 1rem;
-            margin-bottom: 3rem;
-            justify-content: space-between; flex-wrap: wrap;
-        }
-        .instagram-info { display: flex; align-items: center; gap: 1rem; }
-        .instagram-icon {
-            width: 56px; height: 56px;
-            background: var(--instagram-gradient);
-            border-radius: 14px;
-            display: flex; align-items: center; justify-content: center;
-            color: white; font-size: 26px;
-        }
-        .instagram-handle h3 { font-size: 1.1rem; margin: 0; }
-        .instagram-handle p { color: var(--muted); font-size: 0.85rem; margin: 0; }
-
-        .instagram-btn-link {
-            display: inline-flex; align-items: center; gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            background: var(--instagram-gradient);
-            color: white; text-decoration: none;
-            border-radius: 100px; font-weight: 600; font-size: 0.85rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .instagram-btn-link:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(131, 58, 180, 0.3); }
-
-        .instagram-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1rem;
-        }
-        .instagram-post {
+        .stat {
+            padding: 2rem 1.5rem; border-radius: 8px; text-align: left;
             position: relative; overflow: hidden;
-            border-radius: 4px; aspect-ratio: 1/1;
-            transition: transform 0.3s ease;
         }
-        .instagram-post:hover { transform: scale(1.02); }
-        .instagram-post img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
-        .instagram-post:hover img { transform: scale(1.08); }
-
-        .instagram-overlay {
-            position: absolute; inset: 0;
-            background: rgba(10,10,10, 0.55);
-            display: flex; align-items: center; justify-content: center;
-            opacity: 0; transition: opacity 0.3s ease;
-            color: white; font-size: 1.5rem;
+        .stat-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.4rem, 5vw, 3.8rem);
+            font-weight: 400; color: var(--text);
+            letter-spacing: -0.03em; line-height: 1;
         }
-        .instagram-post:hover .instagram-overlay { opacity: 1; }
-
-        /* TESTIMONIALS */
-        .testimonials { padding: 7rem 5%; background: var(--bg-cream); }
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-            gap: 1.5rem;
+        .stat-num em { font-style: italic; color: var(--gold); font-weight: 300; font-size: 0.65em; vertical-align: super; }
+        .stat-label {
+            margin-top: 0.75rem; font-size: 0.7rem;
+            letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-soft);
         }
-        .testimonial-card {
-            background: var(--bg-white);
-            padding: 2rem;
-            border-radius: 6px;
-            border: 1px solid rgba(0,0,0,0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-        }
-        .testimonial-card::before {
-            content: '"';
-            position: absolute; top: 0.5rem; right: 1.25rem;
-            font-family: 'Fraunces', serif; font-size: 4rem;
-            color: var(--burnt); opacity: 0.25; line-height: 1;
-        }
-        .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.06); }
-
-        .stars { color: var(--burnt); margin-bottom: 1rem; font-size: 0.95rem; letter-spacing: 0.1em; }
-        .testimonial-text {
-            color: var(--ink); font-size: 0.97rem; line-height: 1.65;
-            margin-bottom: 1.5rem; font-family: 'Fraunces', serif; font-weight: 400;
-        }
-        .testimonial-author { display: flex; align-items: center; gap: 0.85rem; }
-        .author-avatar {
-            width: 42px; height: 42px; border-radius: 50%;
-            background: var(--text-black); color: var(--bg-cream);
-            display: flex; align-items: center; justify-content: center;
-            font-weight: 700; font-size: 0.9rem;
-            font-family: 'Fraunces', serif;
-        }
-        .author-info h4 { font-size: 0.9rem; margin-bottom: 0.15rem; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; letter-spacing: 0; }
-        .author-info p { font-size: 0.78rem; color: var(--muted); }
+        @media (max-width: 900px) { .stats { grid-template-columns: repeat(2, 1fr); } }
 
         /* PRICING */
-        .pricing-section { padding: 7rem 5%; background: var(--bg-white); }
         .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-            gap: 1.5rem; align-items: stretch;
+            display: grid; gap: 1.25rem;
+            grid-template-columns: repeat(4, 1fr);
         }
-        .pricing-card {
-            border: 1px solid rgba(0,0,0,0.08);
-            padding: 2.5rem 1.75rem; text-align: left;
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-            position: relative; background: var(--bg-white);
+        .price-card {
+            padding: 2.5rem 1.75rem; border-radius: 10px;
+            display: flex; flex-direction: column; position: relative;
+            transition: transform 0.5s ease, border-color 0.5s ease;
+            overflow: hidden;
+            min-height: 480px;
+        }
+        .price-card::before {
+            content: ''; position: absolute; inset: -1px;
+            background: conic-gradient(from 0deg, transparent 0%, rgba(212,175,55,0.55) 50%, transparent 100%);
+            opacity: 0; transition: opacity 0.6s ease;
+            border-radius: 10px; z-index: 0;
+            animation: spin 6s linear infinite; pointer-events: none;
+        }
+        .price-card:hover::before { opacity: 0.6; }
+        .price-card-inner {
+            position: relative; z-index: 1;
+            background: var(--bg); margin: -1px; padding: 2.5rem 1.75rem;
+            border-radius: 10px; flex: 1;
             display: flex; flex-direction: column;
-            border-radius: 6px;
+            border: 1px solid var(--glass-border);
         }
-        .pricing-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.07); }
-        .pricing-card h3 { font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--text-black); }
-        .pricing-card .pricing-tagline { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.5rem; }
-        .pricing-card .price {
-            font-size: 2.5rem; font-family: 'Fraunces', serif;
-            font-weight: 900; margin-bottom: 2rem; color: var(--text-black);
-            letter-spacing: -0.03em;
-        }
-        .pricing-card .price span { font-size: 0.95rem; vertical-align: super; margin-right: 4px; color: var(--muted); font-weight: 400;}
-        .pricing-card ul { list-style: none; margin-bottom: 2rem; flex-grow: 1; }
-        .pricing-card ul li {
-            font-size: 0.87rem; color: #555; margin-bottom: 0.85rem;
-            padding-left: 1.4rem; position: relative; line-height: 1.5;
-        }
-        .pricing-card ul li::before {
-            content: '✓'; position: absolute; left: 0; top: 0;
-            color: var(--burnt); font-weight: 700;
-        }
+        .price-card.featured .price-card-inner { background: linear-gradient(180deg, rgba(212,175,55,0.06), rgba(7,7,7,1) 60%); }
+        @keyframes spin { to { transform: rotate(360deg); } }
 
-        .pricing-card.highlight {
-            background-color: var(--text-black); color: var(--bg-cream);
-            border-color: var(--text-black);
+        .price-card h3 {
+            font-size: 1.5rem; margin-bottom: 0.5rem;
         }
-        .pricing-card.highlight h3, .pricing-card.highlight .price { color: var(--bg-cream); }
-        .pricing-card.highlight .pricing-tagline { color: rgba(247,244,238,0.6); }
-        .pricing-card.highlight .price span { color: rgba(247,244,238,0.5); }
-        .pricing-card.highlight ul li { color: rgba(247,244,238,0.7); }
-        .pricing-card.highlight ul li::before { color: var(--burnt); }
-
-        .badge-popular {
+        .price-tag {
+            font-family: 'Outfit', sans-serif; font-size: 0.7rem;
+            letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-mute);
+            margin-bottom: 2rem;
+        }
+        .price-amount {
+            font-family: 'Cormorant Garamond', serif; font-size: 3rem;
+            font-weight: 400; letter-spacing: -0.03em;
+            margin-bottom: 2rem;
+        }
+        .price-amount em {
+            font-family: 'Outfit', sans-serif; font-style: normal;
+            font-size: 0.7rem; letter-spacing: 0.25em; color: var(--text-mute);
+            margin-right: 0.5rem; vertical-align: middle;
+        }
+        .price-list { list-style: none; flex: 1; margin-bottom: 2rem; }
+        .price-list li {
+            padding: 0.7rem 0; border-bottom: 1px solid var(--glass-border);
+            font-size: 0.85rem; color: var(--text-soft);
+            display: flex; align-items: center; gap: 0.6rem;
+        }
+        .price-list li::before {
+            content: ''; width: 4px; height: 4px; border-radius: 50%;
+            background: var(--gold); flex-shrink: 0;
+        }
+        .badge-featured {
             position: absolute; top: 1.25rem; right: 1.25rem;
-            background: var(--burnt); color: white;
-            padding: 0.3rem 0.75rem;
-            font-size: 0.62rem; font-weight: 600;
-            letter-spacing: 0.15em; text-transform: uppercase;
-            border-radius: 100px;
+            font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase;
+            color: var(--gold); padding: 0.3rem 0.7rem;
+            border: 1px solid var(--gold-soft); border-radius: 100px;
+            background: rgba(212,175,55,0.05); z-index: 2;
         }
+        .price-cta {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0.9rem 1.4rem; border-radius: 100px;
+            border: 1px solid var(--glass-border-strong);
+            font-family: 'Outfit', sans-serif; font-size: 0.74rem;
+            letter-spacing: 0.2em; text-transform: uppercase;
+            transition: all 0.4s ease; color: var(--text);
+        }
+        .price-cta:hover { background: var(--gold); color: var(--bg); border-color: var(--gold); }
+        .price-card.featured .price-cta { background: var(--gold); color: var(--bg); border-color: var(--gold); }
+        .price-card.featured .price-cta:hover { background: #e6c14a; }
 
-        .btn-pricing {
-            display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
-            padding: 0.95rem 1.5rem; text-decoration: none;
-            font-family: 'IBM Plex Sans', sans-serif; font-weight: 600;
-            font-size: 0.82rem; letter-spacing: 0.05em;
-            transition: all 0.3s ease; width: 100%;
-            border-radius: 100px;
-        }
-        .btn-pricing-outline { border: 1.5px solid var(--text-black); color: var(--text-black); background: transparent; }
-        .btn-pricing-outline:hover { background: var(--text-black); color: var(--bg-cream); }
-        .btn-pricing-solid { background: var(--burnt); color: white; border: 1.5px solid var(--burnt); }
-        .btn-pricing-solid:hover { background: var(--bg-cream); color: var(--text-black); border-color: var(--bg-cream); }
+        @media (max-width: 1100px) { .pricing-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .pricing-grid { grid-template-columns: 1fr; } }
 
-        /* CONTACT */
-        .contact-section { padding: 7rem 5%; background: var(--bg-cream); }
-        .contact-container {
-            max-width: 1100px; margin: 0 auto;
-            display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
-            align-items: start;
+        /* INSTAGRAM */
+        .insta-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.6rem;
         }
-        .contact-info h2 { margin-bottom: 1.5rem; }
-        .contact-info > p { color: var(--muted); margin-bottom: 2.5rem; font-size: 1rem; line-height: 1.7; }
-        .contact-method {
-            display: flex; align-items: center; gap: 1rem;
-            padding: 1rem 0; border-bottom: 1px solid rgba(0,0,0,0.08);
-            text-decoration: none; color: var(--text-black);
-            transition: padding 0.3s ease;
+        .insta-item {
+            aspect-ratio: 1; overflow: hidden; position: relative; border-radius: 4px;
+            border: 1px solid var(--glass-border);
         }
-        .contact-method:hover { padding-left: 0.5rem; }
-        .contact-method i {
-            width: 40px; height: 40px;
-            background: rgba(194, 80, 42, 0.08);
-            color: var(--burnt);
-            border-radius: 10px;
+        .insta-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; filter: brightness(0.85); }
+        .insta-item:hover img { transform: scale(1.06); filter: brightness(1); }
+        .insta-item .insta-icon {
+            position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+            color: var(--text); font-size: 1.6rem; opacity: 0;
+            background: rgba(7,7,7,0.55); transition: opacity 0.4s ease;
+        }
+        .insta-item:hover .insta-icon { opacity: 1; }
+        @media (max-width: 700px) { .insta-grid { grid-template-columns: repeat(2, 1fr); } }
+
+        /* TESTIMONIALS */
+        .testi-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;
+        }
+        .testi-card {
+            padding: 2.2rem 1.85rem; border-radius: 8px; position: relative;
+            display: flex; flex-direction: column; gap: 1.5rem;
+        }
+        .testi-card::before {
+            content: '"'; position: absolute; top: 0.5rem; right: 1.5rem;
+            font-family: 'Cormorant Garamond', serif; font-size: 5rem;
+            color: var(--gold); opacity: 0.35; line-height: 1;
+        }
+        .testi-card p {
+            font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 400;
+            font-size: 1.15rem; line-height: 1.45; color: var(--text);
+        }
+        .testi-author { display: flex; align-items: center; gap: 0.85rem; margin-top: auto; }
+        .testi-avatar {
+            width: 40px; height: 40px; border-radius: 50%;
+            background: var(--gold-soft); color: var(--gold);
             display: flex; align-items: center; justify-content: center;
-            font-size: 1rem; flex-shrink: 0;
+            font-family: 'Cormorant Garamond', serif; font-weight: 500; font-style: italic;
+            border: 1px solid var(--gold-soft);
         }
-        .contact-method-info span:first-child {
-            display: block; font-size: 0.72rem; letter-spacing: 0.2em;
-            text-transform: uppercase; color: var(--muted); margin-bottom: 0.15rem;
+        .testi-author-info span:first-child {
+            display: block; font-size: 0.85rem; color: var(--text);
         }
-        .contact-method-info span:last-child {
-            font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600;
+        .testi-author-info span:last-child {
+            display: block; font-size: 0.65rem; letter-spacing: 0.25em;
+            text-transform: uppercase; color: var(--text-mute); margin-top: 0.15rem;
         }
+        @media (max-width: 900px) { .testi-grid { grid-template-columns: 1fr; } }
 
-        .contact-form { background: var(--bg-white); padding: 2.5rem; border-radius: 6px; border: 1px solid rgba(0,0,0,0.05); }
-        .form-group { margin-bottom: 1.25rem; }
-        .form-group label {
-            display: block; font-weight: 500; margin-bottom: 0.4rem;
-            color: var(--text-black); font-size: 0.82rem; letter-spacing: 0.02em;
+        /* CONTACT (footer 100vh) */
+        .hablemos {
+            min-height: 100vh; padding: 8rem 6vw 4rem;
+            display: flex; flex-direction: column; justify-content: space-between;
+            position: relative; overflow: hidden;
         }
-        .form-group input, .form-group textarea, .form-group select {
-            width: 100%; padding: 0.85rem 1rem;
-            border: 1px solid rgba(0,0,0,0.12);
-            border-radius: 4px;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.92rem; background: var(--bg-cream);
-            transition: border-color 0.3s ease, background 0.3s ease;
-            color: var(--text-black);
+        .hablemos::before {
+            content: ''; position: absolute; top: -30%; left: 50%;
+            transform: translateX(-50%);
+            width: 120%; height: 120%;
+            background: radial-gradient(circle, rgba(212,175,55,0.10), transparent 55%);
+            pointer-events: none;
         }
-        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-            outline: none; border-color: var(--burnt); background: var(--bg-white);
-        }
-        .form-group textarea { resize: vertical; min-height: 100px; }
-        .form-feedback {
-            display: none; padding: 0.75rem 1rem; border-radius: 4px;
-            background: rgba(37, 211, 102, 0.1); color: #1a7a3a;
-            font-size: 0.88rem; margin-bottom: 1rem;
-            border-left: 3px solid #25D366;
-        }
-        .form-feedback.visible { display: block; }
-
-        .btn-submit {
-            width: 100%; padding: 1rem;
-            background: var(--text-black); color: var(--bg-cream);
-            border: none;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 600; font-size: 0.88rem; letter-spacing: 0.05em;
-            transition: all 0.3s ease; border-radius: 100px;
-            display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
-        }
-        .btn-submit:hover { background: var(--burnt); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(194, 80, 42, 0.3); }
-
-        /* FOOTER */
-        footer {
-            padding: 4rem 5% 2rem 5%;
-            background: var(--text-black); color: rgba(247,244,238,0.65);
+        .hablemos-eyebrow {
+            font-family: 'Outfit', sans-serif; font-size: 0.7rem;
+            letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold);
+            display: flex; align-items: center; gap: 0.75rem;
             position: relative; z-index: 2;
         }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 3rem; margin-bottom: 3rem;
+        .hablemos-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--gold); }
+
+        .hablemos h2 {
+            font-size: clamp(5rem, 22vw, 22rem);
+            font-weight: 300; line-height: 0.85;
+            letter-spacing: -0.05em;
+            text-align: center; position: relative; z-index: 2;
         }
-        .footer-brand img { height: 40px; margin-bottom: 1rem; filter: brightness(0) invert(1); }
-        .footer-brand p { font-size: 0.88rem; line-height: 1.65; max-width: 320px; }
-        .footer-col h5 {
-            font-family: 'IBM Plex Sans', sans-serif; font-weight: 600;
-            font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase;
-            color: var(--bg-cream); margin-bottom: 1.25rem;
+        .hablemos h2 em {
+            font-style: italic; color: var(--gold);
+            display: inline-block;
         }
-        .footer-col a, .footer-col p {
-            display: block; text-decoration: none; color: rgba(247,244,238,0.6);
-            font-size: 0.88rem; margin-bottom: 0.65rem;
-            transition: color 0.3s ease;
+        .hablemos-cta-row {
+            display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;
+            position: relative; z-index: 2;
         }
-        .footer-col a:hover { color: var(--burnt); }
-        .footer-bottom {
-            border-top: 1px solid rgba(247,244,238,0.1);
-            padding-top: 2rem;
-            display: flex; justify-content: space-between; align-items: center;
-            font-size: 0.78rem; flex-wrap: wrap; gap: 1rem;
+        .hablemos-btn {
+            padding: 1.1rem 2rem; border-radius: 100px;
+            font-family: 'Outfit', sans-serif; font-size: 0.78rem;
+            letter-spacing: 0.22em; text-transform: uppercase;
+            display: inline-flex; align-items: center; gap: 0.7rem;
+            transition: transform 0.4s ease, background 0.4s ease;
         }
-        .footer-socials { display: flex; gap: 0.75rem; }
-        .footer-socials a {
-            width: 36px; height: 36px; border-radius: 50%;
-            background: rgba(247,244,238,0.08);
+        .hablemos-btn.primary { background: var(--gold); color: var(--bg); }
+        .hablemos-btn.primary:hover { transform: translateY(-2px); background: #e6c14a; }
+        .hablemos-btn.ghost {
+            background: transparent; color: var(--text);
+            border: 1px solid var(--glass-border-strong);
+        }
+        .hablemos-btn.ghost:hover { background: var(--glass-hi); transform: translateY(-2px); }
+
+        .hablemos-bottom {
+            display: flex; justify-content: space-between; align-items: end;
+            flex-wrap: wrap; gap: 2rem;
+            position: relative; z-index: 2;
+            border-top: 1px solid var(--glass-border);
+            padding-top: 2.5rem; margin-top: 4rem;
+            font-family: 'Outfit', sans-serif; font-size: 0.72rem;
+            letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-soft);
+        }
+        .hablemos-info {
+            display: flex; gap: 3rem; flex-wrap: wrap;
+        }
+        .hablemos-info div span:first-child {
+            display: block; color: var(--text-mute); font-size: 0.62rem;
+            margin-bottom: 0.4rem; letter-spacing: 0.3em;
+        }
+        .hablemos-info div span:last-child {
+            font-family: 'Cormorant Garamond', serif; font-style: italic;
+            font-size: 1.15rem; color: var(--text); text-transform: none; letter-spacing: 0;
+        }
+        .hablemos-socials { display: flex; gap: 0.6rem; }
+        .hablemos-socials a {
+            width: 40px; height: 40px; border-radius: 50%;
+            border: 1px solid var(--glass-border-strong);
             display: flex; align-items: center; justify-content: center;
-            color: var(--bg-cream); text-decoration: none; font-size: 0.9rem;
-            transition: background 0.3s ease;
+            color: var(--text); font-size: 0.95rem;
+            transition: all 0.3s ease;
         }
-        .footer-socials a:hover { background: var(--burnt); }
-        .tmca-signature { color: rgba(247,244,238,0.4); }
+        .hablemos-socials a:hover { background: var(--gold); color: var(--bg); border-color: var(--gold); }
 
-        /* REVEAL ANIMATION */
-        .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
+        /* FLOAT BUTTONS */
+        .float-buttons {
+            position: fixed; bottom: 24px; right: 24px;
+            display: flex; flex-direction: column; gap: 0.6rem; z-index: 200;
+        }
+        .float-btn {
+            width: 54px; height: 54px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--text); font-size: 1.2rem;
+            transition: transform 0.4s ease, background 0.3s ease, color 0.3s ease;
+            position: relative;
+        }
+        .float-btn::before {
+            content: ''; position: absolute; inset: 0; border-radius: 50%;
+            background: var(--gold); opacity: 0;
+            animation: pulse 2.8s ease-in-out infinite;
+            z-index: -1;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.9); opacity: 0.5; }
+            70%, 100% { transform: scale(1.5); opacity: 0; }
+        }
+        .float-btn:hover { transform: scale(1.08) translateY(-2px); }
+        .float-btn.wa:hover { background: rgba(37,211,102,0.15); color: #25D366; border-color: #25D366; }
+        .float-btn.ig:hover { color: var(--gold); }
+
+        /* FOOTER credit */
+        .footer-credit {
+            text-align: center; padding: 2rem 6vw;
+            font-family: 'Outfit', sans-serif; font-size: 0.65rem;
+            letter-spacing: 0.28em; text-transform: uppercase;
+            color: var(--text-mute); border-top: 1px solid var(--glass-border);
+            position: relative; z-index: 3;
+        }
+        .footer-credit em {
+            color: var(--text-soft); font-style: italic; letter-spacing: 0;
+            font-family: 'Cormorant Garamond', serif; font-size: 0.9rem; text-transform: none;
+        }
+
+        /* REVEAL */
+        .reveal { opacity: 0; transform: translateY(40px); transition: opacity 1s cubic-bezier(.2,.9,.2,1), transform 1s cubic-bezier(.2,.9,.2,1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
+        .reveal-stagger > * { opacity: 0; transform: translateY(30px); transition: opacity 0.8s cubic-bezier(.2,.9,.2,1), transform 0.8s cubic-bezier(.2,.9,.2,1); }
+        .reveal-stagger.active > * { opacity: 1; transform: translateY(0); }
+        .reveal-stagger.active > *:nth-child(1) { transition-delay: 0.05s; }
+        .reveal-stagger.active > *:nth-child(2) { transition-delay: 0.12s; }
+        .reveal-stagger.active > *:nth-child(3) { transition-delay: 0.19s; }
+        .reveal-stagger.active > *:nth-child(4) { transition-delay: 0.26s; }
+        .reveal-stagger.active > *:nth-child(5) { transition-delay: 0.33s; }
+        .reveal-stagger.active > *:nth-child(6) { transition-delay: 0.40s; }
+        .reveal-stagger.active > *:nth-child(7) { transition-delay: 0.47s; }
+        .reveal-stagger.active > *:nth-child(8) { transition-delay: 0.54s; }
 
-        /* MENÚ MÓVIL */
-        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; color: var(--text-black); }
-
-        /* RESPONSIVE */
+        /* RESPONSIVE NAV */
         @media (max-width: 900px) {
+            nav { gap: 0.75rem; padding: 0.55rem 0.55rem 0.55rem 1.1rem; }
             .nav-links { display: none; }
-            .menu-toggle { display: block; }
-            .hero { padding: 7rem 5% 0 5%; }
-            .hero h1 { font-size: 3.2rem; line-height: 1; }
-            .scroll-indicator { display: none; }
-            .section-title { font-size: 2rem; }
-            .portfolio-masonry { grid-template-columns: repeat(2, 1fr); }
-            .p-item--tall, .p-item--square, .p-item--small { grid-column: span 1; min-height: 280px; }
-            .p-item--wide, .p-item--hero, .p-item--mid { grid-column: span 2; min-height: 320px; }
-            .session-label { grid-column: span 2; }
-            .hero-cta { flex-direction: column; width: 100%; }
-            .btn-hero { width: 100%; justify-content: center; }
-            .float-buttons { flex-direction: row; gap: 8px; bottom: 18px; right: 18px; }
-            .float-btn { width: 48px; height: 48px; font-size: 19px; }
-            .about-container, .contact-container { grid-template-columns: 1fr; gap: 2.5rem; }
-            .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            .nav-cta { padding: 0.5rem 0.95rem; font-size: 0.65rem !important; }
+            .menu-toggle { display: block; padding: 0.5rem; }
+            .hero { grid-template-columns: 1fr; padding-top: 7rem; gap: 3rem; }
+            .hero-right { max-height: 50vh; aspect-ratio: 4/3; }
+            .section { padding: 6rem 6vw; }
+            .process { padding: 6rem 6vw; }
+            .about { padding: 7rem 6vw; }
+            .stats { grid-template-columns: repeat(2, 1fr); padding-bottom: 6rem; }
+            .insta-grid { grid-template-columns: repeat(2, 1fr); }
+            .testi-grid { grid-template-columns: 1fr; }
+            .hablemos { padding: 6rem 6vw 3rem; }
+            .hablemos h2 { font-size: clamp(3.5rem, 18vw, 8rem); }
         }
 
-        @media (max-width: 500px) {
-            .portfolio-masonry { grid-template-columns: 1fr; }
-            .p-item--tall, .p-item--square, .p-item--small,
-            .p-item--wide, .p-item--hero, .p-item--mid { grid-column: span 1; }
-            .session-label { grid-column: span 1; }
-            .instagram-grid { grid-template-columns: repeat(2, 1fr); }
-            .footer-grid { grid-template-columns: 1fr; }
-            .service-ctas { flex-direction: column; }
+        /* MOBILE DRAWER */
+        .mobile-drawer {
+            position: fixed; top: 0; right: 0; height: 100vh; width: 84vw; max-width: 360px;
+            background: rgba(7,7,7,0.92);
+            backdrop-filter: blur(28px) saturate(150%);
+            -webkit-backdrop-filter: blur(28px) saturate(150%);
+            border-left: 1px solid var(--glass-border);
+            z-index: 199; transform: translateX(100%);
+            transition: transform 0.5s cubic-bezier(.2,.9,.2,1);
+            padding: 5rem 2rem 2rem;
+            display: flex; flex-direction: column; gap: 1rem;
+        }
+        .mobile-drawer.open { transform: translateX(0); }
+        .mobile-drawer a {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem; font-weight: 400;
+            padding: 0.5rem 0; border-bottom: 1px solid var(--glass-border);
+        }
+        .mobile-drawer a:last-child { border-bottom: none; color: var(--gold); font-style: italic; }
+        .drawer-close {
+            position: absolute; top: 1.25rem; right: 1.5rem;
+            background: transparent; border: none; color: var(--text);
+            font-size: 1.5rem;
         }
     </style>
 </head>
-<body>
+<body data-testid="page-root">
 
-    <div class="custom-cursor" id="cursor" aria-hidden="true"></div>
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
 
-    <!-- BOTONES FLOTANTES -->
-    <div class="float-buttons">
-        <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%20Studios%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios"
-           target="_blank" rel="noopener" class="float-btn whatsapp-btn hover-target"
-           aria-label="Contactar por WhatsApp">
-            <i class="fab fa-whatsapp" aria-hidden="true"></i>
-        </a>
-        <a href="https://instagram.com/otravainaestudios"
-           target="_blank" rel="noopener" class="float-btn instagram-btn hover-target"
-           aria-label="Seguir en Instagram">
-            <i class="fab fa-instagram" aria-hidden="true"></i>
-        </a>
+<!-- FLOAT BUTTONS -->
+<div class="float-buttons">
+    <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%20Studios%2C%20me%20interesa%20conocer%20m%C3%A1s"
+       target="_blank" rel="noopener"
+       class="float-btn wa hover-target glass-strong"
+       data-testid="whatsapp-fab"
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <a href="https://instagram.com/otravainaestudios"
+       target="_blank" rel="noopener"
+       class="float-btn ig hover-target glass-strong"
+       data-testid="instagram-fab"
+       aria-label="Seguir en Instagram">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+    </a>
+</div>
+
+<!-- NAV -->
+<nav data-testid="main-nav">
+    <a href="#" class="brand hover-target" aria-label="Otra Vaina Studios">
+        <span class="brand-mark">o</span>
+        <span class="brand-text">Otra Vaina<span style="color:var(--gold)">.</span></span>
+    </a>
+    <div class="nav-links">
+        <a href="#servicios" class="hover-target" data-testid="nav-servicios">Servicios</a>
+        <a href="#proceso" class="hover-target" data-testid="nav-proceso">Proceso</a>
+        <a href="#catalogo" class="hover-target" data-testid="nav-catalogo">Catálogo</a>
+        <a href="#planes" class="hover-target" data-testid="nav-planes">Inversión</a>
+    </div>
+    <a href="#hablemos" class="nav-cta hover-target" data-testid="nav-cta">Cotizar</a>
+    <button class="menu-toggle hover-target" id="menuOpen" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="menuClose" aria-label="Cerrar menú"><i class="fas fa-times"></i></button>
+    <a href="#servicios" class="drawer-link">Servicios</a>
+    <a href="#proceso" class="drawer-link">Proceso</a>
+    <a href="#catalogo" class="drawer-link">Catálogo</a>
+    <a href="#nosotros" class="drawer-link">Nosotros</a>
+    <a href="#planes" class="drawer-link">Inversión</a>
+    <a href="#hablemos" class="drawer-link"><em>Cotizar</em></a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+    <div class="hero-left">
+        <div class="hero-eyebrow reveal">Estudio Independiente · Monte Plata, RD</div>
+        <h1 class="reveal-stagger">
+            <span class="line"><span class="line-inner">Otra</span></span>
+            <span class="line"><span class="line-inner outline">Vaina</span></span>
+            <span class="line"><span class="line-inner"><em>Studios.</em></span></span>
+        </h1>
+        <div class="hero-meta reveal">
+            <div><span>Desde</span><span>2020</span></div>
+            <div><span>Especialidad</span><span>Editorial &amp; Producción</span></div>
+            <div><span>Proyectos</span><span>+250 entregados</span></div>
+        </div>
+        <div class="hero-cta reveal">
+            <a href="#catalogo" class="btn hover-target" data-testid="hero-cta-portfolio">
+                Ver Catálogo <i class="fas fa-arrow-down" aria-hidden="true"></i>
+            </a>
+            <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%20Studios%2C%20quiero%20cotizar"
+               target="_blank" rel="noopener" class="btn btn-gold hover-target" data-testid="hero-cta-quote">
+                Cotizar Ahora <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+        </div>
     </div>
 
-    <!-- NAVEGACIÓN -->
-    <nav>
-        <a href="#" class="brand hover-target" aria-label="Otra Vaina Studios — Inicio">
-            <img src="assets/images/logo.png" alt="Logo Otra Vaina Studios" width="32" height="32">
-            <span class="logo-text">OTRA VAINA<span style="color:var(--burnt)">.</span></span>
-        </a>
-        <div class="nav-links">
-            <a href="#servicios" class="hover-target">Servicios</a>
-            <a href="#proceso" class="hover-target">Proceso</a>
-            <a href="#catalogo" class="hover-target">Catálogo</a>
-            <a href="#nosotros" class="hover-target">Nosotros</a>
-            <a href="#planes" class="hover-target">Inversión</a>
-            <a href="#contacto" class="nav-cta hover-target">Cotizar</a>
+    <div class="hero-right hover-target reveal" data-cursor="view">
+        <img src="assets/images/editorial-calma.jpeg" alt="Editorial fotográfico — Otra Vaina Studios">
+        <div class="hero-photo-caption">
+            <span>Serie<br><em>Calma</em></span>
+            <span>2026</span>
         </div>
-        <button class="menu-toggle hover-target" aria-label="Abrir menú" id="menuToggle"><i class="fas fa-bars"></i></button>
-    </nav>
+    </div>
+</section>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-eyebrow reveal">Producción Visual · Monte Plata, RD</div>
-            <h1 class="reveal">Estética <em>limpia.</em><br>Producción <span class="outline-text">premium.</span></h1>
-            <p class="reveal">Estudio de fotografía y producción audiovisual que eleva la imagen de marcas, artistas y familias al nivel editorial. Desde el concepto hasta la entrega final.</p>
+<!-- MARQUEE -->
+<div class="marquee">
+    <div class="marquee-content">
+        <span>Fotografía de Estudio</span><i>✦</i>
+        <span><em>Editorial &amp; Moda</em></span><i>✦</i>
+        <span>Cinematografía</span><i>✦</i>
+        <span><em>Catálogos Digitales</em></span><i>✦</i>
+        <span>Diseño 3D</span><i>✦</i>
+        <span><em>Restauración</em></span><i>✦</i>
+        <span>Fotografía de Estudio</span><i>✦</i>
+        <span><em>Editorial &amp; Moda</em></span><i>✦</i>
+        <span>Cinematografía</span><i>✦</i>
+        <span><em>Catálogos Digitales</em></span><i>✦</i>
+    </div>
+</div>
 
-            <div class="hero-cta reveal">
-                <a href="#catalogo" class="btn-hero primary hover-target">
-                    Ver Catálogo <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                </a>
-                <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%20Studios%2C%20quiero%20cotizar%20un%20proyecto" target="_blank" rel="noopener" class="btn-hero hover-target">
-                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Cotizar Ahora
-                </a>
+<!-- SERVICES -->
+<section class="section" id="servicios">
+    <div class="section-head reveal">
+        <div class="eyebrow">01 — El Laboratorio</div>
+        <h2 class="section-title">Servicios que <em>elevan</em><br>tu imagen al nivel editorial.</h2>
+        <p class="section-sub">Seis disciplinas que se cruzan en cada proyecto. Pasa el cursor sobre cada servicio para ver una muestra del trabajo.</p>
+    </div>
+
+    <div class="services-list" id="servicesList">
+        <article class="service-row hover-target" data-image="assets/images/estudio-juntos.jpeg" data-testid="service-estudio">
+            <div class="service-row-left">
+                <span class="service-num">01</span>
+                <span class="service-name">Fotografía de Estudio</span>
             </div>
-        </div>
-
-        <div class="scroll-indicator">SCROLL</div>
-
-        <div class="marquee-container">
-            <div class="marquee-content">
-                <span>Fotografía de Estudio</span>
-                <span>Editorial &amp; Moda</span>
-                <span>Cinematografía</span>
-                <span>Catálogos Digitales</span>
-                <span>Diseño 3D</span>
-                <span>Restauración</span>
-                <span>Fotografía de Estudio</span>
-                <span>Editorial &amp; Moda</span>
-                <span>Cinematografía</span>
-                <span>Catálogos Digitales</span>
+            <div class="service-row-right">
+                <span class="service-price">Desde <strong>RD$3,500</strong></span>
+                <span class="service-arrow"><i class="fas fa-arrow-right"></i></span>
             </div>
-        </div>
-    </section>
+            <div class="service-details">
+                <p>Retratos editoriales, fotografía de producto y moda con iluminación controlada.</p>
+                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20Fotograf%C3%ADa%20de%20Estudio" target="_blank" rel="noopener" class="mini-cta">Cotizar</a>
+            </div>
+        </article>
 
-    <!-- SERVICIOS -->
-    <section id="servicios" class="services">
-        <div class="section-eyebrow reveal">01 — El Laboratorio</div>
-        <h2 class="section-title reveal">Servicios que <em>elevan</em> tu marca al nivel editorial.</h2>
+        <article class="service-row hover-target" data-image="assets/images/editorial-tierra.jpeg" data-testid="service-editorial">
+            <div class="service-row-left">
+                <span class="service-num">02</span>
+                <span class="service-name">Editorial &amp; Moda</span>
+            </div>
+            <div class="service-row-right">
+                <span class="service-price">Desde <strong>RD$8,500</strong></span>
+                <span class="service-arrow"><i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="service-details">
+                <p>Producciones de alto impacto para artistas y marcas con dirección de arte completa.</p>
+                <a href="https://wa.me/18092680341?text=Hola%2C%20quiero%20una%20producci%C3%B3n%20Editorial" target="_blank" rel="noopener" class="mini-cta">Cotizar</a>
+            </div>
+        </article>
 
-        <div class="services-grid">
-            <!-- 1 Fotografía de Estudio -->
-            <article class="service-card reveal hover-target">
-                <div class="service-icon"><i class="fas fa-camera-retro" aria-hidden="true"></i></div>
-                <h3>Fotografía de Estudio</h3>
-                <p>Retratos editoriales, fotografía de producto y moda con iluminación controlada y fondos inmaculados.</p>
-                <ul class="service-card-bullets">
-                    <li>Iluminación de alta gama</li>
-                    <li>Retoque High-End por fotografía</li>
-                    <li>Entrega digital en 48 h</li>
-                </ul>
-                <div class="service-from">Desde</div>
-                <div class="service-from-price"><span style="font-size:0.7em;vertical-align:super">RD$</span>3,500</div>
-                <div class="service-ctas">
-                    <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%2C%20me%20interesa%20una%20sesi%C3%B3n%20de%20Fotograf%C3%ADa%20de%20Estudio" target="_blank" rel="noopener" class="service-cta-primary hover-target">Cotizar</a>
-                    <a href="#catalogo" class="service-cta-secondary hover-target">Ver ejemplos</a>
-                </div>
-            </article>
+        <article class="service-row hover-target" data-image="assets/images/especial-momento.jpeg" data-testid="service-cinema">
+            <div class="service-row-left">
+                <span class="service-num">03</span>
+                <span class="service-name">Cinematografía &amp; Video</span>
+            </div>
+            <div class="service-row-right">
+                <span class="service-price">Desde <strong>RD$18,000</strong></span>
+                <span class="service-arrow"><i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="service-details">
+                <p>Videoclips, reels editoriales y corporativo con look cinematográfico 4K.</p>
+                <a href="https://wa.me/18092680341?text=Hola%2C%20quiero%20Producci%C3%B3n%20de%20Video" target="_blank" rel="noopener" class="mini-cta">Cotizar</a>
+            </div>
+        </article>
 
-            <!-- 2 Editorial — DESTACADO -->
-            <article class="service-card featured reveal hover-target">
-                <span class="service-badge">Más Solicitado</span>
-                <div class="service-icon"><i class="fas fa-star" aria-hidden="true"></i></div>
-                <h3>Editorial &amp; Moda</h3>
-                <p>Producciones de alto impacto para artistas, marcas y campañas con dirección de arte completa.</p>
-                <ul class="service-card-bullets">
-                    <li>Concepto y moodboard</li>
-                    <li>Hasta 3 cambios de vestuario</li>
-                    <li>25+ fotos retocadas</li>
-                </ul>
-                <div class="service-from">Desde</div>
-                <div class="service-from-price"><span style="font-size:0.7em;vertical-align:super">RD$</span>8,500</div>
-                <div class="service-ctas">
-                    <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%2C%20quiero%20una%20producci%C3%B3n%20Editorial%20%26%20Moda" target="_blank" rel="noopener" class="service-cta-primary hover-target">Cotizar</a>
-                    <a href="#catalogo" class="service-cta-secondary hover-target">Ver ejemplos</a>
-                </div>
-            </article>
+        <article class="service-row hover-target" data-image="assets/images/conceptual-ultima-cena.jpeg" data-testid="service-catalog">
+            <div class="service-row-left">
+                <span class="service-num">04</span>
+                <span class="service-name">Catálogos Digitales</span>
+            </div>
+            <div class="service-row-right">
+                <span class="service-price">Desde <strong>RD$12,000</strong></span>
+                <span class="service-arrow"><i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="service-details">
+                <p>Diagramación visual para e-commerce y marcas: tu producto al nivel de revista.</p>
+                <a href="https://wa.me/18092680341?text=Hola%2C%20quiero%20un%20Cat%C3%A1logo%20Digital" target="_blank" rel="noopener" class="mini-cta">Cotizar</a>
+            </div>
+        </article>
 
-            <!-- 3 Cinematografía -->
-            <article class="service-card reveal hover-target">
-                <div class="service-icon"><i class="fas fa-video" aria-hidden="true"></i></div>
-                <h3>Cinematografía &amp; Video</h3>
-                <p>Videoclips, contenido para marcas, eventos y reels editoriales con look cinematográfico.</p>
-                <ul class="service-card-bullets">
-                    <li>Grabación 4K · 2 cámaras</li>
-                    <li>Color grading cinematográfico</li>
-                    <li>Reel para redes incluido</li>
-                </ul>
-                <div class="service-from">Desde</div>
-                <div class="service-from-price"><span style="font-size:0.7em;vertical-align:super">RD$</span>18,000</div>
-                <div class="service-ctas">
-                    <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%2C%20quiero%20cotizar%20una%20Producci%C3%B3n%20de%20Video" target="_blank" rel="noopener" class="service-cta-primary hover-target">Cotizar</a>
-                    <a href="#planes" class="service-cta-secondary hover-target">Ver planes</a>
-                </div>
-            </article>
+        <article class="service-row hover-target" data-image="assets/images/especial-arte.jpeg" data-testid="service-3d">
+            <div class="service-row-left">
+                <span class="service-num">05</span>
+                <span class="service-name">Diseño 3D &amp; Arte</span>
+            </div>
+            <div class="service-row-right">
+                <span class="service-price">Desde <strong>RD$6,000</strong></span>
+                <span class="service-arrow"><i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="service-details">
+                <p>Dirección de arte, escenografía conceptual y modelado 3D para piezas únicas.</p>
+                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20Dise%C3%B1o%203D" target="_blank" rel="noopener" class="mini-cta">Cotizar</a>
+            </div>
+        </article>
 
-            <!-- 4 Catálogos -->
-            <article class="service-card reveal hover-target">
-                <div class="service-icon"><i class="fas fa-th-large" aria-hidden="true"></i></div>
-                <h3>Catálogos Digitales</h3>
-                <p>Diagramación visual para e-commerce y marcas: tu producto al nivel de revista internacional.</p>
-                <ul class="service-card-bullets">
-                    <li>Fotografía de producto</li>
-                    <li>Diseño editorial impecable</li>
-                    <li>Entrega PDF + Web</li>
-                </ul>
-                <div class="service-from">Desde</div>
-                <div class="service-from-price"><span style="font-size:0.7em;vertical-align:super">RD$</span>12,000</div>
-                <div class="service-ctas">
-                    <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%2C%20quiero%20un%20Cat%C3%A1logo%20Digital" target="_blank" rel="noopener" class="service-cta-primary hover-target">Cotizar</a>
-                    <a href="#planes" class="service-cta-secondary hover-target">Ver planes</a>
-                </div>
-            </article>
+        <article class="service-row hover-target" data-image="assets/images/familia-inocencia.jpeg" data-testid="service-restauracion">
+            <div class="service-row-left">
+                <span class="service-num">06</span>
+                <span class="service-name">Restauración Fotográfica</span>
+            </div>
+            <div class="service-row-right">
+                <span class="service-price">Desde <strong>RD$1,500</strong></span>
+                <span class="service-arrow"><i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="service-details">
+                <p>Recuperación meticulosa de fotografías antiguas, dañadas o descoloridas.</p>
+                <a href="https://wa.me/18092680341?text=Hola%2C%20quiero%20restaurar%20una%20foto" target="_blank" rel="noopener" class="mini-cta">Cotizar</a>
+            </div>
+        </article>
+    </div>
 
-            <!-- 5 Diseño 3D & Dirección de Arte -->
-            <article class="service-card reveal hover-target">
-                <div class="service-icon"><i class="fas fa-cube" aria-hidden="true"></i></div>
-                <h3>Diseño 3D &amp; Arte</h3>
-                <p>Dirección de arte, escenografía conceptual y modelado 3D para piezas y campañas únicas.</p>
-                <ul class="service-card-bullets">
-                    <li>Concept &amp; moodboards</li>
-                    <li>Modelado y render 3D</li>
-                    <li>Composiciones híbridas</li>
-                </ul>
-                <div class="service-from">Desde</div>
-                <div class="service-from-price"><span style="font-size:0.7em;vertical-align:super">RD$</span>6,000</div>
-                <div class="service-ctas">
-                    <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%2C%20me%20interesa%20Dise%C3%B1o%203D%20y%20Direcci%C3%B3n%20de%20Arte" target="_blank" rel="noopener" class="service-cta-primary hover-target">Cotizar</a>
-                    <a href="#catalogo" class="service-cta-secondary hover-target">Ver ejemplos</a>
-                </div>
-            </article>
+    <!-- Floating preview -->
+    <div class="service-preview" id="servicePreview">
+        <img src="" alt="" id="servicePreviewImg">
+    </div>
+</section>
 
-            <!-- 6 Restauración -->
-            <article class="service-card reveal hover-target">
-                <div class="service-icon"><i class="fas fa-magic" aria-hidden="true"></i></div>
-                <h3>Restauración Fotográfica</h3>
-                <p>Recuperación meticulosa de fotografías antiguas, dañadas o descoloridas. Devolvemos cada detalle a su lugar.</p>
-                <ul class="service-card-bullets">
-                    <li>Diagnóstico por imagen</li>
-                    <li>Coloración o B/N preservado</li>
-                    <li>Archivo digital + impresión</li>
-                </ul>
-                <div class="service-from">Desde</div>
-                <div class="service-from-price"><span style="font-size:0.7em;vertical-align:super">RD$</span>1,500</div>
-                <div class="service-ctas">
-                    <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%2C%20quiero%20restaurar%20una%20fotograf%C3%ADa" target="_blank" rel="noopener" class="service-cta-primary hover-target">Cotizar</a>
-                    <a href="#contacto" class="service-cta-secondary hover-target">Hablar</a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- PROCESO -->
-    <section id="proceso" class="process">
-        <div class="section-eyebrow reveal" style="color: var(--smooth-blue)">02 — Cómo Trabajamos</div>
-        <h2 class="section-title reveal" style="color: var(--bg-cream)">Un proceso <em style="color: rgba(247,244,238,0.55)">claro,</em> sin sorpresas.</h2>
-        <div class="process-steps">
-            <div class="process-step reveal">
-                <span class="process-step-num">— 01</span>
+<!-- PROCESS -->
+<section class="process" id="proceso">
+    <div class="section-head reveal">
+        <div class="eyebrow">02 — Cómo Trabajamos</div>
+        <h2 class="section-title">Un proceso <em>claro,</em><br>sin sorpresas.</h2>
+    </div>
+    <div class="process-track reveal-stagger">
+        <div class="process-card glass">
+            <div>
+                <div class="process-num"><em>i</em></div>
                 <h4>Briefing</h4>
                 <p>Conversamos tu visión, audiencia y objetivos. Definimos referencias y entregables.</p>
             </div>
-            <div class="process-step reveal">
-                <span class="process-step-num">— 02</span>
+            <div class="process-card-foot">01 — Día 1</div>
+        </div>
+        <div class="process-card glass">
+            <div>
+                <div class="process-num"><em>ii</em></div>
                 <h4>Pre-producción</h4>
                 <p>Moodboard, escenografía, locación, vestuario y cronograma cerrado por escrito.</p>
             </div>
-            <div class="process-step reveal">
-                <span class="process-step-num">— 03</span>
+            <div class="process-card-foot">02 — Días 2-5</div>
+        </div>
+        <div class="process-card glass">
+            <div>
+                <div class="process-num"><em>iii</em></div>
                 <h4>Producción</h4>
-                <p>Dirección de cámara, luz e interpretación. Te mostramos avances en pantalla durante la sesión.</p>
+                <p>Dirección de cámara, luz e interpretación. Te mostramos avances en pantalla.</p>
             </div>
-            <div class="process-step reveal">
-                <span class="process-step-num">— 04</span>
+            <div class="process-card-foot">03 — Día de sesión</div>
+        </div>
+        <div class="process-card glass">
+            <div>
+                <div class="process-num"><em>iv</em></div>
                 <h4>Entrega</h4>
                 <p>Selección, retoque High-End y entrega digital en 48–72 h por enlace privado.</p>
             </div>
+            <div class="process-card-foot">04 — Final</div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- PORTFOLIO -->
-    <section id="catalogo" class="portfolio">
-        <div class="section-eyebrow reveal">03 — Catálogo</div>
-        <h2 class="section-title reveal">Trabajos <em>seleccionados.</em></h2>
+<!-- PORTFOLIO -->
+<section class="section" id="catalogo">
+    <div class="section-head reveal">
+        <div class="eyebrow">03 — Catálogo</div>
+        <h2 class="section-title">Trabajos <em>seleccionados.</em></h2>
+        <p class="section-sub">Una muestra curada de sesiones recientes. Filtra por categoría para enfocar tu búsqueda.</p>
+    </div>
 
-        <div class="portfolio-filters reveal">
-            <button class="filter-btn active hover-target" data-filter="all">Todos</button>
-            <button class="filter-btn hover-target" data-filter="editorial">Editorial</button>
-            <button class="filter-btn hover-target" data-filter="estudio">Estudio</button>
-            <button class="filter-btn hover-target" data-filter="conceptual">Conceptual</button>
-            <button class="filter-btn hover-target" data-filter="familia">Familia</button>
-        </div>
+    <div class="portfolio-filters reveal">
+        <button class="filter-btn active hover-target" data-filter="all" data-testid="filter-all">Todos</button>
+        <button class="filter-btn hover-target" data-filter="editorial" data-testid="filter-editorial">Editorial</button>
+        <button class="filter-btn hover-target" data-filter="estudio" data-testid="filter-estudio">Estudio</button>
+        <button class="filter-btn hover-target" data-filter="conceptual" data-testid="filter-conceptual">Conceptual</button>
+        <button class="filter-btn hover-target" data-filter="familia" data-testid="filter-familia">Familia</button>
+    </div>
 
-        <div class="portfolio-masonry">
-            <div class="session-label"><span>Conceptual — Serie Verde</span></div>
-            <div class="p-item p-item--tall hover-target" data-cat="conceptual">
-                <img src="assets/images/conceptual-en-el-campo.jpeg" alt="Sesión conceptual en la naturaleza — En el Campo, Otra Vaina Studios Monte Plata" loading="lazy">
-                <div class="p-overlay"><div class="p-overlay-tag">Conceptual</div><div class="p-overlay-title">En el Campo</div></div>
-            </div>
-            <div class="p-item p-item--wide hover-target" data-cat="conceptual">
-                <img src="assets/images/conceptual-ultima-cena.jpeg" alt="Fotografía conceptual La Última Cena — Otra Vaina Studios" loading="lazy">
-                <div class="p-overlay"><div class="p-overlay-tag">Conceptual</div><div class="p-overlay-title">La Última Cena</div></div>
-            </div>
+    <div class="bento">
+        <a href="#" class="b-item b-tall hover-target" data-cat="conceptual" data-cursor="view">
+            <img src="assets/images/conceptual-en-el-campo.jpeg" alt="Conceptual - En el Campo" loading="lazy">
+            <div class="b-overlay"><div class="b-tag">Conceptual</div><div class="b-title">En el Campo</div></div>
+        </a>
+        <a href="#" class="b-item b-wide hover-target" data-cat="conceptual" data-cursor="view">
+            <img src="assets/images/conceptual-ultima-cena.jpeg" alt="Conceptual - La Última Cena" loading="lazy">
+            <div class="b-overlay"><div class="b-tag">Conceptual</div><div class="b-title">La Última Cena</div></div>
+        </a>
+        <a href="#" class="b-item b-square hover-target" data-cat="editorial" data-cursor="view">
+            <img src="assets/images/editorial-reposo.jpeg" alt="Editorial - Reposo" loading="lazy">
+            <div class="b-overlay"><div class="b-tag">Editorial</div><div class="b-title">Reposo</div></div>
+        </a>
+        <a href="#" class="b-item b-hero hover-target" data-cat="editorial" data-cursor="view">
+            <img src="assets/images/editorial-tierra.jpeg" alt="Editorial - Tierra" loading="lazy">
+            <div class="b-overlay"><div class="b-tag">Editorial</div><div class="b-title">Tierra</div></div>
+        </a>
+        <a href="#" class="b-item b-square hover-target" data-cat="editorial" data-cursor="view">
+            <img src="assets/images/editorial-calma.jpeg" alt="Editorial - Calma" loading="lazy">
+            <div class="b-overlay"><div class="b-tag">Editorial</div><div class="b-title">Calma</div></div>
+        </a>
+        <a href="#" class="b-item b-mid hover-target" data-cat="estudio" data-cursor="view">
+            <img src="assets/images/estudio-juntos.jpeg" alt="Estudio - Juntos" loading="lazy">
+            <div class="b-overlay"><div class="b-tag">Estudio</div><div class="b-title">Juntos</div></div>
+        </a>
+        <a href="#" class="b-item b-thin hover-target" data-cat="estudio" data-cursor="view">
+            <img src="assets/images/estudio-baile.jpeg" alt="Estudio - Baile" loading="lazy">
+            <div class="b-overlay"><div class="b-tag">Estudio</div><div class="b-title">Baile</div></div>
+        </a>
+        <a href="#" class="b-item b-square hover-target" data-cat="estudio" data-cursor="view">
+            <img src="assets/images/estudio-parejas.jpeg" alt="Estudio - Parejas" loading="lazy">
+            <div class="b-overlay"><div class="b-tag">Estudio</div><div class="b-title">Parejas</div></div>
+        </a>
+        <a href="#" class="b-item b-wide hover-target" data-cat="familia" data-cursor="view">
+            <img src="assets/images/familia-inocencia.jpeg" alt="Familia - Inocencia" loading="lazy">
+            <div class="b-overlay"><div class="b-tag">Familia</div><div class="b-title">Inocencia</div></div>
+        </a>
+        <a href="#" class="b-item b-tall hover-target" data-cat="estudio" data-cursor="view">
+            <img src="assets/images/especial-momento.jpeg" alt="Sesión Especial - Momento" loading="lazy">
+            <div class="b-overlay"><div class="b-tag">Estudio</div><div class="b-title">Momento</div></div>
+        </a>
+        <a href="#" class="b-item b-square hover-target" data-cat="editorial" data-cursor="view">
+            <img src="assets/images/especial-vision.jpeg" alt="Sesión Especial - Visión" loading="lazy">
+            <div class="b-overlay"><div class="b-tag">Editorial</div><div class="b-title">Visión</div></div>
+        </a>
+        <a href="#" class="b-item b-square hover-target" data-cat="conceptual" data-cursor="view">
+            <img src="assets/images/especial-arte.jpeg" alt="Sesión Especial - Arte" loading="lazy">
+            <div class="b-overlay"><div class="b-tag">Conceptual</div><div class="b-title">Arte</div></div>
+        </a>
+        <a href="#" class="b-item b-square hover-target" data-cat="familia" data-cursor="view">
+            <img src="assets/images/especial-conexion.jpeg" alt="Sesión Especial - Conexión" loading="lazy">
+            <div class="b-overlay"><div class="b-tag">Familia</div><div class="b-title">Conexión</div></div>
+        </a>
+    </div>
+</section>
 
-            <div class="session-label"><span>Editorial — Moda &amp; Retrato</span></div>
-            <div class="p-item p-item--hero hover-target" data-cat="editorial">
-                <img src="assets/images/editorial-tierra.jpeg" alt="Editorial de moda Tierra — Otra Vaina Studios Monte Plata" loading="lazy">
-                <div class="p-overlay"><div class="p-overlay-tag">Editorial</div><div class="p-overlay-title">Tierra</div></div>
-            </div>
-            <div class="p-item p-item--small hover-target" data-cat="editorial">
-                <img src="assets/images/editorial-reposo.jpeg" alt="Editorial Reposo — Fotografía de moda Otra Vaina Studios" loading="lazy">
-                <div class="p-overlay"><div class="p-overlay-tag">Editorial</div><div class="p-overlay-title">Reposo</div></div>
-            </div>
-            <div class="p-item p-item--mid hover-target" data-cat="editorial">
-                <img src="assets/images/editorial-calma.jpeg" alt="Editorial Calma — Otra Vaina Studios producción visual" loading="lazy">
-                <div class="p-overlay"><div class="p-overlay-tag">Editorial</div><div class="p-overlay-title">Calma</div></div>
-            </div>
+<!-- ABOUT -->
+<section class="about" id="nosotros">
+    <div class="about-headline reveal">
+        No tomamos fotos. <em>Construimos imágenes</em> que sostienen marcas, identidades y memorias — desde un estudio independiente en <em>Monte Plata.</em>
+    </div>
+    <div class="about-sign reveal">Otra Vaina Studios · MMXXVI</div>
+</section>
 
-            <div class="session-label"><span>Estudio — Sesión de Parejas</span></div>
-            <div class="p-item p-item--wide hover-target" data-cat="estudio">
-                <img src="assets/images/estudio-juntos.jpeg" alt="Sesión de pareja en estudio Juntos — Otra Vaina Studios" loading="lazy">
-                <div class="p-overlay"><div class="p-overlay-tag">Estudio</div><div class="p-overlay-title">Juntos</div></div>
-            </div>
-            <div class="p-item p-item--tall hover-target" data-cat="estudio">
-                <img src="assets/images/estudio-baile.jpeg" alt="Sesión de estudio Baile — Otra Vaina Studios fotografía" loading="lazy">
-                <div class="p-overlay"><div class="p-overlay-tag">Estudio</div><div class="p-overlay-title">Baile</div></div>
-            </div>
+<div class="stats reveal-stagger">
+    <div class="stat glass">
+        <div class="stat-num" id="stat-1">250<em>+</em></div>
+        <div class="stat-label">Proyectos entregados</div>
+    </div>
+    <div class="stat glass">
+        <div class="stat-num" id="stat-2">180<em>+</em></div>
+        <div class="stat-label">Clientes satisfechos</div>
+    </div>
+    <div class="stat glass">
+        <div class="stat-num">5<em>+</em></div>
+        <div class="stat-label">Años de experiencia</div>
+    </div>
+    <div class="stat glass">
+        <div class="stat-num">100<em>%</em></div>
+        <div class="stat-label">Producción in-house</div>
+    </div>
+</div>
 
-            <div class="session-label"><span>Familia — Al Aire Libre</span></div>
-            <div class="p-item p-item--wide hover-target" data-cat="familia">
-                <img src="assets/images/familia-inocencia.jpeg" alt="Fotografía de familia Inocencia al aire libre — Otra Vaina Studios" loading="lazy">
-                <div class="p-overlay"><div class="p-overlay-tag">Familia</div><div class="p-overlay-title">Inocencia</div></div>
-            </div>
-
-            <div class="session-label"><span>Sesiones Especiales</span></div>
-            <div class="p-item p-item--square hover-target" data-cat="estudio">
-                <img src="assets/images/especial-momento.jpeg" alt="Sesión especial Momento — Estudio Otra Vaina" loading="lazy">
-                <div class="p-overlay"><div class="p-overlay-tag">Estudio</div><div class="p-overlay-title">Momento</div></div>
-            </div>
-            <div class="p-item p-item--square hover-target" data-cat="editorial">
-                <img src="assets/images/especial-vision.jpeg" alt="Sesión especial editorial Visión — Otra Vaina Studios" loading="lazy">
-                <div class="p-overlay"><div class="p-overlay-tag">Editorial</div><div class="p-overlay-title">Visión</div></div>
-            </div>
-            <div class="p-item p-item--square hover-target" data-cat="conceptual">
-                <img src="assets/images/especial-arte.jpeg" alt="Sesión especial conceptual Arte — Otra Vaina Studios" loading="lazy">
-                <div class="p-overlay"><div class="p-overlay-tag">Conceptual</div><div class="p-overlay-title">Arte</div></div>
-            </div>
-            <div class="p-item p-item--square hover-target" data-cat="familia">
-                <img src="assets/images/especial-conexion.jpeg" alt="Sesión especial Familia Conexión — Otra Vaina Studios" loading="lazy">
-                <div class="p-overlay"><div class="p-overlay-tag">Familia</div><div class="p-overlay-title">Conexión</div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- STATS -->
-    <section class="stats-section reveal">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <h3 id="stat-proyectos">250+</h3>
-                <p>Proyectos completados</p>
-            </div>
-            <div class="stat-item">
-                <h3 id="stat-clientes">180+</h3>
-                <p>Clientes satisfechos</p>
-            </div>
-            <div class="stat-item">
-                <h3>5+</h3>
-                <p>Años de experiencia</p>
-            </div>
-            <div class="stat-item">
-                <h3>100%</h3>
-                <p>Calidad premium</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="nosotros" class="about-section">
-        <div class="about-container">
-            <div class="about-image reveal">
-                <img src="assets/images/editorial-tierra.jpeg" alt="Equipo de Otra Vaina Studios — Fotografía premium en Monte Plata">
-            </div>
-            <div class="about-text reveal">
-                <div class="section-eyebrow">04 — Quiénes Somos</div>
-                <h2 class="section-title" style="margin-bottom: 1.5rem">Una vaina <em>distinta</em> desde Monte Plata.</h2>
-                <p>Otra Vaina Studios es un estudio independiente que produce fotografía y contenido audiovisual con una sola obsesión: que cada imagen tenga el peso de una pieza editorial.</p>
-                <p>Trabajamos con artistas, marcas locales, familias y empresas que entienden que la imagen no es un costo: es la primera impresión que define todo lo demás.</p>
-                <blockquote class="about-quote">
-                    "No tomamos fotos. Construimos imágenes."
-                </blockquote>
-            </div>
-        </div>
-    </section>
-
-    <!-- INSTAGRAM -->
-    <section id="instagram" class="instagram-section">
-        <div class="instagram-header reveal">
-            <div class="instagram-info">
-                <div class="instagram-icon"><i class="fab fa-instagram" aria-hidden="true"></i></div>
-                <div class="instagram-handle">
-                    <h3>@otravainaestudios</h3>
-                    <p>Nuestro día a día en imágenes</p>
-                </div>
-            </div>
-            <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="instagram-btn-link hover-target">
-                <i class="fab fa-instagram" aria-hidden="true"></i> Seguir
-            </a>
-        </div>
-
-        <div class="instagram-grid">
-            <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="instagram-post reveal hover-target" aria-label="Ver en Instagram">
-                <img src="assets/images/conceptual-en-el-campo.jpeg" alt="Sesión conceptual en la naturaleza" loading="lazy">
-                <div class="instagram-overlay"><i class="fab fa-instagram" aria-hidden="true"></i></div>
-            </a>
-            <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="instagram-post reveal hover-target" aria-label="Ver en Instagram">
-                <img src="assets/images/editorial-tierra.jpeg" alt="Editorial de moda" loading="lazy">
-                <div class="instagram-overlay"><i class="fab fa-instagram" aria-hidden="true"></i></div>
-            </a>
-            <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="instagram-post reveal hover-target" aria-label="Ver en Instagram">
-                <img src="assets/images/familia-inocencia.jpeg" alt="Sesión de familia" loading="lazy">
-                <div class="instagram-overlay"><i class="fab fa-instagram" aria-hidden="true"></i></div>
-            </a>
-            <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="instagram-post reveal hover-target" aria-label="Ver en Instagram">
-                <img src="assets/images/especial-momento.jpeg" alt="Sesión de estudio" loading="lazy">
-                <div class="instagram-overlay"><i class="fab fa-instagram" aria-hidden="true"></i></div>
-            </a>
-        </div>
-    </section>
-
-    <!-- TESTIMONIOS -->
-    <section id="testimonios" class="testimonials">
-        <div class="section-eyebrow reveal">05 — Clientes</div>
-        <h2 class="section-title reveal">Lo que dicen <em>de nosotros.</em></h2>
-        <div class="testimonials-grid">
-            <div class="testimonial-card reveal hover-target">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">"Excelente trabajo, muy profesionales. Las fotos de mi sesión quedaron increíbles. Definitivamente volveré."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">MC</div>
-                    <div class="author-info"><h4>María Campos</h4><p>Modelo profesional</p></div>
-                </div>
-            </div>
-            <div class="testimonial-card reveal hover-target">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">"Transformaron mi catálogo de productos. Las ventas aumentaron significativamente después de la sesión. Muy recomendado."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">JM</div>
-                    <div class="author-info"><h4>Juan Martínez</h4><p>Dueño de empresa</p></div>
-                </div>
-            </div>
-            <div class="testimonial-card reveal hover-target">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">"La atención al detalle es impresionante. Cada foto tiene un toque artístico que destaca. Muy satisfecha con el resultado."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">LP</div>
-                    <div class="author-info"><h4>Laura Pérez</h4><p>Artista visual</p></div>
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonios">
+    <div class="section-head reveal">
+        <div class="eyebrow">04 — Clientes</div>
+        <h2 class="section-title">Lo que <em>dicen.</em></h2>
+    </div>
+    <div class="testi-grid reveal-stagger">
+        <div class="testi-card glass">
+            <p>Excelente trabajo, muy profesionales. Las fotos de mi sesión quedaron increíbles. Definitivamente volveré.</p>
+            <div class="testi-author">
+                <div class="testi-avatar">M</div>
+                <div class="testi-author-info">
+                    <span>María Campos</span>
+                    <span>Modelo profesional</span>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="testi-card glass">
+            <p>Transformaron mi catálogo de productos. Las ventas aumentaron significativamente después de la sesión. Muy recomendado.</p>
+            <div class="testi-author">
+                <div class="testi-avatar">J</div>
+                <div class="testi-author-info">
+                    <span>Juan Martínez</span>
+                    <span>Dueño de empresa</span>
+                </div>
+            </div>
+        </div>
+        <div class="testi-card glass">
+            <p>La atención al detalle es impresionante. Cada foto tiene un toque artístico que destaca. Muy satisfecha con el resultado.</p>
+            <div class="testi-author">
+                <div class="testi-avatar">L</div>
+                <div class="testi-author-info">
+                    <span>Laura Pérez</span>
+                    <span>Artista visual</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- PRICING -->
-    <section id="planes" class="pricing-section">
-        <div class="section-eyebrow reveal">06 — Inversión</div>
-        <h2 class="section-title reveal">Planes <em>diseñados</em> para cada momento.</h2>
-
-        <div class="pricing-grid">
-            <div class="pricing-card reveal hover-target">
+<!-- PRICING -->
+<section class="section" id="planes">
+    <div class="section-head reveal">
+        <div class="eyebrow">05 — Inversión</div>
+        <h2 class="section-title">Planes <em>diseñados</em><br>para cada momento.</h2>
+    </div>
+    <div class="pricing-grid reveal-stagger">
+        <div class="price-card">
+            <div class="price-card-inner">
                 <h3>Sesión Básica</h3>
-                <p class="pricing-tagline">Ideal para retratos personales</p>
-                <div class="price"><span>RD$</span>3,500</div>
-                <ul>
-                    <li>1 hora de sesión fotográfica</li>
+                <div class="price-tag">Retratos personales</div>
+                <div class="price-amount"><em>RD$</em>3,500</div>
+                <ul class="price-list">
+                    <li>1 hora de sesión</li>
                     <li>1 cambio de vestuario</li>
-                    <li>10 fotografías retocadas (High-End)</li>
-                    <li>Entrega digital en 48 horas</li>
+                    <li>10 fotos retocadas High-End</li>
+                    <li>Entrega en 48 h</li>
                 </ul>
-                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20agendar%20la%20Sesi%C3%B3n%20B%C3%A1sica%20en%20Otra%20Vaina%20Studios" target="_blank" rel="noopener" class="btn-pricing btn-pricing-outline hover-target">Agendar</a>
+                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20la%20Sesi%C3%B3n%20B%C3%A1sica" target="_blank" rel="noopener" class="price-cta hover-target" data-testid="plan-basic">
+                    Agendar <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
+        </div>
 
-            <div class="pricing-card highlight reveal hover-target">
-                <div class="badge-popular">Más solicitado</div>
-                <h3>Estudio Pro &amp; Editorial</h3>
-                <p class="pricing-tagline">Para artistas y marcas</p>
-                <div class="price"><span>RD$</span>8,500</div>
-                <ul>
+        <div class="price-card featured">
+            <div class="price-card-inner">
+                <span class="badge-featured">Más solicitado</span>
+                <h3>Estudio Pro</h3>
+                <div class="price-tag">Artistas &amp; marcas</div>
+                <div class="price-amount"><em>RD$</em>8,500</div>
+                <ul class="price-list">
                     <li>2 horas de sesión</li>
                     <li>Hasta 3 cambios de vestuario</li>
-                    <li>25 fotografías retocadas (High-End)</li>
+                    <li>25 fotos retocadas High-End</li>
                     <li>Asesoría de dirección de arte</li>
-                    <li>Moodboard previo a la sesión</li>
+                    <li>Moodboard previo</li>
                 </ul>
-                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20agendar%20el%20plan%20Estudio%20Pro%20en%20Otra%20Vaina%20Studios" target="_blank" rel="noopener" class="btn-pricing btn-pricing-solid hover-target">Agendar</a>
+                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20el%20plan%20Estudio%20Pro" target="_blank" rel="noopener" class="price-cta hover-target" data-testid="plan-pro">
+                    Agendar <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
+        </div>
 
-            <div class="pricing-card reveal hover-target">
-                <h3>Catálogos Digitales</h3>
-                <p class="pricing-tagline">E-commerce y marcas</p>
-                <div class="price"><span>RD$</span>12,000</div>
-                <ul>
-                    <li>Media jornada (4 horas)</li>
-                    <li>Fotografía de productos/modelos</li>
-                    <li>Diagramación digital profesional</li>
-                    <li>Diseño optimizado para e-commerce</li>
-                    <li>Entrega en PDF y formatos web</li>
+        <div class="price-card">
+            <div class="price-card-inner">
+                <h3>Catálogo Digital</h3>
+                <div class="price-tag">E-commerce</div>
+                <div class="price-amount"><em>RD$</em>12,000</div>
+                <ul class="price-list">
+                    <li>Media jornada (4 h)</li>
+                    <li>Fotografía de productos</li>
+                    <li>Diagramación profesional</li>
+                    <li>Optimizado para e-commerce</li>
+                    <li>Entrega PDF + Web</li>
                 </ul>
-                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20cotizar%20la%20creaci%C3%B3n%20de%20un%20Cat%C3%A1logo%20Digital%20con%20Otra%20Vaina%20Studios" target="_blank" rel="noopener" class="btn-pricing btn-pricing-outline hover-target">Cotizar</a>
+                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20un%20Cat%C3%A1logo%20Digital" target="_blank" rel="noopener" class="price-cta hover-target" data-testid="plan-catalog">
+                    Cotizar <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
+        </div>
 
-            <div class="pricing-card reveal hover-target">
-                <h3>Producción de Video</h3>
-                <p class="pricing-tagline">Videoclips · eventos · corporativo</p>
-                <div class="price"><span>RD$</span>18,000</div>
-                <ul>
-                    <li>Grabación a 2 cámaras (4K)</li>
-                    <li>Videoclips, eventos o corporativo</li>
-                    <li>Edición y corrección de color</li>
-                    <li>1 video principal + 1 reel para redes</li>
+        <div class="price-card">
+            <div class="price-card-inner">
+                <h3>Producción Video</h3>
+                <div class="price-tag">Videoclips · eventos</div>
+                <div class="price-amount"><em>RD$</em>18,000</div>
+                <ul class="price-list">
+                    <li>Grabación 2 cámaras 4K</li>
+                    <li>Edición y color grading</li>
+                    <li>1 video principal + 1 reel</li>
                     <li>Diseño sonoro incluido</li>
                 </ul>
-                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20cotizar%20una%20Producci%C3%B3n%20de%20Video%20con%20Otra%20Vaina%20Studios" target="_blank" rel="noopener" class="btn-pricing btn-pricing-outline hover-target">Cotizar</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="contact-section">
-        <div class="contact-container">
-            <div class="contact-info reveal">
-                <div class="section-eyebrow">07 — Contacto</div>
-                <h2 class="section-title">¿Listo para tu <em>próxima</em> sesión?</h2>
-                <p>Cuéntanos tu idea y te respondemos en menos de 24 h con una propuesta a medida.</p>
-
-                <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%20Studios" target="_blank" rel="noopener" class="contact-method hover-target">
-                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                    <div class="contact-method-info">
-                        <span>WhatsApp</span>
-                        <span>+1 (809) 268-0341</span>
-                    </div>
-                </a>
-                <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="contact-method hover-target">
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                    <div class="contact-method-info">
-                        <span>Instagram</span>
-                        <span>@otravainaestudios</span>
-                    </div>
-                </a>
-                <a href="#" class="contact-method hover-target" aria-label="Ubicación en Monte Plata">
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                    <div class="contact-method-info">
-                        <span>Ubicación</span>
-                        <span>Monte Plata, RD</span>
-                    </div>
+                <a href="https://wa.me/18092680341?text=Hola%2C%20me%20interesa%20una%20Producci%C3%B3n%20de%20Video" target="_blank" rel="noopener" class="price-cta hover-target" data-testid="plan-video">
+                    Cotizar <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
-
-            <div class="contact-form reveal">
-                <div id="formFeedback" class="form-feedback">¡Listo! Te estamos redirigiendo a WhatsApp para finalizar tu solicitud…</div>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="nombre">Nombre completo</label>
-                        <input type="text" id="nombre" name="nombre" required autocomplete="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" name="email" required autocomplete="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" required autocomplete="tel">
-                    </div>
-                    <div class="form-group">
-                        <label for="servicio">Servicio de interés</label>
-                        <select id="servicio" name="servicio" required>
-                            <option value="">Selecciona un servicio</option>
-                            <option value="Sesión Básica">Sesión Básica</option>
-                            <option value="Estudio Pro & Editorial">Estudio Pro &amp; Editorial</option>
-                            <option value="Catálogos Digitales">Catálogos Digitales</option>
-                            <option value="Producción de Video">Producción de Video</option>
-                            <option value="Diseño 3D & Arte">Diseño 3D &amp; Dirección de Arte</option>
-                            <option value="Restauración">Restauración Fotográfica</option>
-                            <option value="Otro">Otro proyecto</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Cuéntanos tu idea</label>
-                        <textarea id="mensaje" name="mensaje" required placeholder="Fecha estimada, locación, referencias..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit hover-target">
-                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Enviar por WhatsApp
-                    </button>
-                </form>
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <img src="assets/images/logo.png" alt="Otra Vaina Studios">
-                <p>Estudio de fotografía y producción visual premium desde Monte Plata, República Dominicana.</p>
-            </div>
-            <div class="footer-col">
-                <h5>Servicios</h5>
-                <a href="#servicios">Fotografía Estudio</a>
-                <a href="#servicios">Editorial &amp; Moda</a>
-                <a href="#servicios">Cinematografía</a>
-                <a href="#servicios">Catálogos</a>
-                <a href="#servicios">Restauración</a>
-            </div>
-            <div class="footer-col">
-                <h5>Estudio</h5>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#proceso">Proceso</a>
-                <a href="#catalogo">Catálogo</a>
-                <a href="#testimonios">Testimonios</a>
-                <a href="#planes">Inversión</a>
-            </div>
-            <div class="footer-col">
-                <h5>Contacto</h5>
-                <a href="https://wa.me/18092680341" target="_blank" rel="noopener">+1 (809) 268-0341</a>
-                <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener">@otravainaestudios</a>
-                <p>Monte Plata, RD</p>
-            </div>
+<!-- INSTAGRAM -->
+<section class="section" id="instagram">
+    <div class="section-head reveal">
+        <div class="eyebrow">06 — Instagram</div>
+        <h2 class="section-title">@otravaina<em>estudios</em></h2>
+        <p class="section-sub">Síguenos para ver behind-the-scenes, sesiones recientes y procesos del estudio.</p>
+    </div>
+    <div class="insta-grid reveal-stagger">
+        <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="insta-item hover-target" data-cursor="view" data-testid="insta-1">
+            <img src="assets/images/conceptual-en-el-campo.jpeg" alt="Instagram - Sesión conceptual" loading="lazy">
+            <div class="insta-icon"><i class="fab fa-instagram"></i></div>
+        </a>
+        <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="insta-item hover-target" data-cursor="view" data-testid="insta-2">
+            <img src="assets/images/editorial-tierra.jpeg" alt="Instagram - Editorial moda" loading="lazy">
+            <div class="insta-icon"><i class="fab fa-instagram"></i></div>
+        </a>
+        <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="insta-item hover-target" data-cursor="view" data-testid="insta-3">
+            <img src="assets/images/familia-inocencia.jpeg" alt="Instagram - Familia" loading="lazy">
+            <div class="insta-icon"><i class="fab fa-instagram"></i></div>
+        </a>
+        <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="insta-item hover-target" data-cursor="view" data-testid="insta-4">
+            <img src="assets/images/especial-momento.jpeg" alt="Instagram - Sesión estudio" loading="lazy">
+            <div class="insta-icon"><i class="fab fa-instagram"></i></div>
+        </a>
+    </div>
+</section>
+
+<!-- HABLEMOS (Footer 100vh) -->
+<section class="hablemos" id="hablemos">
+    <div class="hablemos-eyebrow reveal">07 — Contacto</div>
+
+    <h2 class="reveal-stagger">
+        <span style="display:block">Hable</span>
+        <span style="display:block"><em>mos.</em></span>
+    </h2>
+
+    <div class="hablemos-cta-row reveal">
+        <a href="https://wa.me/18092680341?text=Hola%20Otra%20Vaina%20Studios%2C%20quiero%20cotizar%20un%20proyecto" target="_blank" rel="noopener" class="hablemos-btn primary hover-target" data-testid="cta-whatsapp-main">
+            <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+        </a>
+        <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="hablemos-btn ghost hover-target" data-testid="cta-instagram-main">
+            <i class="fab fa-instagram"></i> Ver Instagram
+        </a>
+    </div>
+
+    <div class="hablemos-bottom">
+        <div class="hablemos-info">
+            <div><span>WhatsApp</span><span>+1 809 268 0341</span></div>
+            <div><span>Instagram</span><span>@otravainaestudios</span></div>
+            <div><span>Locación</span><span>Monte Plata, RD</span></div>
         </div>
-        <div class="footer-bottom">
-            <div>© 2026 Otra Vaina Studios. Todos los derechos reservados.</div>
-            <div class="footer-socials">
-                <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://wa.me/18092680341" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-            </div>
-            <div class="tmca-signature">Engineered by TMCA.</div>
+        <div class="hablemos-socials">
+            <a href="https://wa.me/18092680341" target="_blank" rel="noopener" class="hover-target" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/otravainaestudios" target="_blank" rel="noopener" class="hover-target" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script>
-        // Custom cursor (solo desktop)
-        const cursor = document.getElementById('cursor');
-        const supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+<div class="footer-credit">
+    © MMXXVI · Otra Vaina Studios · Engineered by <em>TMCA</em>
+</div>
 
-        if (supportsHover && cursor) {
-            document.addEventListener('mousemove', (e) => {
-                cursor.style.left = e.clientX + 'px';
-                cursor.style.top = e.clientY + 'px';
-            });
-            document.querySelectorAll('.hover-target').forEach(target => {
-                target.addEventListener('mouseenter', () => cursor.classList.add('hover-effect'));
-                target.addEventListener('mouseleave', () => cursor.classList.remove('hover-effect'));
-            });
-        }
+<!-- LIBRARIES -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
 
-        // Counter animation
-        function animateCounter(element, target) {
-            let current = 0;
-            const increment = Math.max(1, Math.floor(target / 50));
-            const interval = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    element.textContent = target + '+';
-                    clearInterval(interval);
-                } else {
-                    element.textContent = current + '+';
-                }
-            }, 30);
-        }
+<script>
+// =====================
+// LENIS SMOOTH SCROLL
+// =====================
+let lenis;
+try {
+    lenis = new Lenis({
+        duration: 1.2,
+        easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smoothWheel: true
+    });
+    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+} catch(e) { console.warn('Lenis no cargó, scroll nativo OK', e); }
 
-        // Reveal on scroll
-        const reveals = document.querySelectorAll('.reveal');
-        const observer = new IntersectionObserver((entries, obs) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    if (entry.target.id === 'stat-proyectos') animateCounter(entry.target, 250);
-                    if (entry.target.id === 'stat-clientes') animateCounter(entry.target, 180);
-                    obs.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
-        reveals.forEach(r => observer.observe(r));
+// =====================
+// CUSTOM CURSOR
+// =====================
+const cursorDot = document.getElementById('cursorDot');
+const cursorRing = document.getElementById('cursorRing');
+const supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-        // Stat counters target separately
-        const statObs = new IntersectionObserver((entries, obs) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const el = entry.target;
-                    if (el.id === 'stat-proyectos') animateCounter(el, 250);
-                    if (el.id === 'stat-clientes') animateCounter(el, 180);
-                    obs.unobserve(el);
-                }
-            });
-        }, { threshold: 0.3 });
-        ['stat-proyectos','stat-clientes'].forEach(id => {
-            const el = document.getElementById(id);
-            if (el) statObs.observe(el);
+if (supportsHover && cursorDot && cursorRing) {
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        cursorDot.style.left = mx + 'px';
+        cursorDot.style.top = my + 'px';
+    });
+    function loop() {
+        rx += (mx - rx) * 0.18;
+        ry += (my - ry) * 0.18;
+        cursorRing.style.left = rx + 'px';
+        cursorRing.style.top = ry + 'px';
+        requestAnimationFrame(loop);
+    }
+    loop();
+    document.querySelectorAll('.hover-target').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            cursorRing.classList.add('hover');
+            if (el.dataset.cursor === 'view') cursorRing.classList.add('view');
         });
-
-        // Portfolio filter
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const pItems = document.querySelectorAll('.p-item');
-        const sessionLabels = document.querySelectorAll('.session-label');
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                const filter = btn.dataset.filter;
-
-                pItems.forEach(item => {
-                    if (filter === 'all' || item.dataset.cat === filter) {
-                        item.classList.remove('hidden');
-                    } else {
-                        item.classList.add('hidden');
-                    }
-                });
-
-                // Ocultar labels si no quedan items debajo
-                sessionLabels.forEach(label => {
-                    if (filter === 'all') { label.style.display = ''; return; }
-                    let next = label.nextElementSibling;
-                    let hasVisible = false;
-                    while (next && !next.classList.contains('session-label')) {
-                        if (next.classList.contains('p-item') && !next.classList.contains('hidden')) {
-                            hasVisible = true; break;
-                        }
-                        next = next.nextElementSibling;
-                    }
-                    label.style.display = hasVisible ? '' : 'none';
-                });
-            });
+        el.addEventListener('mouseleave', () => {
+            cursorRing.classList.remove('hover');
+            cursorRing.classList.remove('view');
         });
+    });
+}
 
-        // Form -> WhatsApp con feedback
-        const contactForm = document.getElementById('contactForm');
-        const feedback = document.getElementById('formFeedback');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const nombre = document.getElementById('nombre').value.trim();
-                const email = document.getElementById('email').value.trim();
-                const telefono = document.getElementById('telefono').value.trim();
-                const servicio = document.getElementById('servicio').value;
-                const mensaje = document.getElementById('mensaje').value.trim();
+// =====================
+// SERVICE PREVIEW (Floating image)
+// =====================
+const servicePreview = document.getElementById('servicePreview');
+const servicePreviewImg = document.getElementById('servicePreviewImg');
+const serviceRows = document.querySelectorAll('.service-row');
+let previewMX = 0, previewMY = 0, previewRX = 0, previewRY = 0;
 
-                const text = `Hola Otra Vaina Studios, tengo la siguiente solicitud:%0A%0A👤 Nombre: ${nombre}%0A📧 Email: ${email}%0A📱 Teléfono: ${telefono}%0A💼 Servicio: ${servicio}%0A📝 Mensaje: ${mensaje}`;
-                const url = `https://wa.me/18092680341?text=${text}`;
+if (supportsHover && servicePreview && servicePreviewImg) {
+    document.addEventListener('mousemove', e => {
+        previewMX = e.clientX;
+        previewMY = e.clientY;
+    });
+    function previewLoop() {
+        previewRX += (previewMX - previewRX) * 0.08;
+        previewRY += (previewMY - previewRY) * 0.08;
+        servicePreview.style.left = previewRX + 'px';
+        servicePreview.style.top = previewRY + 'px';
+        requestAnimationFrame(previewLoop);
+    }
+    previewLoop();
 
-                feedback.classList.add('visible');
-                setTimeout(() => {
-                    window.open(url, '_blank');
-                    contactForm.reset();
-                    setTimeout(() => feedback.classList.remove('visible'), 4000);
-                }, 600);
-            });
+    serviceRows.forEach(row => {
+        row.addEventListener('mouseenter', () => {
+            const img = row.dataset.image;
+            if (img && img !== servicePreviewImg.src) {
+                servicePreviewImg.src = img;
+                servicePreviewImg.alt = row.querySelector('.service-name').textContent;
+            }
+            servicePreview.classList.add('active');
+        });
+        row.addEventListener('mouseleave', () => {
+            servicePreview.classList.remove('active');
+        });
+    });
+}
+
+// =====================
+// REVEAL ON SCROLL
+// =====================
+const reveals = document.querySelectorAll('.reveal, .reveal-stagger');
+const obs = new IntersectionObserver((entries, o) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            o.unobserve(entry.target);
         }
+    });
+}, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+reveals.forEach(r => obs.observe(r));
 
-        // Menú móvil (simple toggle)
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.querySelector('.nav-links');
-        if (menuToggle && navLinks) {
-            menuToggle.addEventListener('click', () => {
-                const isOpen = navLinks.style.display === 'flex';
-                navLinks.style.display = isOpen ? 'none' : 'flex';
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = '100%';
-                navLinks.style.left = '0';
-                navLinks.style.right = '0';
-                navLinks.style.background = 'var(--bg-cream)';
-                navLinks.style.padding = '1rem 5%';
-                navLinks.style.borderBottom = '1px solid rgba(0,0,0,0.08)';
-            });
-            navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-                if (window.innerWidth < 900) navLinks.style.display = 'none';
-            }));
+// =====================
+// COUNTER ANIMATION
+// =====================
+function animateCounter(el, target) {
+    let cur = 0;
+    const step = Math.max(1, Math.floor(target / 60));
+    const t = setInterval(() => {
+        cur += step;
+        if (cur >= target) { el.firstChild.nodeValue = target; clearInterval(t); }
+        else { el.firstChild.nodeValue = cur; }
+    }, 28);
+}
+const counterObs = new IntersectionObserver((entries, o) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const el = entry.target;
+            if (el.id === 'stat-1') animateCounter(el, 250);
+            if (el.id === 'stat-2') animateCounter(el, 180);
+            o.unobserve(el);
         }
-    </script>
+    });
+}, { threshold: 0.4 });
+['stat-1', 'stat-2'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) counterObs.observe(el);
+});
+
+// =====================
+// PORTFOLIO FILTER
+// =====================
+const filterBtns = document.querySelectorAll('.filter-btn');
+const bItems = document.querySelectorAll('.b-item');
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        bItems.forEach(it => {
+            if (f === 'all' || it.dataset.cat === f) it.classList.remove('hidden');
+            else it.classList.add('hidden');
+        });
+    });
+});
+
+// =====================
+// MOBILE DRAWER
+// =====================
+const menuOpen = document.getElementById('menuOpen');
+const menuClose = document.getElementById('menuClose');
+const drawer = document.getElementById('mobileDrawer');
+if (menuOpen && drawer) {
+    menuOpen.addEventListener('click', () => drawer.classList.add('open'));
+    menuClose?.addEventListener('click', () => drawer.classList.remove('open'));
+    drawer.querySelectorAll('.drawer-link').forEach(a => a.addEventListener('click', () => drawer.classList.remove('open')));
+}
+
+// =====================
+// GSAP — Hero stagger + Process pin (subtle)
+// =====================
+if (window.gsap && window.ScrollTrigger) {
+    gsap.registerPlugin(ScrollTrigger);
+    // Hero lines stagger
+    gsap.from('.hero h1 .line-inner', {
+        yPercent: 110,
+        duration: 1.1,
+        stagger: 0.12,
+        ease: 'power3.out',
+        delay: 0.2
+    });
+    // Parallax on hero photo
+    gsap.to('.hero-right img', {
+        yPercent: 12,
+        ease: 'none',
+        scrollTrigger: {
+            trigger: '.hero',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true
+        }
+    });
+}
+</script>
 </body>
 </html>
